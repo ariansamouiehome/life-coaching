@@ -1,0 +1,36 @@
+// Colors
+// ------------------------------------------------
+$black: #000;
+$white: #fff;
+
+$brand-black: #121212;
+$brand-white: #F0F0F0;
+$brand-grey: #C8C8C8;
+
+$brand-color-one: #d2a94e;
+$brand-color-two: #FF5733;
+
+$warning: #FF1313;
+
+// Fonts
+// ------------------------------------------------
+
+// Heading
+$brand-font-heading-one: 'Berkshire Swash', cursive;
+$brand-font-heading-two: 'Akronim', cursive;
+
+// Copy
+$brand-font-copy-one: 'Akaya Telivigala', cursive;
+
+// ------------------------------------------------
+$grid-breakpoints: (
+        xxs: 320px,
+        xs: 568px,
+        sm: 667px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px,
+        xxl: 1305px,
+        xxxl: 1440px,
+        xxxxl: 1600px,
+);

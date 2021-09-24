@@ -1,0 +1,95 @@
+body {
+  background: $brand-black;
+  //-webkit-backface-visibility: hidden;
+}
+
+.heading-one {
+  font-size: 45px;
+  margin: 0 0 20px;
+  @include media-breakpoint-up(sm) {
+    font-size: 55px;
+  }
+  @include media-breakpoint-up(md) {
+    font-size: 65px;
+  }
+}
+
+.body-copy {
+  font-size: 16px;
+  margin: 0 0 20px;
+}
+
+.clickable {
+  position: relative;
+  display: flex;
+  text-decoration: none;
+  color: $brand-color-one;
+  transition: 0.5s;
+
+  &:before {
+    display: block;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 2px;
+    background: $brand-color-one;
+    width: 0;
+    transition: 0.5s;
+  }
+
+  &:hover {
+    color: $brand-white;
+
+    &:before {
+      width: 100%;
+      background-color: $brand-color-one;
+    }
+  }
+}
+
+.heading-mark {
+  position: relative;
+  margin-bottom: 40px;
+
+  &:before {
+    display: block;
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -20px;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 3px;
+    border-radius: 50%;
+    background: $brand-color-one;
+  }
+
+  &.mark-left {
+    &:before {
+      @include media-breakpoint-up(xs) {
+        left: 0;
+        transform: none;
+      }
+    }
+  }
+}
+
+.example-class {
+  @include media-breakpoint-up(xs) {
+
+  }
+}
+
+@for $i from 1 to 10 {
+  .example-loop-item:nth-child(#{$i}) {
+    transition-delay: $i * 0.10s;
+  }
+}
+
+.example-animation {
+  animation-name: fadeUp;
+  animation-fill-mode: both;
+  animation-duration: 0.5s;
+}
