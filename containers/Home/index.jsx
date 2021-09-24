@@ -62,7 +62,7 @@ const Home = () => {
             <ImageSideText
                 backgroundImage="/images/self-love.webp"
                 title="What is self love?"
-                description="We react the same way when speaking to ourselves as we would if someone else was talking to us. If a friend spoke to you the way you speak to yourself, would you still be their friend? The only difference is we can get away from that friend, but we cannot get away from ourselves.<br /><br />Learn how to accept the ego and change the judgmental thoughts you have about yourself given to you by others. <br /><br />Being aware of how you treat yourself is one of the most powerful things you can learn as a human.<br /><br /> To learn more about self love, get in touch."
+                description="We react the same way when speaking to ourselves as we would if someone else was speaking to us. If a friend spoke to you the way you speak to yourself, would you still be their friend? The only difference is we can get away from that friend, but we cannot get away from ourselves.<br /><br />Learn how to accept the ego and change the judgmental thoughts you have about yourself given to you by others. <br /><br />Being aware of how you treat yourself is one of the most powerful things you can learn as a human.<br /><br /> To learn more about self love, get in touch."
                 href="/book-a-call"
                 cta_text="book a call"
             />
