@@ -68,9 +68,12 @@
 
     .content-title {
       color: $brand-white;
-      font-size: 50px;
       text-shadow: 5px 5px $brand-black;
       font-family: $brand-font-heading-one;
+      font-size: 35px;
+      @include media-breakpoint-up(xs) {
+        font-size: 50px;
+      }
     }
 
     .body-copy {

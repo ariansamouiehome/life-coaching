@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from "react";
 import 'styles/app.scss';
 import AOS from 'aos';
+import {isMobile} from 'react-device-detect';
 import Header from "components/Layout/Header";
 import Footer from "components/Layout/Footer";
 import Router from 'next/router';
@@ -12,7 +13,7 @@ const MyApp = ({Component, pageProps}) => {
 
     useEffect(() => {
         AOS.init({
-            offset: 250,
+            offset: isMobile ? 50 : 250,
             once: true
         });
     }, []);

@@ -1,6 +1,7 @@
 .main-footer {
   border-top: 1px solid $brand-color-one;
   padding-top: 50px;
+  overflow: hidden;
   @include media-breakpoint-up(sm) {
     padding-top: 0;
   }

@@ -33,7 +33,6 @@ const Home = () => {
             <FullWidthImageTextBanner
                 title="BECOME THE MOST <br /> AUTHENTIC YOU"
                 description="The further away we are from our most authentic self,<br /> the further away we are to healing."
-                // backgroundImage="https://c.pxhere.com/images/b5/34/8ffebf573eafb155f46e10c0e507-1617158.webp!d"
                 backgroundImage="/images/peace.webp"
                 contentCenter
                 showScrollArrow
