@@ -33,8 +33,8 @@ const Home = () => {
             <FullWidthImageTextBanner
                 title="BECOME THE MOST <br /> AUTHENTIC YOU"
                 description="The further away we are from our most authentic self,<br /> the further away we are to healing."
-                // backgroundImage="https://c.pxhere.com/images/b5/34/8ffebf573eafb155f46e10c0e507-1617158.jpg!d"
-                backgroundImage="/images/peace.jpg"
+                // backgroundImage="https://c.pxhere.com/images/b5/34/8ffebf573eafb155f46e10c0e507-1617158.webp!d"
+                backgroundImage="/images/peace.webp"
                 contentCenter
                 showScrollArrow
                 arrowsOnCLick={() => scrollToPosition('second-component')}
@@ -52,7 +52,7 @@ const Home = () => {
             <FullWidthVideoPlayer
                 title="MEET ARIAN"
                 iframeSrc="https://www.youtube.com/embed/ac6nfXLYAok?rel=0"
-                thumbnailImage="/images/profile.jpg"
+                thumbnailImage="/images/profile.webp"
             />
 
             <ColumnInfoImage
@@ -61,7 +61,7 @@ const Home = () => {
             />
 
             <ImageSideText
-                backgroundImage="/images/self-love.jpg"
+                backgroundImage="/images/self-love.webp"
                 title="What is self love?"
                 description="We react the same way when speaking to ourselves as we would if someone else was talking to us. If a friend spoke to you the way you speak to yourself, would you still be their friend? The only difference is we can get away from that friend, but we cannot get away from ourselves.<br /><br />Learn how to accept the ego and change the judgmental thoughts you have about yourself given to you by others. <br /><br />Being aware of how you treat yourself is one of the most powerful things you can learn as a human.<br /><br /> To learn more about self love, get in touch."
                 href="/book-a-call"
@@ -79,7 +79,7 @@ const Home = () => {
             />
 
             <ImageSideText
-                backgroundImage="/images/relationship.jpg"
+                backgroundImage="/images/relationship.webp"
                 title="Do your relationships have the same outcome."
                 description="The reason I am changing this text is to get rid of the latin on the website as Chrome loves to keep telling me to translate it. The reason I am changing this text is to get <br /><br /> <br />rid of the latin on the website as Chrome loves to keep telling me to translate it The reason I am changing this text is to get rid of the latin on the website as Chrome loves to keep telling me to translate it. The reason I am changing this text is to get rid of the latin on the website as Chrome loves to keep telling me to translate it The reason I am changing this text is to get rid of the latin on the website as Chrome loves to keep telling me to translate it"
                 href="/"

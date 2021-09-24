@@ -29,7 +29,7 @@ const ShadowWork = () => {
         <>
             <FullWidthImageTextBanner
                 title="SHADOW WORK"
-                backgroundImage="/images/shadow.jpg"
+                backgroundImage="/images/shadow.webp"
                 contentCenter
                 alt
             />
@@ -53,7 +53,7 @@ const ShadowWork = () => {
             />
 
             <ImageSideText
-                backgroundImage="/images/mirror.jpg"
+                backgroundImage="/images/mirror.webp"
                 title="What Is Fragmentation?"
                 description="Fragmentation is the primary coping mechanism for a physical human.<br /><br />We have an outdated definition of the meaning for trauma. We tend to define trauma only when it’s the most extreme stuff a person has experienced. Such as mental or sexual abuse, human trafficking or death in the family. Every single human has trauma. This means everyone has fragmentation within their being.<br /><br /> As humans the way we cope with trauma is that we dissociate. Every time we experience trauma (distress without resolve), your consciousness splits into parts. Depending on what feelings are associated with that trauma at the time, the way we cope is by burying those feelings deep in our subconscious when the split occurs.<br /><br /> In order to heal we must reintegrate those fragments into our being. To learn more about Fragmentation, get in touch and book a call."
                 href="/book-a-call"
