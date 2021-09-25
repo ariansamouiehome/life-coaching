@@ -22,7 +22,8 @@ const AppHead = (props) => {
             <meta property="og:image:width" content="300"/>
             <meta property="og:image:height" content="300"/>
             <meta property="og:url" content={router.asPath}/>
-            <meta property="fb:app_id" content="arian_samouie_id"/>
+            <meta property="fb:page_id" content="395450240451647"/>
+
 
             {/*Twitter*/}
             <meta name="twitter:title" content={`Arian Samouie - ${title}`}/>
