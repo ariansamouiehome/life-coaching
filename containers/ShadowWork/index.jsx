@@ -1,12 +1,12 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useContext} from 'react';
 import FullWidthImageTextBanner from "components/FullWidthImageTextBanner";
 import ColumnInfoImage from "components/ColumnInfoImage";
 import FullWidthInfo from "components/FullWidthInfo";
 import ImageSideText from "components/ImageSideText";
 import BackImageFloatingContent from "components/BackImageFloatingContent";
-import {useRouter} from "next/router";
 import {scrollToPosition} from "../../utils/functions";
 import AppHead from "components/Layout/AppHead";
+import {PageChangeContext} from "../../utils/pageChangeContext";
 import Clickable from "components/Elements/Clickable";
 
 const ShadowWork = () => {
@@ -27,16 +27,16 @@ const ShadowWork = () => {
             description: 'To become aware of something you have to be able to see it. Shadow work makes you aware to the aspects that we rejected and stored in our subconscious.',
             image: 'images/icons/aware.png',
         },
-    ]
-    const router = useRouter();
-    const pageIdCameFrom = router.query.from;
-    const pageLoadScrollTarget = router.query.pageLoadScrollTarget;
+    ];
+    const {pageScrollTarget, showBackToButton,clickedPageChangeScrollToPosition} = useContext(PageChangeContext);
 
     useEffect(() => {
-        setTimeout(() => {
-            pageLoadScrollTarget === 'fragmentation' && scrollToPosition('fragmentation');
-        }, 500);
-    }, []);
+        if(pageScrollTarget.target === 'fragmentation') {
+            setTimeout(() => {
+                scrollToPosition('fragmentation');
+            }, 500);
+        }
+    },[pageScrollTarget.target]);
 
     return (
         <>
@@ -103,12 +103,12 @@ const ShadowWork = () => {
                         subconscious when the split occurs.<br/><br/> In order to heal we must reintegrate those
                         fragments into our being. To learn more about Fragmentation, get in touch and book a call.</p>
 
-                    {pageIdCameFrom && <Clickable
-                        href={{pathname: '/', query: { pageLoadScrollTarget: 'external-validation'}}}
+                    {showBackToButton && <Clickable
+                        onClick={() => clickedPageChangeScrollToPosition('/', 'external-validation', '')}
                         brandOne
                         className="go-back-clickable"
                     >
-                        Go back to External Validation
+                        Go back to {pageScrollTarget.from}
                     </Clickable>}
                 </ImageSideText>
             </div>

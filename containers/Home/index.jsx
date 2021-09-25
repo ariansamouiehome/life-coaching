@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useContext} from 'react';
 import {scrollToPosition} from "../../utils/functions";
 import FullWidthImageTextBanner from "components/FullWidthImageTextBanner";
 import ColumnInfoImage from "components/ColumnInfoImage";
@@ -9,7 +9,7 @@ import BackImageFloatingContent from "components/BackImageFloatingContent";
 import {isMobile} from 'react-device-detect';
 import AppHead from "components/Layout/AppHead";
 import Clickable from "components/Elements/Clickable";
-import {useRouter} from "next/router";
+import {PageChangeContext} from "../../utils/pageChangeContext";
 
 const Home = () => {
 
@@ -33,14 +33,15 @@ const Home = () => {
     ];
     const quoteMobile = 'If you fail at something you don\'t want,<br /> you still fail. <br />So why not fail at something you do want?';
     const quoteDesktop = 'If you fail at something you don\'t want, you still fail. <br /> So why not fail at something you do want?';
-    const router = useRouter();
-    const pageLoadScrollTarget = router.query.pageLoadScrollTarget;
+    const {pageScrollTarget, clickedPageChangeScrollToPosition} = useContext(PageChangeContext);
 
     useEffect(() => {
-        setTimeout(() => {
-            pageLoadScrollTarget === 'external-validation' && scrollToPosition('external-validation');
-        }, 500);
-    }, []);
+        if(pageScrollTarget.target === 'external-validation') {
+            setTimeout(() => {
+                scrollToPosition('external-validation');
+            }, 500);
+        }
+    },[pageScrollTarget.target]);
 
     return (
         <>
@@ -106,10 +107,7 @@ const Home = () => {
                         that we
                         have that relationship we depend on for survival.<br/><br/> In moments a child does not feel
                         safe and
-                        feels they could lose that relationship they depend on, their consciousness <Clickable href={{
-                            pathname: '/shadow-work',
-                            query: {pageLoadScrollTarget: 'fragmentation', from: 'home-page-validation'}
-                        }} toolTip="What is fragmentation?" toolTipWidth={170} brandOne>fragments</Clickable> in order
+                        feels they could lose that relationship they depend on, their consciousness <Clickable onClick={() => clickedPageChangeScrollToPosition('/shadow-work', 'fragmentation', 'External Validation')} toolTip="What is fragmentation?" toolTipWidth={170} brandOne>fragments</Clickable> in order
                         to conform with the desire and approval of their caregivers. This behaviour becomes normal and
                         in some cases is expected. <br/><br/> We then carry this
                         behaviour over to adulthood and in an attempt to get love the only way we learnt how to, we

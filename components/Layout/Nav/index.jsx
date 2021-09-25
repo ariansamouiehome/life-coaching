@@ -6,7 +6,7 @@ import Clickable from "components/Elements/Clickable";
 
 const Nav = (props) => {
 
-    const {className, showNav, setShowNav} = props;
+    const {className, showNav} = props;
     const router = useRouter();
 
     return (
@@ -16,7 +16,6 @@ const Nav = (props) => {
                     <Clickable
                         href={item.link}
                         className={`item-link ${router.pathname === item.link ? 'active' : ''}`}
-                        onClick={() => setShowNav(false)}
                         >
                         {item.title}
                     </Clickable>

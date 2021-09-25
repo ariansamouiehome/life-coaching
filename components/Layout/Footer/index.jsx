@@ -9,8 +9,6 @@ const Footer = () => {
 
     const router = useRouter();
 
-    console.log(router)
-
     return (
         <footer className={`main-footer ${router.asPath === '/admin' ? 'admin' : ''}`} data-aos>
             <Container>
