@@ -3,11 +3,17 @@ import FullWidthImageTextBanner from "components/FullWidthImageTextBanner";
 import ColumnInfoImage from "components/ColumnInfoImage";
 import ContactForm from "components/ContactForm";
 import FullWidthInfo from "components/FullWidthInfo";
+import AppHead from "components/Layout/AppHead";
 
 const BookACall = () => {
 
     return (
         <>
+            <AppHead
+                title="Book A Call"
+                description="Fill out the form and tell me a little about yourself. What you're looking for and some of the challenges you face regularly"
+                image="/images/profile.webp"
+            />
             <FullWidthImageTextBanner
                 title="LETS CONNECT"
                 backgroundImage="/images/connect.webp"
