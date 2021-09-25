@@ -167,6 +167,10 @@
 
       .inner-content {
         transform: translateY(20px);
+
+        .content-title {
+          animation-delay: 0.2s;
+        }
       }
     }
   }
