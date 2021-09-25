@@ -18,7 +18,7 @@ const MeetArian = () => {
                 <meta name="msapplication-TileImage" content="/images/profile.webp"/>
                 <meta property="og:site_name" content="Arian Samouie Coaching"/>
                 <meta property="og:title" content="Meet Arian"/>
-                <meta property="og:description" content="Get to know why I have chosen to help people heal their minds"/>
+                <meta property="og:description" content="Get to know why I have chosen to help people heal their minds."/>
                 <meta property="og:image" content="/images/profile.webp"/>
                 <meta property="og:type" content="website"/>
                 <meta property="og:image:type" content="image/webp"/>

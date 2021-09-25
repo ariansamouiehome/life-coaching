@@ -44,7 +44,7 @@ const Home = () => {
 
                 <meta property="og:site_name" content="Arian Samouie Coaching"/>
                 <meta property="og:title" content="Arian Samouie"/>
-                <meta property="og:description" content="BECOME THE MOST AUTHENTIC YOU"/>
+                <meta property="og:description" content="BECOME THE MOST AUTHENTIC YOU. The further away we are from our most authentic self,<br /> the further away we are to healing"/>
 
                 <meta property="og:image" content="/images/peace.webp"/>
 
