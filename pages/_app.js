@@ -6,6 +6,7 @@ import Header from "components/Layout/Header";
 import Footer from "components/Layout/Footer";
 import Router, {useRouter} from 'next/router';
 import {PageChangeContext} from "../utils/pageChangeContext";
+import {scrollToPosition} from "../utils/functions";
 
 const MyApp = ({Component, pageProps}) => {
 
@@ -25,6 +26,7 @@ const MyApp = ({Component, pageProps}) => {
         router.push(href);
         setTimeout(() => {
             setShowBackToButton(true);
+            scrollToPosition(target);
         },500);
         setTimeout(() => {
             setPageScrollTarget({target: '', from: from})

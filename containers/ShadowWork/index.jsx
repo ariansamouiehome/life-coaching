@@ -1,10 +1,9 @@
-import React, {useEffect, useContext} from 'react';
+import React, {useContext} from 'react';
 import FullWidthImageTextBanner from "components/FullWidthImageTextBanner";
 import ColumnInfoImage from "components/ColumnInfoImage";
 import FullWidthInfo from "components/FullWidthInfo";
 import ImageSideText from "components/ImageSideText";
 import BackImageFloatingContent from "components/BackImageFloatingContent";
-import {scrollToPosition} from "../../utils/functions";
 import AppHead from "components/Layout/AppHead";
 import {PageChangeContext} from "../../utils/pageChangeContext";
 import Clickable from "components/Elements/Clickable";
@@ -29,14 +28,6 @@ const ShadowWork = () => {
         },
     ];
     const {pageScrollTarget, showBackToButton,clickedPageChangeScrollToPosition} = useContext(PageChangeContext);
-
-    useEffect(() => {
-        if(pageScrollTarget.target === 'fragmentation') {
-            setTimeout(() => {
-                scrollToPosition('fragmentation');
-            }, 500);
-        }
-    },[pageScrollTarget.target]);
 
     return (
         <>

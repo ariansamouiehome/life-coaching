@@ -1,4 +1,4 @@
-import React, {useEffect, useContext} from 'react';
+import React, {useContext} from 'react';
 import {scrollToPosition} from "../../utils/functions";
 import FullWidthImageTextBanner from "components/FullWidthImageTextBanner";
 import ColumnInfoImage from "components/ColumnInfoImage";
@@ -33,15 +33,7 @@ const Home = () => {
     ];
     const quoteMobile = 'If you fail at something you don\'t want,<br /> you still fail. <br />So why not fail at something you do want?';
     const quoteDesktop = 'If you fail at something you don\'t want, you still fail. <br /> So why not fail at something you do want?';
-    const {pageScrollTarget, clickedPageChangeScrollToPosition} = useContext(PageChangeContext);
-
-    useEffect(() => {
-        if(pageScrollTarget.target === 'external-validation') {
-            setTimeout(() => {
-                scrollToPosition('external-validation');
-            }, 500);
-        }
-    },[pageScrollTarget.target]);
+    const {clickedPageChangeScrollToPosition} = useContext(PageChangeContext);
 
     return (
         <>
