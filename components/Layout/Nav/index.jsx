@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import {navItems} from "../../../utils/globalArrays";
 import {useRouter} from 'next/router';
+import Clickable from "components/Elements/Clickable";
 
 const Nav = (props) => {
 
@@ -12,11 +13,13 @@ const Nav = (props) => {
         <nav className={`main-nav ${className ? className : ''} ${showNav ? 'active' : ''}`}>
             <ul className="nav-list">
                 {navItems.map((item, key) => <li className="list-item" key={`nav-key-${key}`}>
-                    <Link href={item.link}>
-                        <a className={`item-link clickable ${router.pathname === item.link ? 'active' : ''}`} onClick={() => setShowNav(false)}>
-                            {item.title}
-                        </a>
-                    </Link>
+                    <Clickable
+                        href={item.link}
+                        className={`item-link ${router.pathname === item.link ? 'active' : ''}`}
+                        onClick={() => setShowNav(false)}
+                        >
+                        {item.title}
+                    </Clickable>
                 </li>)}
             </ul>
         </nav>

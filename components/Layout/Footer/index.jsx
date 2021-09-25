@@ -3,6 +3,7 @@ import {Col, Container, Row} from "reactstrap";
 import Link from "next/link";
 import {navItems} from "../../../utils/globalArrays";
 import {useRouter} from "next/router";
+import Clickable from "components/Elements/Clickable";
 
 const Footer = () => {
 
@@ -48,11 +49,12 @@ const Footer = () => {
 
                         <ul className="footer-nav-list">
                             {navItems.map((item, key) => <li className="list-item" key={`nav-key-${key}`}>
-                                <Link href={item.link}>
-                                    <a className={`item-link clickable ${router.pathname === item.link ? 'active' : ''}`}>
-                                        {item.title}
-                                    </a>
-                                </Link>
+                                <Clickable
+                                    href={item.link}
+                                    className={`item-link ${router.pathname === item.link ? 'active' : ''}`}
+                                    >
+                                    {item.title}
+                                </Clickable>
                             </li>)}
                         </ul>
                     </Col>
