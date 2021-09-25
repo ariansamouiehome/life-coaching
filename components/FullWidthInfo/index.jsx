@@ -53,7 +53,7 @@ const FullWidthInfo = (props) => {
         <Container className={`full-width-info ${alt ? 'alt' : ''}`} fluid data-aos>
             <Container>
                 <Row>
-                    <Col xs={12} className={`inner-content-head ${cta_show ? 'cta-show' : ''}}`}>
+                    <Col xs={12} className={`inner-content-head ${cta_show ? 'cta-show' : ''}`}>
                         {hTagOutput()}
                         <p className="body-copy" dangerouslySetInnerHTML={{__html: description}}/>
                         <div className="theme-button-wrapper">

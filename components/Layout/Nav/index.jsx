@@ -13,7 +13,7 @@ const Nav = (props) => {
             <ul className="nav-list">
                 {navItems.map((item, key) => <li className="list-item" key={`nav-key-${key}`}>
                     <Link href={item.link}>
-                        <a className={`item-link clickable ${router.asPath === item.link ? 'active' : ''}`} onClick={() => setShowNav(false)}>
+                        <a className={`item-link clickable ${router.pathname === item.link ? 'active' : ''}`} onClick={() => setShowNav(false)}>
                             {item.title}
                         </a>
                     </Link>

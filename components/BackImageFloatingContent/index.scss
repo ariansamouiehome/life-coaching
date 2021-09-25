@@ -84,6 +84,10 @@
       text-shadow: 1px 1px $brand-black;
       transition: 1s;
       transition-delay: 0.6s;
+
+      .clickable {
+        display: inline-block;
+      }
     }
 
     .theme-button-wrapper {

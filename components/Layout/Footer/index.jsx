@@ -8,6 +8,8 @@ const Footer = () => {
 
     const router = useRouter();
 
+    console.log(router)
+
     return (
         <footer className={`main-footer ${router.asPath === '/admin' ? 'admin' : ''}`} data-aos>
             <Container>
@@ -47,7 +49,7 @@ const Footer = () => {
                         <ul className="footer-nav-list">
                             {navItems.map((item, key) => <li className="list-item" key={`nav-key-${key}`}>
                                 <Link href={item.link}>
-                                    <a className={`item-link clickable ${router.asPath === item.link ? 'active' : ''}`}>
+                                    <a className={`item-link clickable ${router.pathname === item.link ? 'active' : ''}`}>
                                         {item.title}
                                     </a>
                                 </Link>

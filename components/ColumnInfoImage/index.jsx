@@ -55,12 +55,12 @@ const ColumnInfoImage = (props) => {
     }
 
     return (
-        <Container className={`column-info-image ${noCurve ? 'noCurve' : ''}`} fluid data-aos>
+        <Container className={`column-info-image ${noCurve ? 'noCurve' : ''} ${!data && !description ? 'heading-only' : ''}`} fluid data-aos>
             <Container className={data ? '' : 'no-data'}>
                 <Row>
-                    <Col xs={12} className="inner-content-head">
+                    <Col xs={12} className={`inner-content-head`}>
                         {hTagOutput()}
-                        <p className="body-copy" dangerouslySetInnerHTML={{ __html: description }} />
+                        {description && <p className="body-copy" dangerouslySetInnerHTML={{ __html: description }} />}
                     </Col>
                     {data?.map((item, key) => <Col xs={12} sm={6} md={4} className={`inner-content-each ${item.cta_show ? '' : 'remove-bottom-padding'}`}
                                                   key={`column-info-image-data-key-${key}`}>

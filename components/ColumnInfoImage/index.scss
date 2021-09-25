@@ -130,6 +130,12 @@
     background: $brand-black;
   }
 
+  &.heading-only {
+    .container {
+      padding-bottom: 0;
+    }
+  }
+
   &.aos-init {
     .inner-content-head {
       .content-head-title {

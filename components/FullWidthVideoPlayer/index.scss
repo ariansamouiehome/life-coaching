@@ -1,7 +1,11 @@
 .full-width-video-player {
   background: $brand-color-one;
   position: relative;
-  padding: 20px 15px 80px;
+  padding: 20px 15px 50px;
+
+  @include media-breakpoint-up(xs) {
+    padding: 20px 15px 80px;
+  }
 
   &:before {
     display: block;

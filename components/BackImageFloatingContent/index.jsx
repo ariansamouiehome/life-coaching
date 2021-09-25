@@ -8,7 +8,6 @@ const BackImageFloatingContent = (props) => {
         backgroundImage,
         hTag,
         title,
-        description,
         href,
         cta_text,
         onClick,
@@ -58,7 +57,7 @@ const BackImageFloatingContent = (props) => {
                 <Row>
                     <Col xs={12} xl={10} className="inner-content">
                         {title && hTagOutput()}
-                        {description && <p className="body-copy" dangerouslySetInnerHTML={{ __html: description }} />}
+                        {props.children}
                         {cta_text && <div className="theme-button-wrapper">{ctaOutput()}</div>}
                     </Col>
                 </Row>

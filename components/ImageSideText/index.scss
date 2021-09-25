@@ -1,8 +1,7 @@
 .image-side-text {
-  //border-top: 1px solid $brand-color-one;
   position: relative;
   background: $brand-black;
-  padding: 50px 15px;
+  padding: 30px 15px;
   overflow: hidden;
   @include media-breakpoint-up(lg) {
     padding: 100px 15px;
@@ -80,11 +79,8 @@
       color: $brand-white;
       font-family: $brand-font-copy-one;
       font-size: 18px;
-      margin: 0 0 50px;
+      margin: 0 0 30px;
       text-shadow: 3px 3px $brand-black;
-      @include media-breakpoint-up(lg) {
-        margin: 0 0 30px;
-      }
     }
   }
 
