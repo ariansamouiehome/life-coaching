@@ -58,7 +58,7 @@ const ImageSideText = (props) => {
                     <Col xs={12} lg={6} className="inner-image" style={{backgroundImage: `url(${backgroundImage})`}}/>
                     <Col xs={12} lg={6} className="inner-content">
                         {title && hTagOutput()}
-                        {description && <p className="body-copy" dangerouslySetInnerHTML={{ __html: description }} />}
+                        {props.children}
                         {cta_text && ctaOutput()}
                     </Col>
                 </Row>
