@@ -6,7 +6,7 @@ import ImageSideText from "components/ImageSideText";
 import BackImageFloatingContent from "components/BackImageFloatingContent";
 import {useRouter} from "next/router";
 import {scrollToPosition} from "../../utils/functions";
-import Head from "next/head";
+import AppHead from "components/Layout/AppHead";
 
 const ShadowWork = () => {
 
@@ -38,30 +38,11 @@ const ShadowWork = () => {
 
     return (
         <>
-            <Head>
-                <title>AS - Meet Arian</title>
-                {/*Facebook & Whatsapp*/}
-
-                <meta name="msapplication-TileImage" content="/images/shadow.webp"/>
-                <meta property="og:site_name" content="Arian Samouie Coaching"/>
-                <meta property="og:title" content="Shadow Work"/>
-                <meta property="og:description" content="WHAT IS THE HUMAN SHADOW? The human shadow is any aspect of a person that has not yet been exposed to the light of their consciousness."/>
-                <meta property="og:image" content="/images/shadow.webp"/>
-                <meta property="og:type" content="website"/>
-                <meta property="og:image:type" content="image/webp"/>
-                <meta property="og:image:width" content="300"/>
-                <meta property="og:image:height" content="300"/>
-                <meta property="og:url" content="http://www.ariansamouie.com/shadow-work"/>
-                <meta property="fb:app_id" content="arian_samouie_id"/>
-
-                {/*Twitter*/}
-                <meta name="twitter:title" content="Shadow Work"/>
-                <meta name="twitter:description"
-                      content="WHAT IS THE HUMAN SHADOW? The human shadow is any aspect of a person that has not yet been exposed to the light of their consciousness."/>
-                <meta name="twitter:image" content="/images/shadow.webp"/>
-                <meta name="twitter:card" content="/images/shadow.webp"/>
-                <meta name="twitter:image:alt" content="Profile Image"/>
-            </Head>
+            <AppHead
+                title="Shadow Work"
+                description="WHAT IS THE HUMAN SHADOW? The human shadow is any aspect of a person that has not yet been exposed to the light of their consciousness."
+                image="/images/shadow.webp"
+            />
             <FullWidthImageTextBanner
                 title="SHADOW WORK"
                 backgroundImage="/images/shadow.webp"

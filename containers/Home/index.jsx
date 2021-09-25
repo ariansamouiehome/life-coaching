@@ -8,7 +8,7 @@ import FullWidthInfo from "components/FullWidthInfo";
 import BackImageFloatingContent from "components/BackImageFloatingContent";
 import {isMobile} from 'react-device-detect';
 import Link from 'next/link';
-import Head from "next/head";
+import AppHead from "components/Layout/AppHead";
 
 const Home = () => {
 
@@ -36,35 +36,11 @@ const Home = () => {
 
     return (
         <>
-            <Head>
-                <title>Arian Samouie</title>
-                {/*Facebook & Whatsapp*/}
-
-                <meta name="msapplication-TileImage" content="/images/peace.webp"/>
-
-                <meta property="og:site_name" content="Arian Samouie Coaching"/>
-                <meta property="og:title" content="Arian Samouie"/>
-                <meta property="og:description" content="BECOME THE MOST AUTHENTIC YOU. The further away we are from our most authentic self,<br /> the further away we are to healing"/>
-
-                <meta property="og:image" content="/images/peace.webp"/>
-
-                <meta property="og:type" content="website"/>
-                <meta property="og:image:type" content="image/webp"/>
-
-                <meta property="og:image:width" content="300"/>
-                <meta property="og:image:height" content="300"/>
-
-                <meta property="og:url" content="http://www.ariansamouie.com"/>
-                <meta property="fb:app_id" content="arian_samouie_id"/>
-
-                {/*Twitter*/}
-                <meta name="twitter:title" content="Meet Arian"/>
-                <meta name="twitter:description"
-                      content="BECOME THE MOST AUTHENTIC YOU"/>
-                <meta name="twitter:image" content="/images/peace.webp"/>
-                <meta name="twitter:card" content="/images/peace.webp"/>
-                <meta name="twitter:image:alt" content="Profile Image"/>
-            </Head>
+            <AppHead
+                title="Arian Samouie"
+                description="BECOME THE MOST AUTHENTIC YOU. The further away we are from our most authentic self,<br /> the further away we are to healing"
+                image="/images/peace.webp"
+            />
             <FullWidthImageTextBanner
                 title="BECOME THE MOST <br /> AUTHENTIC YOU"
                 description="The further away we are from our most authentic self,<br /> the further away we are to healing."
