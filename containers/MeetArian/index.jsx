@@ -41,7 +41,7 @@ const MeetArian = () => {
 
             <BackImageFloatingContent
                 backgroundImage="/images/pattern-back-4.png"
-                title="What role I played in my first social circle"
+                title="Living In Two Cultures"
                 href="/book-a-call"
                 cta_text="Lets connect"
                 headingLine

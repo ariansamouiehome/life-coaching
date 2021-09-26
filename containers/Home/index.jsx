@@ -6,7 +6,6 @@ import FullWidthVideoPlayer from "components/FullWidthVideoPlayer";
 import ImageSideText from "components/ImageSideText";
 import FullWidthInfo from "components/FullWidthInfo";
 import BackImageFloatingContent from "components/BackImageFloatingContent";
-import {isMobile} from 'react-device-detect';
 import AppHead from "components/Layout/AppHead";
 import Clickable from "components/Elements/Clickable";
 import {PageChangeContext} from "../../utils/pageChangeContext";
@@ -31,8 +30,6 @@ const Home = () => {
             image: 'images/icons/heart.png',
         },
     ];
-    const quoteMobile = 'If you fail at something you don\'t want,<br /> you still fail. <br />So why not fail at something you do want?';
-    const quoteDesktop = 'If you fail at something you don\'t want, you still fail. <br /> So why not fail at something you do want?';
     const {clickedPageChangeScrollToPosition} = useContext(PageChangeContext);
 
     return (
@@ -67,7 +64,7 @@ const Home = () => {
             />
 
             <ColumnInfoImage
-                title={isMobile ? quoteMobile : quoteDesktop}
+                title="If you fail at something you don't want,<br /> you still fail. <br />So why not fail at something you do want?"
                 noCurve
             />
 

@@ -75,7 +75,7 @@ const AdminPanel = () => {
                 <Col xs={12} className="admin-panel-nav">
                     <Link href="/">
                         <a className="admin-logo">
-                            <img src="/images/logo-single.svg" alt="brand logo" className="admin-logo-image"/>
+                            <img src="/images/logo-single.svg" alt="Arian Samouie Life Coach" className="admin-logo-image"/>
                         </a>
                     </Link>
                 </Col>
