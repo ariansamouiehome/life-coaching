@@ -10,7 +10,7 @@ const BookACall = () => {
     return (
         <>
             <AppHead
-                title="Book A Call"
+                title="- Book A Call"
                 description="Fill out the form and tell me a little about yourself. What you're looking for and some of the challenges you face regularly"
                 image="/images/profile.webp"
             />

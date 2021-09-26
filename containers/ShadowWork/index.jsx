@@ -32,7 +32,7 @@ const ShadowWork = () => {
     return (
         <>
             <AppHead
-                title="Shadow Work"
+                title="- Shadow Work"
                 description="WHAT IS THE HUMAN SHADOW? The human shadow is any aspect of a person that has not yet been exposed to the light of their consciousness."
                 image="/images/shadow.webp"
             />

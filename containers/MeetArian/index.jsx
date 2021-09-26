@@ -12,7 +12,7 @@ const MeetArian = () => {
     return (
         <>
             <AppHead
-                title="Meet Arian"
+                title="- Meet Arian"
                 description="Get to know why I have chosen to help people heal their minds."
                 image="/images/profile.webp"
             />

@@ -35,7 +35,7 @@ const Home = () => {
     return (
         <>
             <AppHead
-                title="Arian Samouie"
+                title=""
                 description="BECOME THE MOST AUTHENTIC YOU. The further away we are from our most authentic self,<br /> the further away we are to healing"
                 image="/images/peace.webp"
             />
