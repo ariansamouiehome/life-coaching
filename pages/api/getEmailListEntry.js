@@ -8,7 +8,6 @@ export default async (req, res) => {
     const { join } = require('path')
     const array = readFileSync(join(__dirname, '/files', 'emailList.txt'), 'utf8').toString();
 
-
     // const array = fs.readFileSync('files/emailList.txt').toString();
 
     try {
