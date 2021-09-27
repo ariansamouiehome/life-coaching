@@ -1,7 +1,6 @@
-import fs from "fs";
+const fs = require('fs');
 
 export default async (req, res) => {
-    const fs = require('fs');
     const array = fs.readFileSync('emailList.txt').toString();
 
     try {
