@@ -23,7 +23,7 @@ const ShadowWork = () => {
         },
         {
             title: 'BECOMING AWARE',
-            description: 'To become aware of something you have to be able to see it. Shadow work makes you aware to the aspects that we rejected and stored in our subconscious.',
+            description: 'To become aware of something you have to be able to see it. Shadow work makes you aware to the aspects that we rejected and pushed in our subconscious.',
             image: 'images/icons/aware.png',
         },
     ];
@@ -45,7 +45,7 @@ const ShadowWork = () => {
 
             <ColumnInfoImage
                 title="WHAT IS THE HUMAN SHADOW?"
-                description="The human shadow is any aspect of a person that has not <br/>yet been exposed to the light of their consciousness."
+                description="The human shadow is any aspect of a person that has not <br/>yet been exposed to their consciousness."
                 data={columnInfoImage}
                 headingLine
             />

@@ -91,15 +91,15 @@ const Home = () => {
                         lot of behaviours that are considered 'normal'. Something as simple as getting a star for a good
                         drawing
                         as a child plays it's role in teaching us that our worth is based on the approval of an external
-                        opinion
-                        from ourselves. As a child we learn that approval means acceptance, and being accepted means
+                        opinion,
+                        other than ourselves. As a child we learn that approval means acceptance, and being accepted means
                         that we
                         have that relationship we depend on for survival.<br/><br/> In moments a child does not feel
                         safe and
-                        feels they could lose that relationship they depend on, their consciousness <Clickable onClick={() => clickedPageChangeScrollToPosition('/shadow-work', 'fragmentation', 'External Validation')} toolTip="What is fragmentation?" toolTipWidth={170} brandOne>fragments</Clickable> in order
-                        to conform with the desire and approval of their caregivers. This behaviour becomes normal and
-                        in some cases is expected. <br/><br/> We then carry this
-                        behaviour over to adulthood and in an attempt to get love the only way we learnt how to, we
+                        feels they could lose the relationship they depend on for survival, their consciousness <Clickable onClick={() => clickedPageChangeScrollToPosition('/shadow-work', 'fragmentation', 'External Validation')} toolTip="What is fragmentation?" toolTipWidth={170} brandOne>fragments</Clickable> in order
+                        to conform with the desire and approval of their caregivers. This behaviour has become 'normal' and
+                        in some cases, is expected. <br/><br/> We then carry this
+                        behaviour over to adulthood and in order to feel safe the only way we learnt how to, we
                         constantly
                         search for that approval externally. In some extreme cases, someone seeking external validation
                         would be considered as a people pleaser.<br/><br/> To learn more about how to heal from seeking
