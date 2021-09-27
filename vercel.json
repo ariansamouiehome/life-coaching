@@ -1,0 +1,7 @@
+{
+  "functions": {
+    "api/getEmailListEntry.js": {
+      "includeFiles": "_files/**"
+    }
+  }
+}
