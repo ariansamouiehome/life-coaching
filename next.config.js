@@ -19,6 +19,9 @@ module.exports = withPlugins(
 );
 
 module.exports = {
+    serverRuntimeConfig: {
+        PROJECT_ROOT: __dirname
+    },
     /* Add Your Scss File Folder Path Here */
     webpack5: false,
     sassOptions: {

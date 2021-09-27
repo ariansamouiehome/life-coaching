@@ -1,20 +1,23 @@
+import serverPath from "../../utils/resolveFiles";
+
 export default async (req, res) => {
     const fs = require('fs');
+    const path = serverPath('public');
 
-    const contactArray = fs.readFileSync('contacts.txt').toString();
+    const contactArray = fs.readFileSync(path + '/info/contacts.txt').toString();
     const jsArray = JSON.parse(contactArray);
     jsArray.push(req.body);
 
-    fs.writeFile('contacts.txt', JSON.stringify(jsArray), function (err) {
+    fs.writeFile(path + '/info/contacts.txt', JSON.stringify(jsArray), function (err) {
         if (err) throw err;
     });
 
     if (req.body.mailing_list) {
-        const emailArray = fs.readFileSync('emailList.txt').toString();
+        const emailArray = fs.readFileSync(path + '/info/emailList.txt').toString();
         const jsEmailArray = JSON.parse(emailArray);
         jsEmailArray.push(req.body.email);
 
-        fs.writeFile('emailList.txt', JSON.stringify(jsEmailArray), function (err) {
+        fs.writeFile(path + '/info/emailList.txt', JSON.stringify(jsEmailArray), function (err) {
             if (err) throw err;
         });
     }

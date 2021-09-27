@@ -1,6 +1,8 @@
+import serverPath from "../../utils/resolveFiles";
+
 export default async (req, res) => {
     const fs = require('fs');
-    const array = fs.readFileSync('contacts.txt').toString();
+    const array = fs.readFileSync(serverPath('public') + '/info/contacts.txt').toString();
 
     try {
         return res.status(200).json({ data:JSON.parse(array) });
