@@ -1,11 +1,10 @@
 import React from "react";
-import serverPath from "../../utils/resolveFiles";
 
 export default async (req, res) => {
 
     const fs = require('fs');
 
-    const emailArray = fs.readFileSync(serverPath('public') + 'emailList.txt').toString();
+    const emailArray = fs.readFileSync('emailList.txt').toString();
     const jsEmailArray = JSON.parse(emailArray);
 
     let nodemailer = require('nodemailer')
