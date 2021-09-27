@@ -5,7 +5,7 @@ const path = require("path");
 export default async (req, res) => {
 
     const array = fs.readFileSync(
-        path.join(serverPath('public/info'), "emailList.txt"),
+        path.join(serverPath('files'), "emailList.txt"),
         "utf8"
     ).toString();
 
