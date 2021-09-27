@@ -109,21 +109,22 @@ const Home = () => {
 
             <ImageSideText
                 backgroundImage="/images/relationship.webp"
-                title="Do your relationships have the same outcome."
-                href="/"
-                cta_text="find out more"
+                title="Do your relationships have the same outcome?"
+                href="/book-a-call"
+                cta_text="get in touch"
                 contentSwitch
             >
-                <p className="body-copy">The reason I am changing this text is to get rid of the latin on the website as Chrome loves to keep telling me to translate it. The reason I am changing this text is to get <br /><br /> <br />rid of the latin on the website as Chrome loves to keep telling me to translate it The reason I am changing this text is to get rid of the latin on the website as Chrome loves to keep telling me to translate it. The reason I am changing this text is to get rid of the latin on the website as Chrome loves to keep telling me to translate it The reason I am changing this text is to get rid of the latin on the website as Chrome loves to keep telling me to translate it</p>
+                <p className="body-copy">
+                    Being humans, at our core we are relationally dependent. We have relationships with everyone in our lives. Growing up we learn about relationships in our environment. How to treat others, what’s ok to do and what’s not ok to do. Our experiences teach us what our version of love is.<br /><br />We all have relationship dynamics. These are patterns of behaviour between people in the ways that we relate, communicate and interact with each other. <br /><br />Recognising the dynamics that play out in our relationships puts us in a very powerful position. It allows us to navigate the challenges we face with each other. We increase compassion and experience more love and fulfillment throughout our days.<br /><br /> To learn more, book a call</p>
             </ImageSideText>
 
             <FullWidthInfo
                 hTag={3}
-                title="LETS CONNECT"
-                description="Send me a message and we can start the journey to figuring out why things are the way they are. <br />You're never in the position where you can't start."
+                title="SHADOW WORK"
+                description="Find out what the human shadow is and how to use shadow work to heal yourself."
                 cta_show
-                cta_href="/book-a-call"
-                cta_text="Book a call"
+                cta_href="/shadow-work"
+                cta_text="Find out more"
                 headingLine
             />
         </>
