@@ -21,19 +21,13 @@
       padding-bottom: 0;
     }
 
-    .footer-logo {
+    .brand-logo {
       max-width: 200px;
-      margin: 0;
-      transition: 0.5s;
 
-      .footer-logo-image {
+      .logo-image {
         width: 100%;
         transition: 1s;
         transition-delay: 0.5s;
-      }
-
-      &:hover {
-        transform: scale(0.9);
       }
     }
 

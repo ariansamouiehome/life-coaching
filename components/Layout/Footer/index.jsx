@@ -15,8 +15,8 @@ const Footer = () => {
                 <Row>
                     <Col xs={12} className="main-footer-content">
                         <Link href="/">
-                            <a className="footer-logo">
-                                <img src="/images/logo-single.svg" alt="Arian Samouie Life Coach" className="footer-logo-image"/>
+                            <a className="brand-logo">
+                                <img src="/images/logo-single.svg" alt="Arian Samouie Life Coach" className="logo-image"/>
                             </a>
                         </Link>
 

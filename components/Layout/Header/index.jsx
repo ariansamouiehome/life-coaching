@@ -26,8 +26,9 @@ const Header = (props) => {
                 <Row>
                     <Col xs={12} className="main-header-inner">
                         <Link href="/">
-                            <a className="header-logo">
-                                <img src="/images/logo-single.svg" alt="Arian Samouie Life Coach" className="header-logo-image"/>
+                            <a className="brand-logo">
+                                <img src="/images/logo-single.svg" alt="Arian Samouie Life Coach" className="logo-image"/>
+                                <spam className="logo-text">LIFE COACH</spam>
                             </a>
                         </Link>
                         <Nav
