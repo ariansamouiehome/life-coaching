@@ -70,7 +70,7 @@ const Home = () => {
 
             <ImageSideText
                 backgroundImage="/images/self-love.webp"
-                title="What is self love?"
+                title="What is self care?"
                 href="/book-a-call"
                 cta_text="book a call"
             >
