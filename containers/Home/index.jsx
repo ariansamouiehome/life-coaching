@@ -37,7 +37,7 @@ const Home = () => {
             <AppHead
                 title=""
                 description="BECOME THE MOST AUTHENTIC YOU. The further away we are from our most authentic self,<br /> the further away we are to healing"
-                image="/images/peace.webp"
+                image="/images/profile.webp"
             />
             <FullWidthImageTextBanner
                 title="BECOME THE MOST <br /> AUTHENTIC YOU"
@@ -70,7 +70,7 @@ const Home = () => {
 
             <ImageSideText
                 backgroundImage="/images/self-love.webp"
-                title="What is self care?"
+                title="What is self love?"
                 href="/book-a-call"
                 cta_text="book a call"
             >
@@ -88,7 +88,7 @@ const Home = () => {
                 >
                     <p className="body-copy">We are born whole and relationally dependent for survival as children. The
                         world we live in today has a
-                        lot of behaviours that are considered 'normal'. Something as simple as getting a star for a good
+                        lot of behaviours that are considered normal. Something as simple as getting a star for a good
                         drawing
                         as a child plays it's role in teaching us that our worth is based on the approval of an external
                         opinion,
@@ -97,7 +97,7 @@ const Home = () => {
                         have that relationship we depend on for survival.<br/><br/> In moments a child does not feel
                         safe and
                         feels they could lose the relationship they depend on for survival, their consciousness <Clickable onClick={() => clickedPageChangeScrollToPosition('/shadow-work', 'fragmentation', 'External Validation')} toolTip="What is fragmentation?" toolTipWidth={170} brandOne>fragments</Clickable> in order
-                        to conform with the desire and approval of their caregivers. This behaviour has become 'normal' and
+                        to conform with the desire and approval of their caregivers. This behaviour has become normal and
                         in some cases, is expected. <br/><br/> We then carry this
                         behaviour over to adulthood and in order to feel safe the only way we learnt how to, we
                         constantly
