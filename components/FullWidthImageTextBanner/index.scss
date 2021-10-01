@@ -66,6 +66,12 @@
         display: none;
       }
     }
+
+    &.halfBackShadow {
+      &:before {
+        background: rgba($black, 0.3);
+      }
+    }
   }
 
   .inner-content {

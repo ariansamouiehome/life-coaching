@@ -60,7 +60,7 @@ const Home = () => {
             <FullWidthVideoPlayer
                 title="MEET ARIAN"
                 iframeSrc="https://www.youtube.com/embed/ac6nfXLYAok?rel=0"
-                thumbnailImage="/images/profile.webp"
+                thumbnailImage="/images/profile-4.webp"
             />
 
             <ColumnInfoImage

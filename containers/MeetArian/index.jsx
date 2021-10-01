@@ -19,8 +19,9 @@ const MeetArian = () => {
             <FullWidthImageTextBanner
                 title="HI, I'M ARIAN"
                 description="Get to know why I have chosen to help people heal their minds,<br />what my background is and how I came to find my purpose."
-                backgroundImage="/images/profile.webp"
+                backgroundImage="/images/profile-4.webp"
                 contentCenter
+                halfBackShadow
                 showScrollArrow
                 arrowsOnCLick={() => scrollToPosition('second-component')}
             />

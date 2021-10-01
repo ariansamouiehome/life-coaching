@@ -19,6 +19,7 @@ const FullWidthImageTextBanner = (props) => {
         arrowsOnCLick,
         showScrollArrow,
         noDarkOverlay,
+        halfBackShadow,
     } = props;
 
     const ctaOutput = () => {
@@ -60,7 +61,7 @@ const FullWidthImageTextBanner = (props) => {
     return (
         <Container fluid
                    className={`full-width-text-image-banner ${!cta_text && !description ? 'title-only' : ''} ${contentCenter ? 'content-center' : ''} ${contentRight ? 'content-right' : ''} ${alt ? 'alt' : ''}`}>
-            <Col xs={12} className={`inner-image ${noDarkOverlay ? 'noDarkOverlay' : ''}`}
+            <Col xs={12} className={`inner-image ${noDarkOverlay ? 'noDarkOverlay' : ''} ${halfBackShadow ? 'halfBackShadow' : ''}`}
                  style={{backgroundImage: `url(${backgroundImage})`}}/>
             <Container>
                 <Row>
