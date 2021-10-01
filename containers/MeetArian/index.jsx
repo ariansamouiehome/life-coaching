@@ -14,7 +14,7 @@ const MeetArian = () => {
             <AppHead
                 title="- Meet Arian"
                 description="Get to know why I have chosen to help people heal their minds."
-                image="/images/profile.webp"
+                image="/images/profile-4-mobile.webp"
             />
             <FullWidthImageTextBanner
                 title="HI, I'M ARIAN"

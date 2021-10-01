@@ -37,7 +37,7 @@ const Home = () => {
             <AppHead
                 title=""
                 description="BECOME THE MOST AUTHENTIC YOU. The further away we are from our most authentic self,<br /> the further away we are to healing"
-                image="/images/profile.webp"
+                image="/images/profile-4-mobile.webp"
             />
             <FullWidthImageTextBanner
                 title="BECOME THE MOST <br /> AUTHENTIC YOU"

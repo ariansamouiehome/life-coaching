@@ -12,7 +12,7 @@ const BookACall = () => {
             <AppHead
                 title="- Book A Call"
                 description="Fill out the form and tell me a little about yourself. What you're looking for and some of the challenges you face regularly"
-                image="/images/profile.webp"
+                image="/images/profile-4-mobile.webp"
             />
             <FullWidthImageTextBanner
                 title="LETS CONNECT"
