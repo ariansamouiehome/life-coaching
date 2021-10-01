@@ -80,7 +80,10 @@
       font-family: $brand-font-copy-one;
       font-size: 18px;
       margin: 0 0 30px;
-      text-shadow: 3px 3px $brand-black;
+      text-shadow: 1px 1px $brand-black;
+      @include media-breakpoint-up(xs) {
+        text-shadow: 3px 3px $brand-black;
+      }
     }
 
     .go-back-clickable {
