@@ -180,4 +180,13 @@
       }
     }
   }
+
+  &.profile {
+    .inner-image {
+      background-image: url("/images/profile-4-mobile.webp") !important;
+      @include media-breakpoint-up(sm) {
+        background-image: url("/images/profile-4.webp") !important;
+      }
+    }
+  }
 }
