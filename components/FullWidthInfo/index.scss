@@ -36,7 +36,12 @@
       text-shadow: 1px 1px rgba($brand-white, 0.5);
       margin: 0;
       transition: 1s;
+      font-size: 19px;
       transition-delay: 0.3s;
+      @include media-breakpoint-up(sm) {
+        font-size: 18px;
+
+      }
     }
 
     .theme-button-wrapper {

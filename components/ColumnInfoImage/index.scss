@@ -70,6 +70,10 @@
       font-family: $brand-font-copy-one;
       color: $brand-white;
       text-shadow: 1px 1px rgba($brand-color-one, 0.5);
+      font-size: 19px;
+      @include media-breakpoint-up(xs) {
+        font-size: 18px;
+      }
     }
   }
 
@@ -103,6 +107,10 @@
       font-family: $brand-font-copy-one;
       color: $brand-white;
       text-shadow: 1px 1px rgba($brand-color-one, 0.5);
+      font-size: 19px;
+      @include media-breakpoint-up(xs) {
+        font-size: 18px;
+      }
     }
 
     .inner-content-each-footer {

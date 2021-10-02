@@ -67,10 +67,11 @@
 
     .content-title {
       color: $brand-white;
-      text-shadow: 5px 5px $brand-black;
+      text-shadow: 2px 2px $brand-black;
       font-family: $brand-font-heading-one;
       font-size: 35px;
       @include media-breakpoint-up(xs) {
+        text-shadow: 5px 5px $brand-black;
         font-size: 50px;
       }
     }
@@ -78,10 +79,11 @@
     .body-copy {
       color: $brand-white;
       font-family: $brand-font-copy-one;
-      font-size: 18px;
+      font-size: 19px;
       margin: 0 0 30px;
       text-shadow: 1px 1px $brand-black;
       @include media-breakpoint-up(xs) {
+        font-size: 18px;
         text-shadow: 3px 3px $brand-black;
       }
     }

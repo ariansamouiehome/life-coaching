@@ -95,10 +95,11 @@
       color: $white;
       font-family: $brand-font-heading-one;
       word-spacing: 10px;
-      text-shadow: 2px 2px $brand-black;
+      text-shadow: 1px 1px $brand-black;
       font-size: 35px;
       @include media-breakpoint-up(sm) {
         font-size: 60px;
+        text-shadow: 2px 2px $brand-black;
       }
     }
 
@@ -109,8 +110,11 @@
       animation-delay: 0.7s;
       color: rgba($white, 0.7);
       font-family: $brand-font-copy-one;
-      text-shadow: 2px 2px $brand-black;
+      text-shadow: 1px 1px $brand-black;
       font-size: 18px;
+      @include media-breakpoint-up(sm) {
+        text-shadow: 2px 2px $brand-black;
+      }
     }
 
     .theme-button {

@@ -80,10 +80,13 @@
     .body-copy {
       font-family: $brand-font-copy-one;
       color: $brand-white;
-      font-size: 18px;
+      font-size: 19px;
       text-shadow: 1px 1px $brand-black;
       transition: 1s;
       transition-delay: 0.6s;
+      @include media-breakpoint-up(sm) {
+        font-size: 18px;
+      }
 
       .clickable {
         display: inline-block;
