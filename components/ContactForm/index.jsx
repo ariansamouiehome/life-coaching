@@ -141,17 +141,17 @@ const ContactForm = () => {
                         />
                     </Col>
                     <Col xs={12} className="contact-form-footer">
-                        {/*<FormInput*/}
-                        {/*    form={form}*/}
-                        {/*    setForm={setForm}*/}
-                        {/*    name="mailing_list"*/}
-                        {/*    value="mailing_list"*/}
-                        {/*    type="checkbox"*/}
-                        {/*    label="Add me to the mailing list."*/}
-                        {/*    placeholder="mailing_list"*/}
-                        {/*    errorActive={errorActive}*/}
-                        {/*    loading={loading}*/}
-                        {/*/>*/}
+                        <FormInput
+                            form={form}
+                            setForm={setForm}
+                            name="mailing_list"
+                            value="mailing_list"
+                            type="checkbox"
+                            label="Add me to the mailing list."
+                            placeholder="mailing_list"
+                            errorActive={errorActive}
+                            loading={loading}
+                        />
                         <Button
                             type="submit"
                             loading={loading}
