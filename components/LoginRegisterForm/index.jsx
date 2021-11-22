@@ -4,7 +4,6 @@ import axios from "axios";
 import FormInput from "components/Elements/FormInput";
 import Button from "components/Elements/Button";
 import Clickable from "components/Elements/Clickable";
-import AlertMessage from "components/AlertMessage";
 
 const LoginRegisterForm = () => {
 
@@ -80,16 +79,17 @@ const LoginRegisterForm = () => {
     });
     const [loading, setLoading] = useState(false);
 
-
-
     // Login
     const [failedLogin, setFailedLogin] = useState(false);
     const [checkLoginError, setCheckLoginError] = useState(false);
     const [loginError, setLoginError] = useState(false);
 
+    // Forgot
+    const [checkForgotError, setCheckForgotError] = useState(false);
+    const [forgotError, setForgotError] = useState(false);
+    const [forgotSent, setForgotSent] = useState(false);
 
     // Function
-
     // Login
     const onSubmitLogin = (e) => {
         e.preventDefault();
@@ -113,12 +113,44 @@ const LoginRegisterForm = () => {
         }
     };
 
+    // Forgot
+    const onSubmitForgot = (e) => {
+        e.preventDefault();
+        setForgotError(false);
 
-
-
-
+        if (checkForgotError) {
+            setLoading(true);
+            axios.post('/ForgotUrl', forgotFormState)
+                .then(data => {
+                    setLoading(false);
+                    setForgotSent(true);
+                    setForgotFormState({
+                        email: ''
+                    })
+                    // console.log(data);
+                })
+                .catch(err => {
+                    setLoading(false);
+                    setForgotSent(true);
+                    setForgotFormState({
+                        email: ''
+                    })
+                    // console.log(err);
+                })
+        } else {
+            setForgotError(true);
+        }
+    };
 
     // useEffects
+    useEffect(() => {
+        if (tabActive === 1 ||
+            tabActive === 2) {
+            setForgotSent(true);
+        } else {
+            setForgotSent(false);
+        }
+    }, [tabActive]);
 
     // Login Check
     useEffect(() => {
@@ -129,6 +161,15 @@ const LoginRegisterForm = () => {
             setCheckLoginError(true);
         }
     }, [loginFormState]);
+
+    // Forgot Check
+    useEffect(() => {
+        if (forgotFormState.email.length === 0) {
+            setCheckForgotError(false);
+        } else {
+            setCheckForgotError(true);
+        }
+    }, [forgotFormState]);
 
 
     return (
@@ -167,9 +208,7 @@ const LoginRegisterForm = () => {
                                 errorActive={loginError}
                                 loading={loading}
                             />)}
-
-                        {failedLogin && <span className="submit-error-message">Those details didn't match. Please try again. <br />If you're having issues logging in, please <Clickable href="/book-a-call">contact us</Clickable></span>}
-
+                        {failedLogin && <span className="submit-message error">Those details didn't match. Please try again. <br />If you're having issues logging in, please <Clickable href="/book-a-call">contact us</Clickable></span>}
                         <Clickable onClick={() => setTabActive(3)} loading={loading}>Forgotten Password</Clickable>
                         <Button
                             type="submit"
@@ -196,10 +235,10 @@ const LoginRegisterForm = () => {
                         <Button>Register</Button>
                     </div>}
 
-                    {tabActive === 3 && <div className="tab-section">
+                    {tabActive === 3 && <form className="tab-section" onSubmit={(e) => onSubmitForgot(e)}>
                         <h1 className="heading-one">Forgotten Password</h1>
                         <p className="body-copy">Enter your email address and we will send you a link to change your password.</p>
-                        <FormInput
+                        {!forgotSent && <FormInput
                             form={forgotFormState}
                             setForm={setForgotFormState}
                             name={forgotForm.name}
@@ -207,21 +246,16 @@ const LoginRegisterForm = () => {
                             type={forgotForm.type}
                             label={forgotForm.label}
                             placeholder={forgotForm.placeholder}
-                            // errorActive={errorActive}
-                            // loading={loading}
-                        />
+                            errorActive={forgotError}
+                            loading={loading}
+                        />}
+                        {forgotSent && <span className="submit-message success mb-5">An email with a link to change your password has been sent to you.</span>}
                         <Clickable onClick={() => setTabActive(1)}>Back to Login</Clickable>
-                        <Button>Send email</Button>
-                    </div>}
+                        <Button
+                            type="submit"
+                        >Send email</Button>
+                    </form>}
                 </Col>
-
-
-                {/*<Col xs={12} className="contact-form-message" id="contact-form-message">*/}
-                {/*    {showMessage && <AlertMessage*/}
-                {/*        success={success}*/}
-                {/*        failed={failedToSend}*/}
-                {/*    />}*/}
-                {/*</Col>*/}
             </Row>
         </Container>
     )
