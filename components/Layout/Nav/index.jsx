@@ -1,5 +1,4 @@
 import React from 'react';
-import Link from 'next/link';
 import {navItems} from "../../../utils/globalArrays";
 import {useRouter} from 'next/router';
 import Clickable from "components/Elements/Clickable";

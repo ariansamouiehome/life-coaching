@@ -38,7 +38,8 @@
     transform: translateY(-50%) translateX(110%) rotate(-60deg);
   }
 
-  &:hover {
+  &:hover,
+  &.active {
     text-decoration: none;
     background: $brand-black;
     color: $white;
