@@ -58,9 +58,9 @@ const Home = () => {
             </div>
 
             <FullWidthVideoPlayer
-                title="MEET ARIAN"
-                iframeSrc="https://www.youtube.com/embed/ac6nfXLYAok?rel=0"
-                thumbnailImage="/images/profile-4.webp"
+                title="SELF LOVE"
+                iframeSrc="https://www.youtube.com/embed/xA5CGvqv05Y?rel=0"
+                thumbnailImage="/images/self-love-thumbnail.jpeg"
             />
 
             <ColumnInfoImage
