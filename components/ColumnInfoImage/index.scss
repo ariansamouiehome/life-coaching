@@ -144,6 +144,13 @@
     }
   }
 
+  &.padding-bottom {
+    padding-bottom: 30px;
+    @include media-breakpoint-up(xs) {
+      padding-bottom: 50px;
+    }
+  }
+
   &.aos-init {
     .inner-content-head {
       .content-head-title {
