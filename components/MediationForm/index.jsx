@@ -146,7 +146,7 @@ const MediationForm = () => {
                     <Col xs={12} className="contact-form-message" id="contact-form-message">
                         {showMessage && <AlertMessage
                             success={success}
-                            successMessage="Your position has been booked. We will send you an email with a zoom link in it for the session"
+                            successMessage="Your position has been booked. An email with a zoom link has been sent to you with information about the session"
                             failed={failedToSend}
                         />}
                     </Col>
