@@ -9,6 +9,7 @@ import MediationForm from "components/MediationForm";
 const Meditation = () => {
 
     // Data
+    const sessionDate = '15th Dec - 8:00pm';
 
     return (
         <>
@@ -19,7 +20,7 @@ const Meditation = () => {
             />
             <FullWidthImageTextBanner
                 title="Meditation Sessions"
-                description="15th Dec - 8:00pm (Zoom call)"
+                description={`${sessionDate} (Zoom call)`}
                 backgroundImage="/images/meditation.jpeg"
                 contentCenter
                 alt
@@ -41,12 +42,12 @@ const Meditation = () => {
 
             <ColumnInfoImage
                 title="Want to be involved?"
-                description="The next online meditation session will be on 15th Dec at 8:00pm on a zoom call. <br />Fill out the form to secure your position."
+                description={`The next FREE online meditation session will be on ${sessionDate} <br />(Zoom call). <br />Fill out the form to secure your position.`}
                 headingLine
                 noCurve
             />
 
-            <MediationForm/>
+            <MediationForm date={sessionDate}/>
 
             <FullWidthInfo
                 hTag={3}

@@ -6,7 +6,9 @@ import Button from "components/Elements/Button";
 import AlertMessage from "components/AlertMessage";
 import {scrollToPosition} from "../../utils/functions";
 
-const MediationForm = () => {
+const MediationForm = (props) => {
+
+    const {date} = props;
 
     // Data
     const contactForm = [
@@ -51,6 +53,7 @@ const MediationForm = () => {
         telephone: '',
         email: '',
         date: currentDate,
+        session_date: date,
         mailing_list: false,
     });
 
@@ -73,6 +76,7 @@ const MediationForm = () => {
                         telephone: '',
                         email: '',
                         date: currentDate,
+                        session_date: date,
                         mailing_list: false,
                     })
                     setShowMessage(true);
