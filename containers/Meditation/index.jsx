@@ -20,9 +20,10 @@ const Meditation = () => {
             <FullWidthImageTextBanner
                 title="Meditation Sessions"
                 description="15th Dec - 8:00pm (Zoom call)"
-                backgroundImage="/images/shadow.webp"
+                backgroundImage="/images/meditation.jpeg"
                 contentCenter
                 alt
+                blackAndWhiteImage
             />
 
             <ColumnInfoImage
