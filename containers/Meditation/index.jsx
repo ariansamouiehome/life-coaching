@@ -16,7 +16,7 @@ const Meditation = () => {
             <AppHead
                 title="- Meditation Session"
                 description="Meditation Sessions Held by Arian."
-                image="/images/shadow.webp"
+                image="/images/meditation.jpeg"
             />
             <FullWidthImageTextBanner
                 title="Meditation Sessions"

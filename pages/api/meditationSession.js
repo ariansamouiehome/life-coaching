@@ -10,13 +10,6 @@ export default async (req, res) => {
         },
         secure: true,
     })
-    const mailDataToMe = {
-        from: process.env.FORM_EMAIL,
-        to: 'ariansamouiecoach@yahoo.com',
-        subject: `Meditation Session ${req.body.session_date} - ${req.body.first_name} ${req.body.last_name}`,
-        text: `<h1>${req.body.first_name} ${req.body.last_name}</h1> <a style="font-size: 20px" href="tel:${req.body.telephone}">${req.body.telephone}</a> <p>${req.body.email}</p> <p>${req.body.mailing_list === true ? 'Add to Mailing List' : ''}</p>`,
-        html: `<h1>${req.body.first_name} ${req.body.last_name}</h1> <a style="font-size: 20px" href="tel:${req.body.telephone}">${req.body.telephone}</a> <p>${req.body.email}</p> <p>${req.body.mailing_list === true ? 'Add to Mailing List' : ''}</p>`,
-    }
 
     const mailDataToClient = {
         from: 'ariansamouiecoach@yahoo.com',
