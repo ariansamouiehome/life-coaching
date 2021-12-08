@@ -8,7 +8,7 @@ import {scrollToPosition} from "../../utils/functions";
 
 const MediationForm = (props) => {
 
-    const {date} = props;
+    const {sessionDate} = props;
 
     // Data
     const contactForm = [
@@ -53,7 +53,7 @@ const MediationForm = (props) => {
         telephone: '',
         email: '',
         date: currentDate,
-        session_date: date,
+        session_date: sessionDate,
         mailing_list: false,
     });
 
@@ -76,7 +76,7 @@ const MediationForm = (props) => {
                         telephone: '',
                         email: '',
                         date: currentDate,
-                        session_date: date,
+                        session_date: sessionDate,
                         mailing_list: false,
                     })
                     setShowMessage(true);

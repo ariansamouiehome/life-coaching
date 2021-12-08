@@ -9,7 +9,7 @@ import MediationForm from "components/MediationForm";
 const Meditation = () => {
 
     // Data
-    const sessionDate = '15th Dec - 8:00pm';
+    const sessionDate = '16th Dec - 8:00pm';
 
     return (
         <>
@@ -47,7 +47,7 @@ const Meditation = () => {
                 noCurve
             />
 
-            <MediationForm date={sessionDate}/>
+            <MediationForm sessionDate={sessionDate}/>
 
             <FullWidthInfo
                 hTag={3}
