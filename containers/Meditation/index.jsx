@@ -9,7 +9,7 @@ import MediationForm from "components/MediationForm";
 const Meditation = () => {
 
     // Data
-    const sessionDate = '16th Dec - 8:00pm';
+    const sessionDate = '28th Dec - 8:00pm';
 
     return (
         <>
@@ -36,8 +36,8 @@ const Meditation = () => {
 
             <FullWidthVideoPlayer
                 title="Find Out More"
-                iframeSrc="https://www.youtube.com/embed/xA5CGvqv05Y?rel=0"
-                thumbnailImage="/images/self-love-thumbnail.jpeg"
+                iframeSrc="https://www.youtube.com/embed/IA6N8RGEmaE?rel=0"
+                thumbnailImage="/images/meditation-session-thumbnail.jpeg"
             />
 
             <ColumnInfoImage
