@@ -91,7 +91,7 @@
       }
 
       .iframe-play-overlay-button {
-        display: block;
+        display: none;
         position: absolute;
         top: 0;
         left: 0;
@@ -102,6 +102,9 @@
         overflow: hidden;
         border: 1px solid $brand-black;
         border-radius: 15px;
+        @include media-breakpoint-up(lg) {
+          display: block;
+        }
 
         .thumbnail-image {
           position: absolute;
