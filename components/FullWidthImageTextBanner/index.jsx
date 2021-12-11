@@ -21,6 +21,7 @@ const FullWidthImageTextBanner = (props) => {
         noDarkOverlay,
         halfBackShadow,
         className,
+        blackAndWhiteImage,
     } = props;
 
     const ctaOutput = () => {
@@ -62,7 +63,7 @@ const FullWidthImageTextBanner = (props) => {
     return (
         <Container fluid
                    className={`full-width-text-image-banner ${!cta_text && !description ? 'title-only' : ''}  ${className || ''} ${contentCenter ? 'content-center' : ''} ${contentRight ? 'content-right' : ''} ${alt ? 'alt' : ''}`}>
-            <Col xs={12} className={`inner-image ${noDarkOverlay ? 'noDarkOverlay' : ''} ${halfBackShadow ? 'halfBackShadow' : ''}`}
+            <Col xs={12} className={`inner-image ${noDarkOverlay ? 'noDarkOverlay' : ''} ${halfBackShadow ? 'halfBackShadow' : ''} ${blackAndWhiteImage ? 'black-white' : ''}`}
                  style={{backgroundImage: `url(${backgroundImage})`}}/>
             <Container>
                 <Row>
