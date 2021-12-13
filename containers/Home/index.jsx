@@ -1,4 +1,4 @@
-import React, {useContext} from 'react';
+import React, {useContext, useEffect} from 'react';
 import {scrollToPosition} from "../../utils/functions";
 import FullWidthImageTextBanner from "components/FullWidthImageTextBanner";
 import ColumnInfoImage from "components/ColumnInfoImage";
@@ -9,6 +9,7 @@ import BackImageFloatingContent from "components/BackImageFloatingContent";
 import AppHead from "components/Layout/AppHead";
 import Clickable from "components/Elements/Clickable";
 import {PageChangeContext} from "../../utils/pageChangeContext";
+import axios from "axios";
 
 const Home = () => {
 
@@ -58,9 +59,9 @@ const Home = () => {
             </div>
 
             <FullWidthVideoPlayer
-                title="SELF LOVE"
-                iframeSrc="https://www.youtube.com/embed/xA5CGvqv05Y?rel=0"
-                thumbnailImage="/images/self-love-thumbnail.jpeg"
+                title="Overcome Addiction"
+                iframeSrc="https://www.youtube.com/embed/0Yz1_AuGE5k?rel=0"
+                thumbnailImage="/images/addiction.jpeg"
             />
 
             <ColumnInfoImage
