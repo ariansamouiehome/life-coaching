@@ -20,7 +20,7 @@ const Meditation = () => {
             />
             <FullWidthImageTextBanner
                 title="Meditation Sessions"
-                description={`${sessionDate} (Zoom call)`}
+                description={`Next session <br />${sessionDate} (Zoom call)`}
                 backgroundImage="/images/meditation.jpeg"
                 contentCenter
                 alt

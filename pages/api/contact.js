@@ -30,7 +30,7 @@ export default async (req, res) => {
         secure: true,
     })
     const mailData = {
-        from: process.env.FORM_EMAIL,
+        from: req.body.email,
         to: 'ariansamouiecoach@outlook.com',
         subject: `Website - ${req.body.first_name} ${req.body.last_name}`,
         text: `<h1>${req.body.first_name} ${req.body.last_name}</h1> <a style="font-size: 20px" href="tel:${req.body.telephone}">${req.body.telephone}</a> <p>${req.body.email}</p> <p>${req.body.message}</p> <p>${req.body.mailing_list === true ? 'Add to Mailing List' : ''}</p>`,
