@@ -3,7 +3,7 @@ const courses =[
         title: "Practice Self Love",
         url: "self-love",
         description: 'This is the description for course 1',
-        card_description: 'Learn how to start or increase your practise of your self love.',
+        card_description: 'Learn how to start, or increase your practise of your self love.',
         backgroundImage: '/images/self-love.webp',
     },
     {
@@ -14,14 +14,14 @@ const courses =[
         backgroundImage: '/images/worrying.jpeg',
     },
     {
-        title: "Overcoming addiction",
+        title: "Overcoming Addiction",
         url: "overcome-addiction",
         description: 'This is the description for course 3',
         card_description: 'Learn what addiction is and how to take back control.',
         backgroundImage: '/images/addiction-woman.jpeg',
     },
     {
-        title: "External validation",
+        title: "External Validation",
         url: "external-validation",
         description: 'This is the description for course 4',
         card_description: 'Why we seek it and how much it affects our relationships.',
