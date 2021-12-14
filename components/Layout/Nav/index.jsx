@@ -1,5 +1,4 @@
 import React from 'react';
-import Link from 'next/link';
 import {navItems} from "../../../utils/globalArrays";
 import {useRouter} from 'next/router';
 import Clickable from "components/Elements/Clickable";
@@ -14,8 +13,8 @@ const Nav = (props) => {
             <ul className="nav-list">
                 {navItems.map((item, key) => <li className="list-item" key={`nav-key-${key}`}>
                     <Clickable
-                        href={item.link}
-                        className={`item-link ${router.pathname === item.link ? 'active' : ''}`}
+                        href={`/${item.link}`}
+                        className={`item-link ${router.asPath.split("/")[1] === item.link ? 'active' : ''}`}
                         >
                         {item.title}
                     </Clickable>

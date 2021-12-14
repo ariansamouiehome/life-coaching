@@ -102,6 +102,13 @@
     }
   }
 
+  &.center {
+    .inner-content {
+      align-items: center;
+      text-align: center;
+    }
+  }
+
   &.curve-bottom {
     clip-path: ellipse(200% 100% at 50% -25px);
     padding-bottom: 102px;

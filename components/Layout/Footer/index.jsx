@@ -48,8 +48,8 @@ const Footer = () => {
                         <ul className="footer-nav-list">
                             {navItems.map((item, key) => <li className="list-item" key={`nav-key-${key}`}>
                                 <Clickable
-                                    href={item.link}
-                                    className={`item-link ${router.pathname === item.link ? 'active' : ''}`}
+                                    href={`/${item.link}`}
+                                    className={`item-link ${router.asPath.split("/")[1] === item.link ? 'active' : ''}`}
                                     >
                                     {item.title}
                                 </Clickable>
