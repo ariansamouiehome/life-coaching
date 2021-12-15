@@ -33,6 +33,8 @@ const Courses = () => {
                 title="Online Courses"
                 description="Get full access to all courses for just £50"
                 backgroundImage="/images/courses.jpeg"
+                href="/checkout"
+                cta_text="Purchase"
                 contentCenter
                 alt
             />
@@ -83,7 +85,7 @@ const Courses = () => {
             <FullWidthInfo
                 hTag={3}
                 title="Meditation Sessions"
-                description="Join in some meditation sessions to help heal yourself as well as learn how to let go."
+                description="Join the online meditation sessions over Zoom calls.<br /> Learn how to let go."
                 cta_show
                 cta_href="/meditation-sessions"
                 cta_text="Find out more"
