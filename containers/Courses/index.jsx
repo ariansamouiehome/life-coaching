@@ -37,7 +37,7 @@ const Courses = () => {
 
             <ColumnInfoImage
                 title="Get Access"
-                description="Check out which course would be helpful with what you are looking for. <br />All courses will have video chapters with clear ."
+                description="Check out which course would be helpful with what you are looking for. <br />Courses include video chapters."
                 headingLine
                 paddingBottom
             />
@@ -69,7 +69,7 @@ const Courses = () => {
             </div>
 
             <ImageSideText
-                backgroundImage="/images/shadow.webp"
+                backgroundImage="/images/healing-journey.jpeg"
                 title="Healing Journey"
                 contentSwitch
             >
