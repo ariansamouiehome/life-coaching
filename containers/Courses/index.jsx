@@ -6,7 +6,6 @@ import coursesInformation from 'utils/courses'
 import ListWrapper from "components/ListWrapper";
 import CourseCard from "components/CourseCard";
 import FullWidthInfo from "components/FullWidthInfo";
-import Clickable from "components/Elements/Clickable";
 import ImageSideText from "components/ImageSideText";
 import FullWidthVideoPlayer from "components/FullWidthVideoPlayer";
 import {scrollToPosition} from "../../utils/functions";
@@ -31,10 +30,7 @@ const Courses = () => {
             />
             <FullWidthImageTextBanner
                 title="Online Courses"
-                description="Get full access to all courses for just £50"
                 backgroundImage="/images/courses.jpeg"
-                href="/checkout"
-                cta_text="Purchase"
                 contentCenter
                 alt
             />
@@ -74,12 +70,10 @@ const Courses = () => {
 
             <ImageSideText
                 backgroundImage="/images/shadow.webp"
-                title="Shadow Work"
-                href="/shadow-work"
-                cta_text="Learn more"
+                title="Healing Journey"
                 contentSwitch
             >
-                <p className="body-copy">What is Shadow Work and why is it so important?</p>
+                <p className="body-copy">We are all on our own healing journey. Everyone has experienced life in their own unique way.<br /><br /> No-one has been through the same things you have been through so it doesn't make sense to compare yourself to anyone else when it comes to healing.<br/><br/>There is no time limit of when you should start feeling better, or be in a better place.<br/><br/> We grow up with such unrealistic expectations projected onto us and carry these over to when we are adults. <br /><br/>Let go of any expectation you have on yourself and learn to unconditionally accept yourself for who you are.</p>
             </ImageSideText>
 
             <FullWidthInfo
