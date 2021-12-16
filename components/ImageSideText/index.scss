@@ -82,9 +82,14 @@
       font-size: 19px;
       margin: 0 0 30px;
       text-shadow: 1px 1px $brand-black;
+
       @include media-breakpoint-up(xs) {
         font-size: 18px;
         text-shadow: 3px 3px $brand-black;
+      }
+
+      .clickable {
+        display: inline-block;
       }
     }
 

@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Clickable = (props) => {
 
-    const {href, toolTip, toolTipWidth, brandOne, className, onClick, loading} = props;
+    const {href, toolTip, toolTipWidth, brandOne, className, onClick, loading, target} = props;
 
     const onClickFunction = (e) => {
         e.preventDefault();
@@ -15,7 +15,9 @@ const Clickable = (props) => {
             <a className={`clickable ${brandOne ? 'brand-one' : ''} ${className || ''} ${loading ? 'loading' : ''}`}
                onClick={(e) => {
                    onClick && onClickFunction(e)
-               }}>
+               }}
+                target={target && '_blank' || null}
+            >
                 {props.children}
                 {toolTip && <span className="clickable-tooltip" style={{width: toolTipWidth || 170}}>{toolTip}</span>}
             </a>

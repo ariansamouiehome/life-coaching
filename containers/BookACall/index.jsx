@@ -32,11 +32,11 @@ const BookACall = () => {
 
             <FullWidthInfo
                 hTag={3}
-                title="Get to know Arian"
-                description="Find out more about my background and why I have chosen to do what I do."
+                title="Meditation Sessions"
+                description="Join in some meditation sessions to help heal yourself as well as learn how to let go."
                 cta_show
-                cta_href="/meet-arian"
-                cta_text="Meet Arian"
+                cta_href="/meditation-sessions"
+                cta_text="Find out more"
                 headingLine
             />
         </>

@@ -1,4 +1,4 @@
-import React, {useContext} from 'react';
+import React, {useContext, useEffect} from 'react';
 import {scrollToPosition} from "../../utils/functions";
 import FullWidthImageTextBanner from "components/FullWidthImageTextBanner";
 import ColumnInfoImage from "components/ColumnInfoImage";
@@ -9,6 +9,7 @@ import BackImageFloatingContent from "components/BackImageFloatingContent";
 import AppHead from "components/Layout/AppHead";
 import Clickable from "components/Elements/Clickable";
 import {PageChangeContext} from "../../utils/pageChangeContext";
+import axios from "axios";
 
 const Home = () => {
 
@@ -58,9 +59,9 @@ const Home = () => {
             </div>
 
             <FullWidthVideoPlayer
-                title="MEET ARIAN"
-                iframeSrc="https://www.youtube.com/embed/ac6nfXLYAok?rel=0"
-                thumbnailImage="/images/profile-4.webp"
+                title="Overcome Addiction"
+                iframeSrc="https://www.youtube.com/embed/0Yz1_AuGE5k?rel=0"
+                thumbnailImage="/images/addiction.jpeg"
             />
 
             <ColumnInfoImage
@@ -74,7 +75,7 @@ const Home = () => {
                 href="/book-a-call"
                 cta_text="book a call"
             >
-                <p className="body-copy">We react the same way when speaking to ourselves as we would if someone else was speaking to us. If a friend spoke to you the way you speak to yourself, would you still be their friend? The only difference is we can get away from that friend, but we cannot get away from ourselves.<br /><br />Learn how to accept the ego and change the judgmental thoughts you have about yourself given to you by others. <br /><br />Being aware of how you treat yourself is one of the most powerful things you can learn as a human.<br /><br /> To learn more about self love, get in touch.</p>
+                <p className="body-copy">We react the same way when speaking to ourselves as we would if someone else was speaking to us. If a friend spoke to you the way you speak to yourself, would you still be their friend? The only difference is we can get away from that friend, but we cannot get away from ourselves.<br /><br />Learn how to accept the ego and change the judgmental thoughts you have about yourself given to you by others. <br /><br />Being aware of how you treat yourself is one of the most powerful things you can learn as a human.<br /><br /> To learn more about self love, get in touch. <br /><br /><Clickable href="https://youtu.be/xA5CGvqv05Y" target>Watch Self Love Video On YouTube</Clickable></p>
             </ImageSideText>
 
             <div id="external-validation">

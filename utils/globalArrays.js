@@ -8,6 +8,10 @@ export const navItems =[
         link: '/shadow-work'
     },
     {
+        title: "Meditation Sessions",
+        link: '/meditation-sessions'
+    },
+    {
         title: "Book a call",
         link: '/book-a-call'
     },
