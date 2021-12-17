@@ -17,13 +17,18 @@ const Header = (props) => {
     const [headerScroll, setHeaderScroll] = useState(0);
     const [showUserDropDown, setShowUserDropDown] = useState(false);
 
+    // Functions
+    const onClickUserButton = () => {
+        setShowNav(false);
+        setShowUserDropDown(!showUserDropDown);
+    }
+
+    // UseEffects
     useEffect(() => {
         window.addEventListener("scroll", () => {
             setHeaderScroll(window.scrollY);
         });
-    }, []);
 
-    useEffect(() => {
         const handleRouteChange = (url) => {
             setShowUserDropDown(false);
         }
@@ -53,8 +58,8 @@ const Header = (props) => {
                             />
                             <div className="user-wrapper">
                                 <button
-                                    className="user-button"
-                                    onClick={() => setShowUserDropDown(!showUserDropDown)}
+                                    className={`user-button ${showUserDropDown ? 'active' :''}`}
+                                    onClick={onClickUserButton}
                                 >
                                     <img src="/images/icons/user.png" alt="user" className="user-icon"/>
                                 </button>
@@ -75,6 +80,7 @@ const Header = (props) => {
                             <BurgerButton
                                 activeState={showNav}
                                 setState={setShowNav}
+                                setShowUserDropDown={setShowUserDropDown}
                             />
                         </div>
                     </Col>

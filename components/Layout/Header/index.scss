@@ -94,7 +94,8 @@
           outline: none;
         }
 
-        &:hover {
+        &:hover,
+        &.active {
           &:before {
             transform: scale(1);
           }
@@ -132,7 +133,7 @@
           display: block;
           position: relative;
           width: 100%;
-          padding: 10px 15px;
+          padding: 15px;
           font-family: $brand-font-copy-one;
           text-decoration: none;
           color: $brand-black;
@@ -141,7 +142,10 @@
           border: 1px $brand-black;
           border-style: solid none;
           text-align: center;
+          font-size: 24px;
           @include media-breakpoint-up(lg) {
+            font-size: 18px;
+            padding: 10px 15px;
             text-align: left;
           }
 
@@ -198,5 +202,12 @@
   width: 100%;
   height: 100%;
   z-index: 100;
-  background: transparent;
+  background: rgba($brand-black, 0.8);
+  animation-name: fadeIn;
+  animation-fill-mode: both;
+  animation-duration: 0.5s;
+
+  @include media-breakpoint-up(lg) {
+    background: transparent;
+  }
 }
