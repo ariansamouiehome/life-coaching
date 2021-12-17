@@ -13,10 +13,10 @@ const FormInput = (props) => {
         } else {
             setForm({...form, [name]: e.target.value});
         }
-    }
+    };
 
     return (<div className={`form-group ${focus ? 'focus' : ''} ${type === 'checkbox' ? 'checkbox' : '' }`}>
-        <label htmlFor={name} className="form-group-label">{label}</label>
+        <label htmlFor={name} className={`form-group-label ${loading ? 'loading' : ''}`}>{label}</label>
         {type === 'textarea' ?
             <textarea
                 id={name}

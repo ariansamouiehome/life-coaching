@@ -21,8 +21,6 @@ const Courses = (props) => {
                     contentCenter
                     alt
                 />
-
-
             </>
         )
     } else {
