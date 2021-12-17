@@ -1,23 +1,36 @@
-import React, {useEffect, useState} from 'react';
-import Link from 'next/link'
+import React, {useEffect, useState, useContext} from 'react';
+import Link from 'next/link';
 import {Col, Container, Row} from "reactstrap";
 import Nav from "components/Layout/Nav";
 import BurgerButton from "components/Elements/BurgerButton";
 import {useRouter} from "next/router";
+import {PageChangeContext} from "../../../utils/pageChangeContext";
 
 const Header = (props) => {
 
     // Data
     const {showNav, setShowNav} = props;
     const router = useRouter();
+    const {loggedIn} = useContext(PageChangeContext);
 
     // States
     const [headerScroll, setHeaderScroll] = useState(0);
+    const [showUserDropDown, setShowUserDropDown] = useState(false);
 
     useEffect(() => {
         window.addEventListener("scroll", () => {
             setHeaderScroll(window.scrollY);
         });
+    }, []);
+
+    useEffect(() => {
+        const handleRouteChange = (url) => {
+            setShowUserDropDown(false);
+        }
+        router.events.on('routeChangeStart', handleRouteChange);
+        return () => {
+            router.events.off('routeChangeStart', handleRouteChange);
+        }
     }, []);
 
     return (<>
@@ -31,15 +44,39 @@ const Header = (props) => {
                                 <spam className="logo-text">LIFE COACH</spam>
                             </a>
                         </Link>
-                        <Nav
-                            showNav={showNav}
-                            setShowNav={setShowNav}
-                            className="desktop"
-                        />
-                        <BurgerButton
-                            activeState={showNav}
-                            setState={setShowNav}
-                        />
+                        <div className="nav-hold-wrapper">
+                            <Nav
+                                showNav={showNav}
+                                setShowNav={setShowNav}
+                                className="desktop"
+                                setShowUserDropDown={setShowUserDropDown}
+                            />
+                            <div className="user-wrapper">
+                                <button
+                                    className="user-button"
+                                    onClick={() => setShowUserDropDown(!showUserDropDown)}
+                                >
+                                    <img src="/images/icons/user.png" alt="user" className="user-icon"/>
+                                </button>
+                                <div className={`user-drop-down ${showUserDropDown ? 'active' :''}`}>
+                                    {loggedIn && <>
+                                        <Link href="/login">
+                                            <a className="user-drop-down-link">Account</a>
+                                        </Link>
+                                        <Link href="/login">
+                                            <a className="user-drop-down-link">Logout</a>
+                                        </Link>
+                                    </>}
+                                    {!loggedIn && <Link href="/login">
+                                        <a className="user-drop-down-link">Login</a>
+                                    </Link>}
+                                </div>
+                            </div>
+                            <BurgerButton
+                                activeState={showNav}
+                                setState={setShowNav}
+                            />
+                        </div>
                     </Col>
                 </Row>
             </Container>
@@ -48,6 +85,7 @@ const Header = (props) => {
             showNav={showNav}
             setShowNav={setShowNav}
         />
+        {showUserDropDown && <div className="background-click" onClick={() => setShowUserDropDown(false)}/>}
     </>)
 }
 

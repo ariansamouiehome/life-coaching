@@ -14,6 +14,7 @@ const MyApp = ({Component, pageProps}) => {
     const router = useRouter();
 
     // States
+    const [loggedIn, setLoggedIn] = useState(false);
     const [showNav, setShowNav] = useState(false);
     const [showBackToButton, setShowBackToButton] = useState(false);
     const [pageScrollTarget, setPageScrollTarget] = useState({
@@ -50,7 +51,7 @@ const MyApp = ({Component, pageProps}) => {
     });
 
     return (
-        <PageChangeContext.Provider value={{pageScrollTarget, showBackToButton, clickedPageChangeScrollToPosition}}>
+        <PageChangeContext.Provider value={{pageScrollTarget, showBackToButton, loggedIn, clickedPageChangeScrollToPosition}}>
             <Header
                 showNav={showNav}
                 setShowNav={setShowNav}

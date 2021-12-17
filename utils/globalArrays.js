@@ -18,10 +18,6 @@ export const navItems =[
     {
         title: "Book a call",
         link: 'book-a-call'
-    },
-    {
-        title: "Login",
-        link: 'login'
-    },
+    }
 ];
 
