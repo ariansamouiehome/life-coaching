@@ -76,7 +76,14 @@ const Header = (props) => {
                                         <a className="user-drop-down-link">Login</a>
                                     </Link>}
                                 </div>
+                                
                             </div>
+                            <Link href="/bag">
+                                <a className="bag-icon-link">
+                                    <img src="/images/icons/cart.png" alt="cart" className="bag-icon-image"/>
+                                </a>
+                            </Link>
+
                             <BurgerButton
                                 activeState={showNav}
                                 setState={setShowNav}

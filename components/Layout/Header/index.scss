@@ -32,7 +32,7 @@
     }
 
     .brand-logo {
-      width: 170px;
+      width: 160px;
       @include media-breakpoint-up(xl) {
         width: 220px;
       }
@@ -55,9 +55,9 @@
     .user-wrapper {
       display: flex;
       position: relative;
-      margin-right: 25px;
       @include media-breakpoint-up(lg) {
         margin-left: 10px;
+        margin-right: 0;
       }
 
       .user-button {
@@ -121,7 +121,7 @@
           border-radius: 10px;
           width: 200px;
           top: calc(100% + 15px);
-          box-shadow: 0 0 8px 2px rgba($brand-color-one, 0.5);
+          box-shadow: 0 0 8px 2px rgba($brand-black, 0.5);
         }
 
         &.active {
@@ -139,12 +139,12 @@
           color: $brand-black;
           text-transform: uppercase;
           transition: 0.5s;
-          border: 1px $brand-black;
+          border: 1px rgba($brand-black, 0.8);
           border-style: solid none;
           text-align: center;
           font-size: 24px;
           @include media-breakpoint-up(lg) {
-            font-size: 18px;
+            font-size: 16px;
             padding: 10px 15px;
             text-align: left;
           }
@@ -154,6 +154,29 @@
             text-shadow: 1px 1px $brand-color-one;
             background: $brand-black;
           }
+        }
+      }
+    }
+
+    .bag-icon-link {
+      display: inline-block;
+      position: relative;
+      margin: 0 20px;
+      @include media-breakpoint-up(lg) {
+        margin-right: 0;
+      }
+      .bag-icon-image {
+        width: 30px;
+        transition: 0.5s;
+      }
+
+      &:focus {
+        outline: none;
+      }
+
+      &:hover {
+        .bag-icon-image {
+          transform: scale(1.1);
         }
       }
     }
