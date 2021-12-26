@@ -101,6 +101,7 @@ const LoginRegisterForm = () => {
             axios.post('/loginUrl', loginFormState)
                 .then(data => {
                     setLoading(false);
+                    // TODO set referer (If url isn't login then that is referer)
                     // console.log(data);
                 })
                 .catch(err => {

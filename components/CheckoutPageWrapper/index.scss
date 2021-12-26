@@ -69,16 +69,6 @@
       margin: 0 0 30px;
       text-shadow: 1px 1px rgba($brand-white, 0.6);
     }
-
-    &.payments {
-      .theme-button {
-        width: 100%;
-      }
-
-      .back-button {
-        margin: 0 0 20px;
-      }
-    }
   }
 
   .bag-page-price-list {
@@ -90,7 +80,7 @@
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0 0 9px 5px rgba($brand-color-one, 0.2);
-    margin: 0 0 20px;
+    margin: 0 0 30px;
 
     .list-item {
       display: flex;

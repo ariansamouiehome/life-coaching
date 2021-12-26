@@ -85,6 +85,16 @@
     }
   }
 
+  &.secondaryBorder {
+    border: 1px solid $brand-color-one;
+    box-shadow: 0 0 5px 1px $brand-color-one inset;
+
+    &:hover {
+      border: 1px solid $brand-color-one;
+      box-shadow: 0 0 5px 3px $brand-black inset;
+    }
+  }
+
   &.danger {
     background: $warning;
     color: $brand-white;

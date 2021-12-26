@@ -4,13 +4,20 @@ import Loader from "components/Elements/Loader";
 
 const Button = (props) => {
 
-    const {onClick, className, style, href, type, loading, secondary, danger, disabled} = props;
+    const {onClick, className, style, href, type, loading, secondary, danger, disabled, secondaryBorder} = props;
 
     if(href) {
         return (
             <Link href={href}>
                 <a
-                    className={`theme-button ${className ? className : ''} ${loading ? 'loading' : ''} ${secondary ? 'secondary' :''} ${danger ? 'danger' :''}  ${disabled ? 'disabled' :''}`}
+                    className={`theme-button 
+                        ${className ? className : ''} 
+                        ${loading ? 'loading' : ''} 
+                        ${secondary ? 'secondary' :''} 
+                        ${danger ? 'danger' :''} 
+                        ${disabled ? 'disabled' :''}
+                        ${secondaryBorder ? 'secondaryBorder' :''}
+                    `}
                     onClick={onClick}
                 >
                     {props.children}
@@ -23,7 +30,14 @@ const Button = (props) => {
                 onClick={onClick}
                 style={style}
                 type={type}
-                className={`theme-button ${className ? className : ''} ${loading ? 'loading' : ''} ${secondary ? 'secondary' :''} ${danger ? 'danger' :''} ${disabled ? 'disabled' :''}`}
+                className={`theme-button 
+                    ${className ? className : ''} 
+                    ${loading ? 'loading' : ''} 
+                    ${secondary ? 'secondary' :''} 
+                    ${danger ? 'danger' :''} 
+                    ${disabled ? 'disabled' :''} 
+                    ${secondaryBorder ? 'secondaryBorder' :''}
+                `}
             >
                 {loading ? <Loader button/> : props.children}
             </button>

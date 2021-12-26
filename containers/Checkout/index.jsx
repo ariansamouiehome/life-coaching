@@ -1,10 +1,10 @@
 import React, {useContext} from 'react';
 import AppHead from "components/Layout/AppHead";
-import BagPageWrapper from "components/BagPageWrapper";
 import {PageChangeContext} from "../../utils/pageChangeContext";
 import LoginRegisterForm from "components/LoginRegisterForm";
+import CheckoutPageWrapper from "components/CheckoutPageWrapper";
 
-const Bag = () => {
+const Checkout = () => {
 
     // Data
     const {loggedIn} = useContext(PageChangeContext);
@@ -13,11 +13,11 @@ const Bag = () => {
         return (
             <>
                 <AppHead
-                    title="Bag"
-                    description="Bag Page"
+                    title="Checkout"
+                    description="Checkout Page"
                     image="/images/profile-4-mobile.webp"
                 />
-                <BagPageWrapper/>
+                <CheckoutPageWrapper />
             </>
         )
     } else {
@@ -28,4 +28,4 @@ const Bag = () => {
 
 }
 
-export default Bag;
+export default Checkout;
