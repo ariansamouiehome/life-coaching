@@ -61,6 +61,11 @@
     background: rgba($brand-color-one, 0.5);
   }
 
+  &.disabled {
+    pointer-events: none;
+    background: rgba($brand-color-one, 0.5);
+  }
+
   &.secondary {
     background: $brand-black;
     color: $brand-white;
@@ -77,6 +82,25 @@
       color: $brand-black;
       text-shadow: 1px 1px rgba($brand-white, 0.5);
       box-shadow: 0 0 7px 1px rgba($brand-black, 0.5) inset;
+    }
+  }
+
+  &.danger {
+    background: $warning;
+    color: $brand-white;
+    text-shadow: 1px 1px rgba($brand-white, 0.5);
+
+    &:before,
+    &:after {
+      background: $warning;
+    }
+
+    &:hover {
+      background: $brand-white;
+      border-color: $warning;
+      color: $warning;
+      text-shadow: 1px 1px rgba($brand-white, 0.5);
+      box-shadow: 0 0 7px 1px rgba($warning, 0.5) inset;
     }
   }
 }

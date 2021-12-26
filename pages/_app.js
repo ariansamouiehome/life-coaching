@@ -7,6 +7,7 @@ import Footer from "components/Layout/Footer";
 import Router, {useRouter} from 'next/router';
 import {PageChangeContext} from "../utils/pageChangeContext";
 import {scrollToPosition} from "../utils/functions";
+import axios from "axios";
 
 const MyApp = ({Component, pageProps}) => {
 
@@ -14,12 +15,29 @@ const MyApp = ({Component, pageProps}) => {
     const router = useRouter();
 
     // States
-    const [loggedIn, setLoggedIn] = useState(false);
+    const [loggedIn, setLoggedIn] = useState(true);
     const [showNav, setShowNav] = useState(false);
     const [showBackToButton, setShowBackToButton] = useState(false);
     const [pageScrollTarget, setPageScrollTarget] = useState({
         target: '',
         from: ''
+    });
+    const [bag, setBag] = useState({
+        items: [
+            {
+                id: 1,
+                title: 'Self Love',
+                price: 15,
+            },
+            {
+                id: 2,
+                title: 'How to stop worrying',
+                price: 15,
+            },
+        ],
+        subTotal: 10,
+        vat: 2,
+        total: 12
     });
 
     const clickedPageChangeScrollToPosition = (href, target, from) => {
@@ -39,6 +57,13 @@ const MyApp = ({Component, pageProps}) => {
             offset: isMobile ? 50 : 250,
             once: true
         });
+        // axios.get('/api/bag')
+        //     .then(data => {
+        //         console.log(data);
+        //     })
+        //     .catch(err => {
+        //         console.log(err);
+        //     })
     }, []);
 
 
@@ -51,7 +76,7 @@ const MyApp = ({Component, pageProps}) => {
     });
 
     return (
-        <PageChangeContext.Provider value={{pageScrollTarget, showBackToButton, loggedIn, clickedPageChangeScrollToPosition}}>
+        <PageChangeContext.Provider value={{pageScrollTarget, showBackToButton, bag, setBag, loggedIn, clickedPageChangeScrollToPosition}}>
             <Header
                 showNav={showNav}
                 setShowNav={setShowNav}

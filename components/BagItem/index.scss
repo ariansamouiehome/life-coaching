@@ -1,0 +1,43 @@
+.bag-item {
+  display: flex;
+  width: 100%;
+  border: 1px solid $brand-color-one;
+  border-radius: 10px;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 15px;
+  margin: 0 0 30px;
+  box-shadow: 0 0 9px 5px rgba($brand-color-one, 0.2);
+  flex-direction: column;
+
+  @include media-breakpoint-up(sm) {
+    flex-direction: row;
+  }
+
+  .item-info {
+    .bag-item-heading {
+      font-size: 24px;
+      color: $brand-white;
+      font-family: $brand-font-heading-one;
+      text-transform: capitalize;
+    }
+
+    .bag-item-price {
+      font-size: 30px;
+      font-family: $brand-font-heading-one;
+      color: $brand-color-one;
+      margin: 0 0 20px;
+      display: block;
+      @include media-breakpoint-up(sm) {
+        margin: 0;
+      }
+    }
+  }
+
+  .theme-button {
+    width: 100%;
+    @include media-breakpoint-up(sm) {
+      width: auto;
+    }
+  }
+}

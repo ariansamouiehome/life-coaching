@@ -11,7 +11,7 @@ const Header = (props) => {
     // Data
     const {showNav, setShowNav} = props;
     const router = useRouter();
-    const {loggedIn} = useContext(PageChangeContext);
+    const {loggedIn, bag} = useContext(PageChangeContext);
 
     // States
     const [headerScroll, setHeaderScroll] = useState(0);
@@ -80,6 +80,7 @@ const Header = (props) => {
                             </div>
                             <Link href="/bag">
                                 <a className="bag-icon-link">
+                                    {loggedIn && bag.items.length !== 0 && <span className="back-icon-number">{bag.items.length}</span>}
                                     <img src="/images/icons/cart.png" alt="cart" className="bag-icon-image"/>
                                 </a>
                             </Link>
