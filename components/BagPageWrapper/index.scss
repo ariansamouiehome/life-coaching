@@ -101,7 +101,7 @@
       .item-title {
         margin: 0;
         color: $brand-white;
-        font-size:24px;
+        font-size: 24px;
         font-family: $brand-font-heading-one;
       }
 
@@ -115,6 +115,31 @@
         margin: 0;
         border-top: 1px solid $brand-color-one;
         padding-top: 15px;
+      }
+    }
+  }
+
+  &.checkout {
+    .container {
+      border: 3px solid $brand-color-one;
+      box-shadow: 0 0 10px 5px rgba($brand-white, 0.5);
+    }
+
+    .inner-content {
+      .bag-page-heading {
+        color: $brand-white
+      }
+    }
+
+    .bag-page-price-list {
+      .list-item {
+        .item-title {
+          color: $brand-color-one;
+        }
+
+        .item-value {
+          color: $brand-white;
+        }
       }
     }
   }

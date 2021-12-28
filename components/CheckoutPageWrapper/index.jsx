@@ -23,7 +23,7 @@ const CheckoutPageWrapper = () => {
     };
 
     return (
-        <Container fluid className="back-page-wrapper" data-aos>
+        <Container fluid className="back-page-wrapper checkout" data-aos>
             {bag.items.length === 0 && <Col xs={12} className="no-items-wrapper">
                 <AlertMessage
                     message="There are no items in your bag"
