@@ -32,15 +32,15 @@ const AdminPanel = () => {
     }
 
     const sendMailingList = () => {
-        // for (let i = 0; i < globalMailingList.length; i++) {
-        //     axios.post('/api/mailingList', {email:globalMailingList[i]})
-        //         .then(data => {
-        //             console.log(data);
-        //         })
-        //         .catch(err => {
-        //             console.log(err);
-        //         })
-        // }
+        for (let i = 0; i < globalMailingList.length; i++) {
+            axios.post('/api/mailingList', {email:globalMailingList[i]})
+                .then(data => {
+                    console.log(data);
+                })
+                .catch(err => {
+                    console.log(err);
+                })
+        }
     };
 
     return (
