@@ -19,7 +19,7 @@ export default async (req, res) => {
     const mailData = {
         from: 'ariansamouiecoach@outlook.com',
         to: req.body.email,
-        subject: 'Meditation Session',
+        subject: 'Your Thoughts Can Make You Sick!',
         text: `
                 <img src="https://ariansamouie.com/images/logo-single.svg" style="max-width: 320px;"/>
                 <h3>Arian Samouie's</h3>
@@ -44,7 +44,7 @@ export default async (req, res) => {
                     JOIN ZOOM CALL
                 </a>
                 
-                <p>I look forward to seeing you all there.</p>
+                <p>I look forward to seeing you there.</p>
                 
                 <br />
                 <h2><strong>Life Coach / Trauma Healing</strong></h2>
@@ -88,7 +88,7 @@ export default async (req, res) => {
                     JOIN ZOOM CALL
                 </a>
                 
-                <p>I look forward to seeing you all there.</p>
+                <p>I look forward to seeing you there.</p>
                 
                 <br />
                 <h2><strong>Life Coach / Trauma Healing</strong></h2>

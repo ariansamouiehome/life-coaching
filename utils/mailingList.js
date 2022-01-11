@@ -1,4 +1,18 @@
 export const globalMailingList = [
     "ariansamouie@gmail.com",
     "ariansamouiecoach@outlook.com",
+    // "jj01.joseph@gmail.com",
+    // "daniella_m_terry@hotmail.com",
+    // "ashley_collins87@hotmail.co.uk",
+    // "georgiacybel@hotmail.com",
+    // "gary@spiritedstrength.com",
+    // "raffaellaluoni@gmail.com",
+    // "juphil57@icloud.com",
+    // "geoffreygvalentine@gmail.com",
+    // "raybarrett75@hotmail.com",
+    // "aminathwani@hotmail.co.uk",
+    // "lesshort.77@gmail.com",
+    // "jrhaftel@gmail.com",
+    // "zulekasmith@hotmail.co.uk",
+    // "sseymourx5@hotmail.co.uk",
 ]
