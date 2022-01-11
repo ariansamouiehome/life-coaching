@@ -28,7 +28,7 @@ const Meditation = () => {
             />
 
             <ColumnInfoImage
-                title="Learn To Let Go!"
+                title="Learn To Control Your Thoughts!"
                 description="One of the best ways to heal is to let go of everything. <br /> Your mind, your body, your feelings and your thoughts. <br /> Become your consciousness. <br /> To understand more, watch the video below."
                 headingLine
                 paddingBottom
@@ -36,8 +36,8 @@ const Meditation = () => {
 
             <FullWidthVideoPlayer
                 title="Find Out More"
-                iframeSrc="https://www.youtube.com/embed/IA6N8RGEmaE?rel=0"
-                thumbnailImage="/images/meditation-session-thumbnail.jpeg"
+                iframeSrc="https://www.youtube.com/embed/3UGEfefw_CY?rel=0"
+                thumbnailImage="/images/thoughts-promo.jpeg"
             />
 
             <ColumnInfoImage

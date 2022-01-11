@@ -28,9 +28,11 @@ body {
   @include media-breakpoint-up(sm) {
     max-width: 200px;
     transform: scale(1);
+    height: 60px;
   }
   @include media-breakpoint-up(lg) {
     max-width: 300px;
+    height: auto;
   }
 
   .logo-image {
@@ -43,17 +45,22 @@ body {
 
   .logo-text {
     position: absolute;
-    bottom: 8px;
+    bottom: 6px;
     right: 0;
     font-family: $brand-font-copy-one;
     color: $brand-color-one;
     transition: 0.5s;
-    font-size: 12px;
+    font-size: 8px;
     -webkit-backface-visibility: hidden;
     letter-spacing: 1.5px;
 
     @include media-breakpoint-up(sm) {
-      bottom: 0;
+      bottom: -6px;
+      font-size: 12px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      bottom: -2px;
       font-size: 14px;
     }
   }
