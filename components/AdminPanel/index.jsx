@@ -33,7 +33,11 @@ const AdminPanel = () => {
 
     const sendMailingList = () => {
         for (let i = 0; i < globalMailingList.length; i++) {
-            axios.post('/api/mailingList', {email:globalMailingList[i]})
+            axios.post('/api/mailingList', {
+                email:globalMailingList[i].email,
+                firstName:globalMailingList[i].firstName,
+                lastName:globalMailingList[i].email
+            })
                 .then(data => {
                     console.log(data);
                 })
