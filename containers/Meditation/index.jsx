@@ -9,7 +9,7 @@ import MediationForm from "components/MediationForm";
 const Meditation = () => {
 
     // Data
-    const sessionDate = '25th Jan - 8:00pm';
+    const sessionDate = '8th Feb - 8:00pm';
 
     return (
         <>
