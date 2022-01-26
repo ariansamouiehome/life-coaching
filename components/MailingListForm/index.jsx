@@ -99,9 +99,6 @@ const MailingListForm = (props) => {
         <form onSubmit={(e) => handleSubmit(e)} className="contact-form-form mailing-list" id="contact-form-form">
             <Container className="contact-form" data-aos>
                 <Row>
-                    <Col xs={12} className="mailing-list-header">
-                        <h3 className="mailing-list-heading">Mailing List</h3>
-                    </Col>
                     {contactForm.map((item, key) => <Col xs={12} md={5} className="contact-form-each-input" key={`input-key-${key}`}>
                         <FormInput
                             form={form}

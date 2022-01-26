@@ -59,9 +59,9 @@ const Home = () => {
             </div>
 
             <FullWidthVideoPlayer
-                title="Overcome Addiction"
-                iframeSrc="https://www.youtube.com/embed/0Yz1_AuGE5k?rel=0"
-                thumbnailImage="/images/addiction.jpeg"
+                title="What is Trauma?"
+                iframeSrc="https://www.youtube.com/embed/v8GP6tn4798?rel=0"
+                thumbnailImage="/images/what-is-trauma.jpeg"
             />
 
             <ColumnInfoImage

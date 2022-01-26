@@ -5,6 +5,7 @@ import {navItems} from "../../../utils/globalArrays";
 import {useRouter} from "next/router";
 import Clickable from "components/Elements/Clickable";
 import MailingListForm from "components/MailingListForm";
+import ColumnInfoImage from "components/ColumnInfoImage";
 
 const Footer = () => {
 
@@ -12,7 +13,15 @@ const Footer = () => {
 
     return (
         <>
-            {router.asPath !== '/meditation-sessions' && router.asPath !== '/book-a-call' && <MailingListForm/>}
+            {router.asPath !== '/meditation-sessions' && router.asPath !== '/book-a-call' && <>
+                <ColumnInfoImage
+                    title="Mailing list"
+                    description={`Want to be part of the mailing list? <br />Just fill out this form and you will be added to receive regular updates.`}
+                    headingLine
+                    noCurve
+                />
+                <MailingListForm/>
+            </>}
             <footer className={`main-footer ${router.asPath === '/admin' ? 'admin' : ''}`} data-aos>
                 <Container>
                     <Row>
