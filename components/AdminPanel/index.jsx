@@ -22,7 +22,7 @@ const AdminPanel = () => {
     });
 
     // Data
-    const password = 'qwerty';
+    const password = 'Ashton123';
 
     // Functions
     const handleSubmit = () => {
