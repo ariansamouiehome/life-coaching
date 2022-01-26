@@ -12,6 +12,7 @@ const BackImageFloatingContent = (props) => {
         cta_text,
         onClick,
         curveBottom,
+        center,
     } = props;
 
     const ctaOutput = () => {
@@ -34,24 +35,24 @@ const BackImageFloatingContent = (props) => {
     const hTagOutput = () => {
         if (hTag) {
             if (hTag === 2) {
-                return <h2 className="content-title heading-one heading-mark mark-left" dangerouslySetInnerHTML={{ __html: title }} />
+                return <h2 className={`content-title heading-one heading-mark ${!center ? 'mark-left' : ''}`} dangerouslySetInnerHTML={{ __html: title }} />
             }
             if (hTag === 1) {
-                return <h1 className="content-title heading-one heading-mark mark-left" dangerouslySetInnerHTML={{ __html: title }} />
+                return <h1 className={`content-title heading-one heading-mark ${!center ? 'mark-left' : ''}`} dangerouslySetInnerHTML={{ __html: title }} />
             }
             if (hTag === 4) {
-                return <h4 className="content-title heading-one heading-mark mark-left" dangerouslySetInnerHTML={{ __html: title }} />
+                return <h4 className={`content-title heading-one heading-mark ${!center ? 'mark-left' : ''}`} dangerouslySetInnerHTML={{ __html: title }} />
             }
             if (hTag === 5) {
-                return <h5 className="content-title heading-one heading-mark mark-left" dangerouslySetInnerHTML={{ __html: title }} />
+                return <h5 className={`content-title heading-one heading-mark ${!center ? 'mark-left' : ''}`} dangerouslySetInnerHTML={{ __html: title }} />
             }
         } else {
-            return <h3 className="content-title heading-one heading-mark mark-left" dangerouslySetInnerHTML={{ __html: title }} />
+            return <h3 className={`content-title heading-one heading-mark ${!center ? 'mark-left' : ''}`} dangerouslySetInnerHTML={{ __html: title }} />
         }
     }
 
     return (
-        <Container fluid className={`back-image-floating-content ${curveBottom ? 'curve-bottom' : ''}`} data-aos>
+        <Container fluid className={`back-image-floating-content ${curveBottom ? 'curve-bottom' : ''} ${center ? 'center' : ''}`} data-aos>
             <Col xs={12} className="inner-image" style={{backgroundImage: `url(${backgroundImage})`}}/>
             <Container>
                 <Row>

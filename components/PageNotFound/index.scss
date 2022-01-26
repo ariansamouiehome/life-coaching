@@ -1,0 +1,9 @@
+.page-not-found {
+  display: block;
+  width: 100%;
+  position: relative;
+  padding-top: 70px;
+  @include media-breakpoint-up(lg) {
+    padding-top: 100px;
+  }
+}

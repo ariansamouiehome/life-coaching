@@ -36,8 +36,8 @@ const MailingListForm = (props) => {
     const [showMessage, setShowMessage] = useState(false);
     const [loading, setLoading] = useState(false);
     const [form, setForm] = useState({
-        name: '',
-        email: '',
+        mailingListName: '',
+        mailingListEmail: '',
     });
 
     // Function
@@ -51,11 +51,11 @@ const MailingListForm = (props) => {
 
         if (checkError) {
             setLoading(true);
-            axios.post('/api/AAAAAA', form)
+            axios.post('/api/addToMailingList', form)
                 .then(data => {
                     setForm({
-                        first_name: '',
-                        email: '',
+                        mailingListName: '',
+                        mailingListEmail: '',
                     })
                     setShowMessage(true);
                     setFailedToSend(false);
@@ -79,13 +79,21 @@ const MailingListForm = (props) => {
     }
 
     useEffect(() => {
-        if (form.name.length === 0 ||
-            form.email.length === 0) {
+        if (form.mailingListName.length === 0 ||
+            form.mailingListEmail.length === 0) {
             setCheckError(false);
         } else {
             setCheckError(true);
         }
     }, [form]);
+
+    useEffect(() => {
+        if (showMessage) {
+            setTimeout(() => {
+                setShowMessage(false);
+            }, 10000)
+        }
+    },[showMessage]);
 
     return (
         <form onSubmit={(e) => handleSubmit(e)} className="contact-form-form mailing-list" id="contact-form-form">
@@ -111,7 +119,6 @@ const MailingListForm = (props) => {
                         <Button
                             type="submit"
                             loading={loading}
-                            disabled={checkError}
                         >
                             Submit
                         </Button>
@@ -119,7 +126,7 @@ const MailingListForm = (props) => {
                     <Col xs={12}  className="contact-form-message" id="contact-form-message">
                         {showMessage && <AlertMessage
                             success={success}
-                            successMessage="Your position has been reserved. An email with a zoom link and information about the session has been sent to you."
+                            successMessage="You have ben added to the mailing list."
                             failed={failedToSend}
                         />}
                     </Col>

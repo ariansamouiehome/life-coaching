@@ -32,6 +32,13 @@
       border-color: $brand-black transparent transparent transparent;
     }
   }
+
+  &.alt {
+    div {
+      border: 5px solid $brand-black;
+      border-color: $brand-black transparent transparent transparent;
+    }
+  }
 }
 
 .lds-ring div:nth-child(1) {

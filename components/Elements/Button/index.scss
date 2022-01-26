@@ -38,7 +38,8 @@
     transform: translateY(-50%) translateX(110%) rotate(-60deg);
   }
 
-  &:hover {
+  &:hover,
+  &.active {
     text-decoration: none;
     background: $brand-black;
     color: $white;
@@ -60,6 +61,11 @@
     background: rgba($brand-color-one, 0.5);
   }
 
+  &.disabled {
+    pointer-events: none;
+    background: rgba($brand-color-one, 0.5);
+  }
+
   &.secondary {
     background: $brand-black;
     color: $brand-white;
@@ -76,6 +82,35 @@
       color: $brand-black;
       text-shadow: 1px 1px rgba($brand-white, 0.5);
       box-shadow: 0 0 7px 1px rgba($brand-black, 0.5) inset;
+    }
+  }
+
+  &.secondaryBorder {
+    border: 1px solid $brand-color-one;
+    box-shadow: 0 0 5px 1px $brand-color-one inset;
+
+    &:hover {
+      border: 1px solid $brand-color-one;
+      box-shadow: 0 0 5px 3px $brand-black inset;
+    }
+  }
+
+  &.danger {
+    background: $warning;
+    color: $brand-white;
+    text-shadow: 1px 1px rgba($brand-white, 0.5);
+
+    &:before,
+    &:after {
+      background: $warning;
+    }
+
+    &:hover {
+      background: $brand-white;
+      border-color: $warning;
+      color: $warning;
+      text-shadow: 1px 1px rgba($brand-white, 0.5);
+      box-shadow: 0 0 7px 1px rgba($warning, 0.5) inset;
     }
   }
 }

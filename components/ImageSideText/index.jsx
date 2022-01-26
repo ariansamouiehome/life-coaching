@@ -8,7 +8,6 @@ const ImageSideText = (props) => {
         backgroundImage,
         hTag,
         title,
-        description,
         href,
         cta_text,
         onClick,

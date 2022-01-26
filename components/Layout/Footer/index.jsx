@@ -12,7 +12,7 @@ const Footer = () => {
 
     return (
         <>
-            <MailingListForm/>
+            {router.asPath !== '/meditation-sessions' && router.asPath !== '/book-a-call' && <MailingListForm/>}
             <footer className={`main-footer ${router.asPath === '/admin' ? 'admin' : ''}`} data-aos>
                 <Container>
                     <Row>
@@ -75,12 +75,11 @@ const Footer = () => {
                                     </a>
                                 </li>
                             </ul>
-
-                            <ul className="footer-nav-list">
-                                {navItems.map((item, key) => <li className="list-item" key={`nav-key-${key}`}>
-                                    <Clickable
-                                        href={item.link}
-                                        className={`item-link ${router.pathname === item.link ? 'active' : ''}`}
+                        <ul className="footer-nav-list">
+                            {navItems.map((item, key) => <li className="list-item" key={`nav-key-${key}`}>
+                                <Clickable
+                                    href={`/${item.link}`}
+                                    className={`item-link ${router.asPath.split("/")[1] === item.link ? 'active' : ''}`}
                                     >
                                         {item.title}
                                     </Clickable>

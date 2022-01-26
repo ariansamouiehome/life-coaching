@@ -4,7 +4,6 @@
   left: 0;
   width: 100%;
   display: flex;
-  z-index: 100;
   transition: 0.5s;
   animation-name: slideDown;
   animation-fill-mode: both;
@@ -12,6 +11,7 @@
   animation-delay: 0.5s;
   background: $brand-black;
   border-bottom: 1px solid $brand-color-one;
+  z-index: 200;
   @include media-breakpoint-up(lg) {
     background: transparent;
     border-bottom: 1px solid rgba($brand-color-one, 0.3);
@@ -31,10 +31,184 @@
       height: 100px;
     }
 
+    .brand-logo {
+      width: 160px;
+      @include media-breakpoint-up(xl) {
+        width: 220px;
+      }
+    }
+
     .burger-button {
       display: flex;
       @include media-breakpoint-up(lg) {
         display: none;
+      }
+    }
+
+    .nav-hold-wrapper {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .user-wrapper {
+      display: flex;
+      position: relative;
+      @include media-breakpoint-up(lg) {
+        margin-left: 10px;
+        margin-right: 0;
+      }
+
+      .user-button {
+        background: transparent;
+        border: none;
+        width: 30px;
+        height: 30px;
+        padding: 0;
+
+        &:before {
+          display: block;
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          border: 2px solid $brand-color-one;
+          border-radius: 50%;
+          transition: 0.5s;
+          transform: scale(1.2);
+        }
+
+        .user-icon {
+          position: absolute;
+          height: 100%;
+          width: 100%;
+          top: 0;
+          left: 0;
+          transition: 0.5s;
+        }
+
+        &:focus {
+          outline: none;
+        }
+
+        &:hover,
+        &.active {
+          &:before {
+            transform: scale(1);
+          }
+        }
+      }
+
+      .user-drop-down {
+        position: fixed;
+        top: 70px;
+        right: 0;
+        background: $brand-color-one;
+        display: flex;
+        flex-direction: column;
+        opacity: 0;
+        pointer-events: none;
+        transition: 0.3s;
+        width: 100vw;
+        border: 1px solid $brand-black;
+        overflow: hidden;
+
+        @include media-breakpoint-up(lg) {
+          position: absolute;
+          border-radius: 10px;
+          width: 200px;
+          top: calc(100% + 15px);
+          box-shadow: 0 0 8px 2px rgba($brand-black, 0.5);
+        }
+
+        &.active {
+          opacity: 1;
+          pointer-events: auto;
+        }
+
+        .user-drop-down-link {
+          display: block;
+          position: relative;
+          width: 100%;
+          padding: 15px;
+          font-family: $brand-font-copy-one;
+          text-decoration: none;
+          color: $brand-black;
+          text-transform: uppercase;
+          transition: 0.5s;
+          border: 1px rgba($brand-black, 0.8);
+          border-style: solid none;
+          text-align: center;
+          font-size: 24px;
+          @include media-breakpoint-up(lg) {
+            font-size: 16px;
+            padding: 10px 15px;
+            text-align: left;
+          }
+
+          &:hover {
+            color: $brand-white;
+            text-shadow: 1px 1px $brand-color-one;
+            background: $brand-black;
+          }
+        }
+      }
+    }
+
+    .bag-icon-link {
+      display: inline-block;
+      position: relative;
+      margin: 0 20px;
+      transition: 0.3s;
+
+      @include media-breakpoint-up(lg) {
+        margin-right: 0;
+      }
+
+      .back-icon-number {
+        position: absolute;
+        top: -5px;
+        right: -5px;
+        width: 20px;
+        height: 20px;
+        background: $brand-black;
+        color: $brand-white;
+        border-radius: 50%;
+        font-size: 11px;
+        //font-family: $brand-font-heading-two;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 5;
+        border: 1px solid $brand-black;
+
+        &:before {
+          display: block;
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+          box-shadow: 0 0 1px 1px rgba($brand-color-one, 1) inset;
+        }
+      }
+
+      .bag-icon-image {
+        width: 30px;
+        transition: 0.5s;
+      }
+
+      &:focus {
+        outline: none;
+      }
+
+      &:hover {
+        transform: scale(1.1);
       }
     }
   }
@@ -72,5 +246,22 @@
 
   &.admin {
     display: none;
+  }
+}
+
+.background-click {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  background: rgba($brand-black, 0.8);
+  animation-name: fadeIn;
+  animation-fill-mode: both;
+  animation-duration: 0.5s;
+
+  @include media-breakpoint-up(lg) {
+    background: transparent;
   }
 }

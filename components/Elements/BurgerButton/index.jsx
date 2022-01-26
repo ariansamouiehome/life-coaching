@@ -2,11 +2,18 @@ import React from 'react';
 
 const BurgerButton = (props) => {
 
-    const {activeState, setState} = props;
+    // Data
+    const {activeState, setState, setShowUserDropDown} = props;
+
+    // Functions
+    const onCLickBurgerButton = () => {
+        setState(!activeState);
+        setShowUserDropDown(false);
+    };
 
     return (<button
             className={`burger-button ${activeState ? 'active' : ''}`}
-            onClick={() => setState(!activeState)}
+            onClick={onCLickBurgerButton}
         >
             <span/>
             <span/>

@@ -1,8 +1,12 @@
 .list-wrapper {
   padding: 15px;
-  max-width: 1320px;
+  background: $brand-color-one;
   @include media-breakpoint-up(md) {
-    padding: 30px 15px;
+    padding: 50px 15px;
+  }
+
+  .container {
+    max-width: 1320px;
   }
 
   .list-wrapper-loader {
