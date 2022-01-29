@@ -123,7 +123,7 @@ const MailingListForm = (props) => {
                     <Col xs={12}  className="contact-form-message" id="contact-form-message">
                         {showMessage && <AlertMessage
                             success={success}
-                            successMessage="You have ben added to the mailing list."
+                            successMessage="You have been added to the mailing list."
                             failed={failedToSend}
                         />}
                     </Col>
