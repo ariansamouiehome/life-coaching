@@ -36,8 +36,8 @@ const Meditation = () => {
 
             <FullWidthVideoPlayer
                 title="Find Out More"
-                iframeSrc="https://www.youtube.com/embed/3UGEfefw_CY?rel=0"
-                thumbnailImage="/images/thoughts-promo.jpeg"
+                iframeSrc="https://www.youtube.com/embed/IA6N8RGEmaE?rel=0"
+                thumbnailImage="/images/meditation-session-thumbnail.jpeg"
             />
 
             <ColumnInfoImage
