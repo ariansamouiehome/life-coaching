@@ -16,44 +16,60 @@ export default async (req, res) => {
         },
         secure: true,
     })
+    const subject = 'What Is Crying?';
     const bodyText = `
         <img src="https://ariansamouie.com/images/logo-single.svg" style="max-width: 320px;"/>
-        <h1>We all experience trauma!</h1>
+        <h1>STOP trying to STOP people crying!</h1>
         
-        <h2>Hi ${req.body.firstName}</h2>
+        <h2>I know it can sound crazy ${req.body.firstName}.</h2>   
+        <h2>But let me explain...</h2>
         
-        <p>Have you ever thought why you feel the way you do?</p>
-        <p>How can we get rid of the anxiety that we feel?</p>
-        <p>Ever wonder how much control you're actually in of yourself?</p>
+        <p>Crying is not a social thing. It's a biological thing. It's how we as humans work.</p> 
         
-        <p>Your personality and how you feel has to do with the experiences you have had in your past more than anything else.</p>
-        <h2>What actually is TRAUMA?</h2>
-        <p>We all experience trauma throughout our lives. It's one of the most normal things we go through as a living human being.</p>
-        <p>We have been brought up in a society that has tought us to be embarresed about having mental trauma. But that couldn't be further from what it actually is.</p>
+        <p>We release emotions by crying. And by stopping the crying we're stopping that release, which means those emotions are still within us. We're still keeping a hold of them. And that is not a healthy state of being.</p>
         
-        <p>Once you get an understanding of what trauma actually is, as well as what happens at the time of trauma, you see that it's a very normal thing.</p> 
-        <p>Something we all go through. But something we all need to <strong>heal</strong> from.</p>
+        <p>There are two main reasons why we tell people to stop crying.</p>
         
-        <p>If you fell out of a tree and broke your legs, you would need to heal your broken legs.</p>
-        <p>So it's very normal, as well as the most helpful thing a human can do for themselves, to <strong>heal</strong> the mental trauma too.</p>
-        <br />
-        <p><strong>To get a better understanding of what happens to us and how we deal with our traumatic experiences, watch my new video on YouTube by licking on the button below</strong></p>
+        <ul>
+            <li>1) Because of social conditioning. This is what ever generation has been taught for the longest time. Especially the men. </li>
+            <li>2) We actually relate to that bad feeling of someone crying, and it triggers those feelings in us. So because it makes us feel bad that they're crying, we try and stop them.</li>
+        </ul>
+   
+        <p>The goal when we get a bad feeling isn't to get rid of it. Feelings are the bodies way of communicating with us. This is how we work.</p>
         
-        <a href="https://www.youtube.com/watch?v=v8GP6tn4798" target="_blank"
-            style="width: 100%; max-width: 320px; display: block; padding: 15px; text-align: center; color: #fff; background: #c4302b; text-decoration: none; border-radius: 5px;"
-        >
-            Watch YouTube Video
-        </a>
+        <p>Allow people to be who they are. Kids and adults.</p>
         
-        <p>It's ok to work like a human</p>
+        <p>If someone is crying for any reason, it's not unreasonable, it's how they feel. It's who they are in that moment. By telling them not to cry you're telling them to be someone other than who they are.</p>
+        
+        <p>Just be there with their emotions and allow them to express themselves. We all feel the way we do and that's ok and normal.</p>
+        
+        <p>Should and shouldn't cry are subjective. Crying is a healthy way of releasing our emotions. It's also the way we work as humans.</p>
+        
+        <p>It's ok to work like a normal human.</p>
         <p>You're doing great, keep going.</p>
         
+        
+        <a href="https://youtu.be/VimTmPvsT6U" target="_blank"
+            style="width: 100%; max-width: 320px; display: block; padding: 15px; text-align: center; color: #fff; background: #c4302b; text-decoration: none; border-radius: 5px;"
+        >
+            Watch YouTube Short Video
+        </a> 
+        
         <br />
-        <p><strong>To join my <u>FREE</u> online meditation session, click the button below. 8th Feb - 8:00pm (Zoom call)</strong></p>
+        <br />
+        <p><strong>To join my <u>FREE</u> online "How To Let Go" meditation session, click the button below. 8th Feb - 8:00pm (Zoom call)</strong></p>
         <a href="https://ariansamouie.com/meditation-sessions" target="_blank"
             style="width: 100%; max-width: 320px; display: block; padding: 15px; text-align: center; color: #fff; background: #d2a94e; text-decoration: none; border-radius: 5px;"
         >
             Reserve Your Position
+        </a>
+        
+        <br />
+        <p><strong>To join my MeetUp group about all meditation sessions I will be hosting, click on the button below.</strong></p>
+        <a href="https://www.meetup.com/online-healing-meditation/" target="_blank"
+            style="width: 100%; max-width: 320px; display: block; padding: 15px; text-align: center; color: #fff; background: #e51937; text-decoration: none; border-radius: 5px;"
+        >
+            Join MettUp Group
         </a>
         
         <br />
@@ -72,7 +88,7 @@ export default async (req, res) => {
     const mailData = {
         from: 'ariansamouiecoach@outlook.com',
         to: req.body.email,
-        subject: 'What is Trauma?',
+        subject: subject,
         text: bodyText,
         html: bodyText,
     }
