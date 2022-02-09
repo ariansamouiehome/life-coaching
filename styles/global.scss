@@ -3,6 +3,13 @@ body {
   //-webkit-backface-visibility: hidden;
 }
 
+.theme-row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
 .heading-one {
   font-size: 45px;
   margin: 0 0 20px;

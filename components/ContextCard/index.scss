@@ -8,6 +8,8 @@
   z-index: 1000;
   transition: 0.5s;
   transform: translateX(100%);
+  border: 1px solid $brand-color-one;
+  box-shadow: 0 0 5px 1px rgba($brand-color-one, 0.8) inset;
   @include media-breakpoint-up(sm) {
     max-width: 400px;
   }

@@ -13,6 +13,7 @@ const BackImageFloatingContent = (props) => {
         onClick,
         curveBottom,
         center,
+        large,
     } = props;
 
     const ctaOutput = () => {
@@ -56,7 +57,7 @@ const BackImageFloatingContent = (props) => {
             <Col xs={12} className="inner-image" style={{backgroundImage: `url(${backgroundImage})`}}/>
             <Container>
                 <Row>
-                    <Col xs={12} xl={10} className="inner-content">
+                    <Col xs={12} xl={!large && 10} className={`inner-content `}>
                         {title && hTagOutput()}
                         {props.children}
                         {cta_text && <div className="theme-button-wrapper">{ctaOutput()}</div>}

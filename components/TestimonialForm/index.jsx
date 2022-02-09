@@ -120,7 +120,7 @@ const TestimonialForm = (props) => {
                     <Col xs={12}  className="contact-form-message" id="contact-form-message">
                         {showMessage && <AlertMessage
                             success={success}
-                            successMessage="Thanks you. Your testimonial has been submitted."
+                            successMessage="Thank you. Your testimonial has been submitted."
                             failed={failedToSend}
                         />}
                     </Col>

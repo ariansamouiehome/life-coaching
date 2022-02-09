@@ -1,0 +1,52 @@
+.testimonial-card {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  width: 100%;
+  position: relative;
+  transition: 1s;
+  @include media-breakpoint-up(lg) {
+    width: 50%;
+  }
+
+  &:before {
+    display: flex;
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 6px 3px rgba($brand-color-one, 0.5) inset;
+    border: 2px solid $brand-color-one;
+  }
+
+  .testimonial-card-name {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin: 0 0 5px;
+
+    .testimonial-card-name-text {
+      color: $brand-white;
+      margin: 0;
+      font-family: $brand-font-heading-one;
+    }
+
+    .testimonial-card-image {
+      width: 50px;
+      margin-right: 5px;
+    }
+  }
+
+  .testimonial-card-message {
+    display: flex;
+    width: 100%;
+    padding: 0 5px;
+    .body-copy {
+      text-align: left;
+      margin: 0;
+    }
+  }
+}
