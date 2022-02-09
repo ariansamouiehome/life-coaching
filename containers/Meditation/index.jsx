@@ -1,15 +1,20 @@
-import React from 'react';
+import React, {useState} from 'react';
 import FullWidthImageTextBanner from "components/FullWidthImageTextBanner";
 import ColumnInfoImage from "components/ColumnInfoImage";
 import FullWidthVideoPlayer from "components/FullWidthVideoPlayer";
 import FullWidthInfo from "components/FullWidthInfo";
 import AppHead from "components/Layout/AppHead";
 import MediationForm from "components/MediationForm";
+import ContextCard from "components/ContextCard";
+import TestimonialForm from "components/TestimonialForm";
 
 const Meditation = () => {
 
     // Data
     const sessionDate = '22nd Feb - 8:00pm';
+
+    // State
+    const [testimonialState, setTestimonialState] = useState(false);
 
     return (
         <>
@@ -18,6 +23,13 @@ const Meditation = () => {
                 description="Meditation Sessions Held by Arian."
                 image="/images/meditation.jpeg"
             />
+            <ContextCard
+                state={testimonialState}
+                setState={setTestimonialState}
+                heading="Testimonial"
+            >
+                <TestimonialForm subject="Learn To Let Go"/>
+            </ContextCard>
             <FullWidthImageTextBanner
                 title="Meditation Sessions"
                 description={`Next session <br />${sessionDate} (Zoom call)`}
@@ -51,11 +63,11 @@ const Meditation = () => {
 
             <FullWidthInfo
                 hTag={3}
-                title="Get to know Arian"
-                description="Find out more about my background and why I have chosen to do what I do."
+                title="Testimonial"
+                description="It would be great to hear what you thought about the session.<br /> Please share a few thoughts about your experience."
                 cta_show
-                cta_href="/meet-arian"
-                cta_text="Meet Arian"
+                cta_onClick={() => setTestimonialState(true)}
+                cta_text="Add Testimonial"
                 headingLine
             />
         </>

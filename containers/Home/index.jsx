@@ -1,15 +1,15 @@
-import React, {useContext, useEffect} from 'react';
+import React, {useContext} from 'react';
 import {scrollToPosition} from "../../utils/functions";
 import FullWidthImageTextBanner from "components/FullWidthImageTextBanner";
 import ColumnInfoImage from "components/ColumnInfoImage";
 import FullWidthVideoPlayer from "components/FullWidthVideoPlayer";
 import ImageSideText from "components/ImageSideText";
-import FullWidthInfo from "components/FullWidthInfo";
 import BackImageFloatingContent from "components/BackImageFloatingContent";
 import AppHead from "components/Layout/AppHead";
 import Clickable from "components/Elements/Clickable";
 import {PageChangeContext} from "../../utils/pageChangeContext";
-import axios from "axios";
+import TestimonialCard from "components/TestimonialCard";
+import FullWidthInfo from "components/FullWidthInfo";
 
 const Home = () => {
 
@@ -29,6 +29,24 @@ const Home = () => {
             title: 'HOW TO HEAL FROM IT',
             description: 'The way we heal from trauma is to get the fragmented parts of ourselves on the same page and in a position of agreement in order to achieve resolution.',
             image: 'images/icons/heart.png',
+        },
+    ];
+    const testimonials = [
+        {
+            name: 'Asli Ungan',
+            message: 'In the moment of trauma, a person experiences distress without resolve. When this happens our consciousness fragments into parts.',
+        },
+        {
+            name: 'Taba Fard',
+            message: 'In the moment of trauma, a person experiences distress without resolve. When this happens our consciousness fragments into parts.',
+        },
+        {
+            name: 'Jim Jeffreys',
+            message: 'In the moment of trauma, a person experiences distress without resolve. When this happens our consciousness fragments into parts.',
+        },
+        {
+            name: 'Toad Smith',
+            message: 'In the moment of trauma, a person experiences distress without resolve. When this happens our consciousness fragments into parts.',
         },
     ];
     const {clickedPageChangeScrollToPosition} = useContext(PageChangeContext);
@@ -75,13 +93,20 @@ const Home = () => {
                 href="/book-a-call"
                 cta_text="book a call"
             >
-                <p className="body-copy">We react the same way when speaking to ourselves as we would if someone else was speaking to us. If a friend spoke to you the way you speak to yourself, would you still be their friend? The only difference is we can get away from that friend, but we cannot get away from ourselves.<br /><br />Learn how to accept the ego and change the judgmental thoughts you have about yourself given to you by others. <br /><br />Being aware of how you treat yourself is one of the most powerful things you can learn as a human.<br /><br /> To learn more about self love, get in touch. <br /><br /><Clickable href="https://youtu.be/xA5CGvqv05Y" target>Watch Self Love Video On YouTube</Clickable></p>
+                <p className="body-copy">We react the same way when speaking to ourselves as we would if someone else
+                    was speaking to us. If a friend spoke to you the way you speak to yourself, would you still be their
+                    friend? The only difference is we can get away from that friend, but we cannot get away from
+                    ourselves.<br/><br/>Learn how to accept the ego and change the judgmental thoughts you have about
+                    yourself given to you by others. <br/><br/>Being aware of how you treat yourself is one of the most
+                    powerful things you can learn as a human.<br/><br/> To learn more about self love, get in
+                    touch. <br/><br/><Clickable href="https://youtu.be/xA5CGvqv05Y" target>Watch Self Love Video On
+                        YouTube</Clickable></p>
             </ImageSideText>
 
             <div id="external-validation">
                 <BackImageFloatingContent
                     backgroundImage="/images/pattern-back-4.png"
-                    title="Why Do We Seek External Validation."
+                    title="Why Do We Seek External Validation?"
                     href="/book-a-call"
                     cta_text="Book a call"
                     headingLine
@@ -93,12 +118,17 @@ const Home = () => {
                         drawing
                         as a child plays it's role in teaching us that our worth is based on the approval of an external
                         opinion,
-                        other than ourselves. As a child we learn that approval means acceptance, and being accepted means
+                        other than ourselves. As a child we learn that approval means acceptance, and being accepted
+                        means
                         that we
                         have that relationship we depend on for survival.<br/><br/> In moments a child does not feel
                         safe and
-                        feels they could lose the relationship they depend on for survival, their consciousness <Clickable onClick={() => clickedPageChangeScrollToPosition('/shadow-work', 'fragmentation', 'External Validation')} toolTip="What is fragmentation?" toolTipWidth={170} brandOne>fragments</Clickable> in order
-                        to conform with the desire and approval of their caregivers. This behaviour has become normal and
+                        feels they could lose the relationship they depend on for survival, their
+                        consciousness <Clickable
+                            onClick={() => clickedPageChangeScrollToPosition('/shadow-work', 'fragmentation', 'External Validation')}
+                            toolTip="What is fragmentation?" toolTipWidth={170} brandOne>fragments</Clickable> in order
+                        to conform with the desire and approval of their caregivers. This behaviour has become normal
+                        and
                         in some cases, is expected. <br/><br/> We then carry this
                         behaviour over to adulthood and in order to feel safe the only way we learnt how to, we
                         constantly
@@ -116,8 +146,41 @@ const Home = () => {
                 contentSwitch
             >
                 <p className="body-copy">
-                    Being humans, at our core we are relationally dependent. We have relationships with everyone in our lives. Growing up we learn about relationships in our environment. How to treat others, what’s ok to do and what’s not ok to do. Our experiences teach us what our version of love is.<br /><br />We all have relationship dynamics. These are patterns of behaviour between people in the ways that we relate, communicate and interact with each other. <br /><br />Recognising the dynamics that play out in our relationships puts us in a very powerful position. It allows us to navigate the challenges we face with each other. We increase compassion and experience more love and fulfillment throughout our days.<br /><br /> To learn more, book a call</p>
+                    Being humans, at our core we are relationally dependent. We have relationships with everyone in our
+                    lives. Growing up we learn about relationships in our environment. How to treat others, what’s ok to
+                    do and what’s not ok to do. Our experiences teach us what our version of love is.<br/><br/>We all
+                    have relationship dynamics. These are patterns of behaviour between people in the ways that we
+                    relate, communicate and interact with each other. <br/><br/>Recognising the dynamics that play out
+                    in our relationships puts us in a very powerful position. It allows us to navigate the challenges we
+                    face with each other. We increase compassion and experience more love and fulfillment throughout our
+                    days.<br/><br/> To learn more, book a call</p>
             </ImageSideText>
+
+            {/*<BackImageFloatingContent*/}
+            {/*    backgroundImage="/images/pattern-back-4.png"*/}
+            {/*    title="Testimonials"*/}
+            {/*    headingLine*/}
+            {/*    large*/}
+            {/*>*/}
+            {/*    <div className="theme-row">*/}
+            {/*        {testimonials.map((item, key) =>*/}
+            {/*            <TestimonialCard*/}
+            {/*                name={item.name}*/}
+            {/*                message={item.message}*/}
+            {/*            />)}*/}
+            {/*    </div>*/}
+            {/*</BackImageFloatingContent>*/}
+
+            {/*<FullWidthImageTextBanner*/}
+            {/*    title="SHADOW WORK"*/}
+            {/*    description="Find out what the human shadow is and how to use shadow work to heal yourself."*/}
+            {/*    backgroundImage="/images/shadow-1.jpeg"*/}
+            {/*    contentCenter*/}
+            {/*    href="/shadow-work"*/}
+            {/*    cta_text="Find out more"*/}
+            {/*    alt*/}
+            {/*    npPaddTop*/}
+            {/*/>*/}
 
             <FullWidthInfo
                 hTag={3}

@@ -1,0 +1,71 @@
+.context-card {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  background: $brand-black;
+  z-index: 1000;
+  transition: 0.5s;
+  transform: translateX(100%);
+  border: 1px solid $brand-color-one;
+  box-shadow: 0 0 5px 1px rgba($brand-color-one, 0.8) inset;
+  @include media-breakpoint-up(sm) {
+    max-width: 400px;
+  }
+
+  &.active {
+    transform: translateX(0);
+  }
+
+  .context-card-header {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 15px 25px;
+    background: rgba($brand-color-one, 1);
+
+    .context-card-close {
+      position: absolute;
+      right: 5px;
+      top: 5px;
+      background: transparent;
+      border: 0;
+
+      .close-icon {
+        width: 25px;
+        transition: 0.3s;
+      }
+
+      &:hover {
+        .close-icon {
+          transform: scale(1.1);
+        }
+      }
+    }
+
+    .context-card-heading {
+      font-family: $brand-font-heading-one;
+      font-size: 30px;
+      color: $brand-black;
+      text-shadow: 1px 1px $brand-white;
+    }
+  }
+}
+
+.context-card-back {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba($brand-black, 0.6);
+  z-index: 900;
+  transform: translateX(100%);
+
+  &.active {
+    transform: translateX(0);
+  }
+}
+

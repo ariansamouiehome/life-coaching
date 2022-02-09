@@ -100,6 +100,12 @@
       display: inline-block;
       width: auto;
     }
+
+    @for $i from 1 to 10 {
+      .testimonial-card:nth-child(#{$i}) {
+        transition-delay: $i * 0.10s;
+      }
+    }
   }
 
   &.center {
@@ -135,7 +141,8 @@
 
       .content-title,
       .body-copy,
-      .theme-button-wrapper {
+      .theme-button-wrapper,
+      .testimonial-card {
         opacity: 0;
         transform: translateY(30px);
       }
@@ -152,7 +159,8 @@
 
         .content-title,
         .body-copy,
-        .theme-button-wrapper {
+        .theme-button-wrapper,
+        .testimonial-card {
           opacity: 1;
           transform: translateY(0);
         }
