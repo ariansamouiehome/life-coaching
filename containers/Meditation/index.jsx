@@ -5,6 +5,7 @@ import FullWidthVideoPlayer from "components/FullWidthVideoPlayer";
 import FullWidthInfo from "components/FullWidthInfo";
 import AppHead from "components/Layout/AppHead";
 import MediationForm from "components/MediationForm";
+import ContextCard from "components/ContextCard";
 
 const Meditation = () => {
 
@@ -18,6 +19,9 @@ const Meditation = () => {
                 description="Meditation Sessions Held by Arian."
                 image="/images/meditation.jpeg"
             />
+            <ContextCard>
+                child
+            </ContextCard>
             <FullWidthImageTextBanner
                 title="Meditation Sessions"
                 description={`Next session <br />${sessionDate} (Zoom call)`}
