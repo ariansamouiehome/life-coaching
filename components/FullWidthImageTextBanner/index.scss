@@ -197,4 +197,10 @@
       }
     }
   }
+
+  &.no-padding-top {
+    .container {
+      padding-top: 0;
+    }
+  }
 }

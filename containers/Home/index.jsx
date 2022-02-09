@@ -119,15 +119,26 @@ const Home = () => {
                     Being humans, at our core we are relationally dependent. We have relationships with everyone in our lives. Growing up we learn about relationships in our environment. How to treat others, what’s ok to do and what’s not ok to do. Our experiences teach us what our version of love is.<br /><br />We all have relationship dynamics. These are patterns of behaviour between people in the ways that we relate, communicate and interact with each other. <br /><br />Recognising the dynamics that play out in our relationships puts us in a very powerful position. It allows us to navigate the challenges we face with each other. We increase compassion and experience more love and fulfillment throughout our days.<br /><br /> To learn more, book a call</p>
             </ImageSideText>
 
-            <FullWidthInfo
-                hTag={3}
+            <FullWidthImageTextBanner
                 title="SHADOW WORK"
                 description="Find out what the human shadow is and how to use shadow work to heal yourself."
-                cta_show
-                cta_href="/shadow-work"
+                backgroundImage="/images/shadow.webp"
+                contentCenter
+                href="/shadow-work"
                 cta_text="Find out more"
-                headingLine
+                alt
+                npPaddTop
             />
+
+            {/*<FullWidthInfo*/}
+            {/*    hTag={3}*/}
+            {/*    title="SHADOW WORK"*/}
+            {/*    description="Find out what the human shadow is and how to use shadow work to heal yourself."*/}
+            {/*    cta_show*/}
+            {/*    cta_href="/shadow-work"*/}
+            {/*    cta_text="Find out more"*/}
+            {/*    headingLine*/}
+            {/*/>*/}
         </>
     )
 }
