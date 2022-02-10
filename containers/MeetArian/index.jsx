@@ -35,9 +35,9 @@ const MeetArian = () => {
 
             <ImageSideText
                 backgroundImage="/images/iran.webp"
-                title="Where my story started"
+                title="Where My Story Started"
             >
-                <p className="body-copy">Born in the year 1985, I started my life in the middle of the Iran-Iraq war. As all children we grow up knowing only what we experience. In order to protect me, my family tried to keep me away from the war that was happening around us.<br /><br /> In 1990 my mother, myself and older brother left Iran to start a new life in England and was reunited with my father joining us 2 years later. I never realised what was truly going on around me and how much everything was affecting me until I was an adult. <br /><br /> Throughout my life I had always struggled with extreme anxiety to the stage that I was in constant pain mentally as well as physically, but always presumed that what I was feeling was normal and everyone was felling the same.</p>
+                <p className="body-copy">Born in the year 1985, I started my life in the middle of the Iran-Iraq war. As all children we grow up knowing only what we experience. In order to protect me, my family tried to keep me away from the war that was happening around us.<br /><br /> In 1990 my mother, myself and older brother left Iran to start a new life in England and was reunited with my father joining us 2 years later. I never realised what was truly going on around me and how much everything was affecting me until I was an adult. <br /><br /> Throughout my life I had always struggled with extreme anxiety to the stage that I was in constant pain mentally as well as physically, but always presumed that what I was feeling was normal and everyone was feeling the same.</p>
             </ImageSideText>
 
             <BackImageFloatingContent
@@ -52,7 +52,7 @@ const MeetArian = () => {
 
             <ImageSideText
                 backgroundImage="/images/purpose.webp"
-                title="What healing has done."
+                title="What Healing Has Done"
                 contentSwitch
             >
                 <p className="body-copy">I have always known that I should do specific things to improve myself. Maybe I could eat better, or go exercise more. Maybe I spend too much time on social media. Maybe I drink too much and need to cut down. But I struggled to keep any of the things I tried to do consistent. Even though I forced myself to stop, I always eventually went back. I still craved whatever it was that was dragging me to the bad foods. I still didn’t have enough energy to exercise properly. I had to force myself to stay off social media. <br /><br />Healing yourself gets out of the place where you still crave doing the things you know you don’t want to do. Without even trying, my diet has improved. I exercise regularly without effort. My time spent on social media browsing carelessly has reduced to almost none. <br /><br />When we look at all the things around us that we feel like we need to change, it can look like a lot of work, but all you need to do is concentrate on healing yourself. EVERYTHING ELSE will fall into place.</p>

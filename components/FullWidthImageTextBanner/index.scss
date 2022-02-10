@@ -24,9 +24,6 @@
     align-items: center;
     max-width: 1320px;
     min-height: 100vh;
-    animation-name: roundBottom;
-    animation-fill-mode: both;
-    animation-duration: 1s;
     z-index: 20;
 
     .row {
@@ -46,9 +43,6 @@
     background-size: cover;
     background-repeat: no-repeat;
     z-index: 5;
-    animation-name: scaleOutFade;
-    animation-fill-mode: both;
-    animation-duration: 10s;
 
     &:before {
       display: block;
@@ -92,10 +86,6 @@
     }
 
     .content-title {
-      animation-name: fadeUp;
-      animation-fill-mode: both;
-      animation-duration: 2s;
-      animation-delay: 0.5s;
       color: $white;
       font-family: $brand-font-heading-one;
       word-spacing: 10px;
@@ -108,10 +98,6 @@
     }
 
     .body-copy {
-      animation-name: fadeUp;
-      animation-fill-mode: both;
-      animation-duration: 1s;
-      animation-delay: 0.7s;
       color: rgba($white, 0.7);
       font-family: $brand-font-copy-one;
       text-shadow: 1px 1px $brand-black;
@@ -119,13 +105,6 @@
       @include media-breakpoint-up(sm) {
         text-shadow: 2px 2px $brand-black;
       }
-    }
-
-    .theme-button {
-      animation-name: fadeUp;
-      animation-fill-mode: both;
-      animation-duration: 1s;
-      animation-delay: 1.5s;
     }
   }
 
@@ -200,7 +179,90 @@
 
   &.no-padding-top {
     .container {
-      padding-top: 0;
+      padding: 30px 15px;
+      @include media-breakpoint-up(sm) {
+        padding: 0 15px;
+      }
+      .inner-content {
+        transform: translateY(0);
+      }
+    }
+  }
+
+  &.intro {
+    .inner-image {
+      animation-name: scaleOutFade;
+      animation-fill-mode: both;
+      animation-duration: 10s;
+    }
+
+    .container {
+      animation-name: roundBottom;
+      animation-fill-mode: both;
+      animation-duration: 1s;
+    }
+
+    .inner-content {
+      .content-title {
+        animation-name: fadeUp;
+        animation-fill-mode: both;
+        animation-duration: 2s;
+        animation-delay: 0.5s;
+      }
+
+      .body-copy {
+        animation-name: fadeUp;
+        animation-fill-mode: both;
+        animation-duration: 1s;
+        animation-delay: 0.7s;
+      }
+
+      .theme-button {
+        animation-name: fadeUp;
+        animation-fill-mode: both;
+        animation-duration: 1s;
+        animation-delay: 1.5s;
+      }
+    }
+  }
+
+  &.aos-init {
+    .inner-image {
+      transition: 2s;
+      opacity: 0;
+      transform: scale(1.1);
+    }
+
+    .container {
+      transition: 1s;
+      opacity: 0;
+      transform: translateY(25px);
+    }
+
+    .inner-content {
+      .content-title, .body-copy, .theme-button {
+        transition: 1s;
+        opacity: 0;
+        transform: translateY(25px);
+      }
+    }
+    &.aos-animate {
+      .inner-image {
+        opacity: 1;
+        transform: scale(1);
+      }
+
+      .container {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .inner-content {
+        .content-title, .body-copy, .theme-button {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
     }
   }
 }

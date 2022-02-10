@@ -33,20 +33,20 @@ const Home = () => {
     ];
     const testimonials = [
         {
-            name: 'Asli Ungan',
-            message: 'In the moment of trauma, a person experiences distress without resolve. When this happens our consciousness fragments into parts.',
+            name: 'Jenni Wardell',
+            message: 'Arian makes sure there is an ongoing conversation and makes you feel comfortable from the get go. Amazing process.',
         },
         {
             name: 'Taba Fard',
-            message: 'In the moment of trauma, a person experiences distress without resolve. When this happens our consciousness fragments into parts.',
+            message: 'I found the meditation very helpful and useful for me who always has negative thoughts. I will recommend it to my friends and family.',
         },
         {
-            name: 'Jim Jeffreys',
-            message: 'In the moment of trauma, a person experiences distress without resolve. When this happens our consciousness fragments into parts.',
+            name: 'AR',
+            message: 'Such a deeply relaxing meditation led by Arian who clearly has much insight and knowledge. The information he holds and his desire to enhance the lives of others will do much to advance society. Thank you.',
         },
         {
-            name: 'Toad Smith',
-            message: 'In the moment of trauma, a person experiences distress without resolve. When this happens our consciousness fragments into parts.',
+            name: 'Isaac Orr',
+            message: 'I\'ve never felt more at ease with my mind and soul. Looking forward to attend another session, best meditation I\'ve experienced in years!',
         },
     ];
     const {clickedPageChangeScrollToPosition} = useContext(PageChangeContext);
@@ -90,8 +90,6 @@ const Home = () => {
             <ImageSideText
                 backgroundImage="/images/self-love.webp"
                 title="What is self love?"
-                href="/book-a-call"
-                cta_text="book a call"
             >
                 <p className="body-copy">We react the same way when speaking to ourselves as we would if someone else
                     was speaking to us. If a friend spoke to you the way you speak to yourself, would you still be their
@@ -153,44 +151,45 @@ const Home = () => {
                     relate, communicate and interact with each other. <br/><br/>Recognising the dynamics that play out
                     in our relationships puts us in a very powerful position. It allows us to navigate the challenges we
                     face with each other. We increase compassion and experience more love and fulfillment throughout our
-                    days.<br/><br/> To learn more, book a call</p>
+                    days.</p>
             </ImageSideText>
 
-            {/*<BackImageFloatingContent*/}
-            {/*    backgroundImage="/images/pattern-back-4.png"*/}
-            {/*    title="Testimonials"*/}
-            {/*    headingLine*/}
-            {/*    large*/}
-            {/*>*/}
-            {/*    <div className="theme-row">*/}
-            {/*        {testimonials.map((item, key) =>*/}
-            {/*            <TestimonialCard*/}
-            {/*                name={item.name}*/}
-            {/*                message={item.message}*/}
-            {/*            />)}*/}
-            {/*    </div>*/}
-            {/*</BackImageFloatingContent>*/}
+            <BackImageFloatingContent
+                backgroundImage="/images/pattern-back-4.png"
+                title="Testimonials"
+                headingLine
+                large
+            >
+                <div className="theme-row">
+                    {testimonials.map((item, key) =>
+                        <TestimonialCard
+                            name={item.name}
+                            message={item.message}
+                        />)}
+                </div>
+            </BackImageFloatingContent>
 
-            {/*<FullWidthImageTextBanner*/}
-            {/*    title="SHADOW WORK"*/}
-            {/*    description="Find out what the human shadow is and how to use shadow work to heal yourself."*/}
-            {/*    backgroundImage="/images/shadow-1.jpeg"*/}
-            {/*    contentCenter*/}
-            {/*    href="/shadow-work"*/}
-            {/*    cta_text="Find out more"*/}
-            {/*    alt*/}
-            {/*    npPaddTop*/}
-            {/*/>*/}
-
-            <FullWidthInfo
-                hTag={3}
+            <FullWidthImageTextBanner
                 title="SHADOW WORK"
                 description="Find out what the human shadow is and how to use shadow work to heal yourself."
-                cta_show
-                cta_href="/shadow-work"
+                backgroundImage="/images/shadow-1.jpeg"
+                contentCenter
+                href="/shadow-work"
                 cta_text="Find out more"
-                headingLine
+                alt
+                noPaddTop
+                animation
             />
+
+            {/*<FullWidthInfo*/}
+            {/*    hTag={3}*/}
+            {/*    title="SHADOW WORK"*/}
+            {/*    description="Find out what the human shadow is and how to use shadow work to heal yourself."*/}
+            {/*    cta_show*/}
+            {/*    cta_href="/shadow-work"*/}
+            {/*    cta_text="Find out more"*/}
+            {/*    headingLine*/}
+            {/*/>*/}
         </>
     )
 }

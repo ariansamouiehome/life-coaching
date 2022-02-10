@@ -69,7 +69,7 @@ export default async (req, res) => {
         <a href="https://www.meetup.com/online-healing-meditation/" target="_blank"
             style="width: 100%; max-width: 320px; display: block; padding: 15px; text-align: center; color: #fff; background: #e51937; text-decoration: none; border-radius: 5px;"
         >
-            Join MettUp Group
+            Join MeetUp Group
         </a>
         
         <br />
