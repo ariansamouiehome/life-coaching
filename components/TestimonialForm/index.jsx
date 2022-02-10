@@ -88,7 +88,7 @@ const TestimonialForm = (props) => {
                             name="testimonialName"
                             value="testimonialName"
                             type="text"
-                            label="Name"
+                            label="Full Name"
                             placeholder="Adam Smith"
                             errorActive={errorActive}
                             loading={loading}

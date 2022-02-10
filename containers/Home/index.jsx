@@ -38,7 +38,7 @@ const Home = () => {
         },
         {
             name: 'Taba Fard',
-            message: 'I found the meditation very helpful and useful for me who always has negative thoughts. I will recommend it to my friends and family.',
+            message: 'I found the meditation very helpful and useful for someone like me who has always had negative thoughts. I will recommend it to my friends and family.',
         },
         {
             name: 'AR',
@@ -96,9 +96,7 @@ const Home = () => {
                     friend? The only difference is we can get away from that friend, but we cannot get away from
                     ourselves.<br/><br/>Learn how to accept the ego and change the judgmental thoughts you have about
                     yourself given to you by others. <br/><br/>Being aware of how you treat yourself is one of the most
-                    powerful things you can learn as a human.<br/><br/> To learn more about self love, get in
-                    touch. <br/><br/><Clickable href="https://youtu.be/xA5CGvqv05Y" target>Watch Self Love Video On
-                        YouTube</Clickable></p>
+                    powerful things you can learn as a human.<br/><br/> To learn more about self love, Watch <Clickable href="https://youtu.be/xA5CGvqv05Y" target>"What Is Self Love"</Clickable> Video On YouTube.</p>
             </ImageSideText>
 
             <div id="external-validation">
@@ -131,8 +129,8 @@ const Home = () => {
                         behaviour over to adulthood and in order to feel safe the only way we learnt how to, we
                         constantly
                         search for that approval externally. In some extreme cases, someone seeking external validation
-                        would be considered as a people pleaser.<br/><br/> To learn more about how to heal from seeking
-                        external validation, get in touch.</p>
+                        would be considered as a people pleaser.<br/><br/> To learn more about why we seek
+                        external validation watch <Clickable href="https://youtu.be/SaJq3Yx436M" target>"Why We Seek External Validation"</Clickable> video On YouTube.</p>
                 </BackImageFloatingContent>
             </div>
 

@@ -67,7 +67,7 @@ const Meditation = () => {
                 description="It would be great to hear what you thought about the session.<br /> Please share a few thoughts about your experience."
                 cta_show
                 cta_onClick={() => setTestimonialState(true)}
-                cta_text="Add Testimonial"
+                cta_text="Submit Testimonial"
                 headingLine
             />
         </>
