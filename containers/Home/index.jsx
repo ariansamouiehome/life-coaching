@@ -33,6 +33,10 @@ const Home = () => {
     ];
     const testimonials = [
         {
+            name: 'Asli',
+            message: 'This meditation helped me so much to calm my mind and detach from my thoughts. I loved Arians voice and guidance through the process with his open heart. Thank you so much, will definitely join again. 🙏',
+        },
+        {
             name: 'Jenni Wardell',
             message: 'Arian makes sure there is an ongoing conversation and makes you feel comfortable from the get go. Amazing process.',
         },
