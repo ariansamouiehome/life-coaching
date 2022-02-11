@@ -1,38 +1,38 @@
+.admin-panel-nav {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+  justify-content: center;
+  background: $brand-black;
+
+  .admin-logo {
+    display: flex;
+
+    .admin-logo-image {
+      height: 50px;
+      transition: 0.5s;
+    }
+
+    &:hover {
+      .admin-logo-image {
+        transform: scale(0.9);
+      }
+    }
+  }
+
+  .theme-button {
+    margin: 0 10px;
+  }
+
+  &.nav {
+    padding: 15px 15px 50px;
+  }
+}
+
 .admin-panel {
   background: $brand-color-one;
   min-height: 100vh;
-
-  .admin-panel-nav {
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    padding: 15px;
-    justify-content: center;
-    background: $brand-black;
-
-    .admin-logo {
-      display: flex;
-
-      .admin-logo-image {
-        height: 50px;
-        transition: 0.5s;
-      }
-
-      &:hover {
-        .admin-logo-image {
-          transform: scale(0.9);
-        }
-      }
-    }
-
-    .theme-button {
-      margin: 0 10px;
-    }
-
-    &.nav {
-      padding: 15px 15px 50px;
-    }
-  }
 
   .admin-panel-login {
     min-height: 400px;

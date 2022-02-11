@@ -1,0 +1,17 @@
+.profile-section {
+  display: flex;
+  width: 100%;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  background: $brand-color-one;
+  padding: 30px 15px;
+
+  .image-wrapper {
+    display: flex;
+    position: relative;
+    .profile-image {
+
+    }
+  }
+}

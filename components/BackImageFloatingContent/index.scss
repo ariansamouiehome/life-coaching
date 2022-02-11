@@ -130,6 +130,10 @@
     }
   }
 
+  &.no-padding-top {
+    padding-top: 15px;
+  }
+
   &.aos-init {
     .inner-image {
       opacity: 0;

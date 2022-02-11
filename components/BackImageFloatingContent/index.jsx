@@ -14,6 +14,7 @@ const BackImageFloatingContent = (props) => {
         curveBottom,
         center,
         large,
+        noPaddTop,
     } = props;
 
     const ctaOutput = () => {
@@ -53,7 +54,7 @@ const BackImageFloatingContent = (props) => {
     }
 
     return (
-        <Container fluid className={`back-image-floating-content ${curveBottom ? 'curve-bottom' : ''} ${center ? 'center' : ''}`} data-aos>
+        <Container fluid className={`back-image-floating-content ${curveBottom ? 'curve-bottom' : ''} ${center ? 'center' : ''} ${noPaddTop ? 'no-padding-top' : ''}`} data-aos>
             <Col xs={12} className="inner-image" style={{backgroundImage: `url(${backgroundImage})`}}/>
             <Container>
                 <Row>

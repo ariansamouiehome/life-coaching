@@ -7,7 +7,7 @@ import Clickable from "components/Elements/Clickable";
 import MailingListForm from "components/MailingListForm";
 import ColumnInfoImage from "components/ColumnInfoImage";
 
-const Footer = () => {
+const Footer = ({show}) => {
 
     const router = useRouter();
 
@@ -22,7 +22,7 @@ const Footer = () => {
                 />
                 <MailingListForm/>
             </>}
-            <footer className={`main-footer ${router.asPath === '/admin' ? 'admin' : ''}`} data-aos>
+            {show && <footer className={`main-footer ${router.asPath === '/admin' ? 'admin' : ''}`} data-aos>
                 <Container>
                     <Row>
                         <Col xs={12} className="main-footer-content">
@@ -111,7 +111,7 @@ const Footer = () => {
                         </Col>
                     </Row>
                 </Container>
-            </footer>
+            </footer>}
         </>
     )
 }

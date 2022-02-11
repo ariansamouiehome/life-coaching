@@ -15,6 +15,7 @@ const MyApp = ({Component, pageProps}) => {
     const router = useRouter();
 
     // States
+    const [show, setShow] = useState(null);
     const [loggedIn, setLoggedIn] = useState(true);
     const [showNav, setShowNav] = useState(false);
     const [showBackToButton, setShowBackToButton] = useState(false);
@@ -57,6 +58,7 @@ const MyApp = ({Component, pageProps}) => {
             offset: isMobile ? 50 : 250,
             once: true
         });
+        checkToShow();
         // axios.get('/api/bag')
         //     .then(data => {
         //         console.log(data);
@@ -73,16 +75,25 @@ const MyApp = ({Component, pageProps}) => {
         document.documentElement.scrollTo({ top: 0, behavior: 'auto' });
         setShowNav(false);
         setShowBackToButton(false);
+        checkToShow();
     });
+
+    const checkToShow = () => {
+        if (router.asPath === '/links') {
+            setShow(false);
+        } else {
+            setShow(true);
+        }
+    }
 
     return (
         <PageChangeContext.Provider value={{pageScrollTarget, showBackToButton, bag, setBag, loggedIn, clickedPageChangeScrollToPosition}}>
-            <Header
+            {show && <Header
                 showNav={showNav}
                 setShowNav={setShowNav}
-            />
+            />}
             <Component {...pageProps} />
-            <Footer/>
+            <Footer show={show}/>
         </PageChangeContext.Provider>
     )
 }
