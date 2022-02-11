@@ -15,7 +15,7 @@ const MailingListForm = (props) => {
         {
             name: 'mailingListName',
             type: 'text',
-            label: 'Name',
+            label: 'Full Name',
             placeholder: 'Adam Smith',
             errorMessage: 'stop it'
         },
