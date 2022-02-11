@@ -134,39 +134,43 @@
     padding-top: 25px;
   }
 
-  &.aos-init {
-    .inner-image {
-      opacity: 0;
-      transform: scale(1.2);
-    }
-    .inner-content {
-      opacity: 0;
-      transform: translateY(30px);
+  &.animation {
+    &.aos-init {
+      .inner-image {
+        opacity: 0;
+        transform: scale(1.2);
+      }
 
-      .content-title,
-      .body-copy,
-      .theme-button-wrapper,
-      .testimonial-card {
+      .inner-content {
         opacity: 0;
         transform: translateY(30px);
-      }
-    }
-
-    &.aos-animate {
-      .inner-image {
-        opacity: 0.15;
-        transform: scale(1);
-      }
-      .inner-content {
-        opacity: 1;
-        transform: translateY(0);
 
         .content-title,
         .body-copy,
         .theme-button-wrapper,
         .testimonial-card {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+      }
+
+      &.aos-animate {
+        .inner-image {
+          opacity: 0.15;
+          transform: scale(1);
+        }
+
+        .inner-content {
           opacity: 1;
           transform: translateY(0);
+
+          .content-title,
+          .body-copy,
+          .theme-button-wrapper,
+          .testimonial-card {
+            opacity: 1;
+            transform: translateY(0);
+          }
         }
       }
     }

@@ -32,6 +32,7 @@ const Links = () => {
                 large
                 center
                 noPaddTop
+                noAnimation
             >
                 <div className="theme-row">
                     {linkItems.map((item, key) => <LinksCard
