@@ -1,34 +1,84 @@
 import React from 'react';
 import BackImageFloatingContent from "components/BackImageFloatingContent";
 import AppHead from "components/Layout/AppHead";
-import TestimonialCard from "components/TestimonialCard";
 import Link from "next/link";
 import {Col} from "reactstrap";
 import ProfileSection from "components/ProfileSection";
+import LinksCard from "components/LinksCard";
 
 const Links = () => {
 
     // Data
-    const testimonials = [
+    const links = [
         {
-            name: 'Asli',
-            message: 'This meditation helped me so much to calm my mind and detach from my thoughts. I loved Arians voice and guidance through the process with his open heart. Thank you so much, will definitely join again. 🙏',
+            title: 'What Is Trauma Video - YouTube',
+            href: 'https://youtu.be/v8GP6tn4798',
+            external: true,
+            icon: '<svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 24 24"><path d="M23,9.71a8.5,8.5,0,0,0-.91-4.13,2.92,2.92,0,0,0-1.72-1A78.36,78.36,0,0,0,12,4.27a78.45,78.45,0,0,0-8.34.3,2.87,2.87,0,0,0-1.46.74c-.9.83-1,2.25-1.1,3.45a48.29,48.29,0,0,0,0,6.48,9.55,9.55,0,0,0,.3,2,3.14,3.14,0,0,0,.71,1.36,2.86,2.86,0,0,0,1.49.78,45.18,45.18,0,0,0,6.5.33c3.5.05,6.57,0,10.2-.28a2.88,2.88,0,0,0,1.53-.78,2.49,2.49,0,0,0,.61-1,10.58,10.58,0,0,0,.52-3.4C23,13.69,23,10.31,23,9.71ZM9.74,14.85V8.66l5.92,3.11C14,12.69,11.81,13.73,9.74,14.85Z"/></svg>',
         },
         {
-            name: 'Jenni Wardell',
-            message: 'Arian makes sure there is an ongoing conversation and makes you feel comfortable from the get go. Amazing process.',
+            title: 'Join MeetUp Group',
+            href: 'https://www.meetup.com/online-healing-meditation/',
+            external: true,
+            icon: '<svg fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="50px" height="50px">    <path d="M 15 1 A 1 1 0 0 0 14 2 A 1 1 0 0 0 15 3 A 1 1 0 0 0 16 2 A 1 1 0 0 0 15 1 z M 28 2 A 2 2 0 0 0 26 4 A 2 2 0 0 0 28 6 A 2 2 0 0 0 30 4 A 2 2 0 0 0 28 2 z M 22 6 C 17.543 6 13.710453 8.8770312 12.439453 13.082031 C 8.7734531 13.597031 6 16.723 6 20.5 C 6 21.692 6.2832187 22.858062 6.8242188 23.914062 C 5.6432187 25.343062 5 27.122 5 29 C 5 32.673 7.5218594 35.846188 11.005859 36.742188 C 11.002859 36.829188 11 36.915 11 37 C 11 41.411 14.589 45 19 45 C 20.859 45 22.609297 44.373844 24.029297 43.214844 C 25.228297 44.360844 26.809 45 28.5 45 C 31.531 45 34.137313 42.871047 34.820312 39.998047 C 34.881312 39.999047 34.94 40 35 40 C 39.963 40 44 35.962 44 31 C 44 29.261 43.512984 27.605156 42.583984 26.160156 C 43.492984 25.157156 44 23.865 44 22.5 C 44 19.97 42.277062 17.826172 39.914062 17.201172 C 39.971063 16.797172 40 16.396 40 16 C 40 11.038 35.963 7 31 7 C 29.809 7 28.651734 7.2333594 27.552734 7.6933594 C 25.901734 6.5833594 23.994 6 22 6 z M 9.5 8 A 1.5 1.5 0 0 0 8 9.5 A 1.5 1.5 0 0 0 9.5 11 A 1.5 1.5 0 0 0 11 9.5 A 1.5 1.5 0 0 0 9.5 8 z M 44 13 A 2 2 0 0 0 42 15 A 2 2 0 0 0 44 17 A 2 2 0 0 0 46 15 A 2 2 0 0 0 44 13 z M 26.941406 15 C 28.223406 15 29.305375 15.810406 29.734375 16.941406 C 29.753375 16.991406 29.811562 17.006703 29.851562 16.970703 C 30.567563 16.332703 31.518406 16.003906 32.566406 16.003906 C 33.816406 16.003906 35 16.873047 35 18.873047 C 35 21.123047 33.625 23.123047 31.5 27.998047 C 31.294 28.470047 31 29.302047 31 29.998047 C 31 30.874047 31.5 32 33.5 32 C 34.328 32 35 32.672 35 33.5 C 35 34.328 34.328 35 33.5 35 C 27.375 35 27 31.75 27 31 C 27 30.129 27.0735 29.548 27.3125 28.875 C 27.3665 28.723 30.885016 21.471391 30.916016 21.400391 C 30.975016 21.265391 31.002 21.126281 31 20.988281 C 30.995 20.608281 30.772391 20.246984 30.400391 20.083984 C 29.894391 19.861984 29.304984 20.092656 29.083984 20.597656 C 29.083984 20.597656 24.538469 30.526266 24.355469 30.947266 C 23.970469 31.833266 22.939734 32.239516 22.052734 31.853516 C 21.387734 31.564516 20.991047 30.912469 20.998047 30.230469 C 21.000047 30.003469 21.048531 29.772781 21.144531 29.550781 C 21.340531 29.099781 23.924734 22.450406 23.927734 22.441406 C 23.972734 22.323406 23.998047 22.195547 23.998047 22.060547 C 24.000047 21.475547 23.5245 21 22.9375 21 C 22.4825 21 22.094359 21.287453 21.943359 21.689453 C 21.200359 23.633453 18.349266 31.193859 18.072266 32.005859 C 17.653266 33.233859 16.486797 33.99 15.216797 34 C 14.864797 34.003 14.505344 33.959844 14.152344 33.839844 C 12.521344 33.283844 11.632969 31.562141 12.167969 29.994141 C 12.561969 28.837141 15.362609 19.817141 15.724609 18.619141 C 16.200609 17.046141 17.314453 16 19.564453 16 C 21.189453 16 22.425781 17 23.425781 17 C 24.191781 17 24.941406 15 26.941406 15 z M 49 20 A 1 1 0 0 0 48 21 A 1 1 0 0 0 49 22 A 1 1 0 0 0 50 21 A 1 1 0 0 0 49 20 z M 2 21 A 2 2 0 0 0 0 23 A 2 2 0 0 0 2 25 A 2 2 0 0 0 4 23 A 2 2 0 0 0 2 21 z M 46.5 25 A 1.5 1.5 0 0 0 45 26.5 A 1.5 1.5 0 0 0 46.5 28 A 1.5 1.5 0 0 0 48 26.5 A 1.5 1.5 0 0 0 46.5 25 z M 8 39 A 1 1 0 0 0 7 40 A 1 1 0 0 0 8 41 A 1 1 0 0 0 9 40 A 1 1 0 0 0 8 39 z M 38 42 A 2 2 0 0 0 36 44 A 2 2 0 0 0 38 46 A 2 2 0 0 0 40 44 A 2 2 0 0 0 38 42 z M 23.5 46 A 1.5 1.5 0 0 0 22 47.5 A 1.5 1.5 0 0 0 23.5 49 A 1.5 1.5 0 0 0 25 47.5 A 1.5 1.5 0 0 0 23.5 46 z"/></svg>',
         },
         {
-            name: 'Taba Fard',
-            message: 'I found the meditation very helpful and useful for someone like me who has always had negative thoughts. I will recommend it to my friends and family.',
+            title: 'Free Meditation Session Form',
+            href: '/meditation-sessions',
+            external: false,
+            icon: '<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"\n' +
+                '\t viewBox="0 0 297 297" style="enable-background:new 0 0 297 297;" xml:space="preserve">\n' +
+                '<g>\n' +
+                '\t<path d="M148.5,101.331c25.373,0,46.81-22.32,46.81-48.74c0-25.166-20.561-44.879-46.81-44.879s-46.81,19.714-46.81,44.879\n' +
+                '\t\tC101.69,79.011,123.127,101.331,148.5,101.331z"/>\n' +
+                '\t<path d="M29.796,224.548l34.315,2.939l25.542-55.189c1.485-3.208,5.002-4.959,8.455-4.192c3.453,0.76,5.913,3.82,5.913,7.356\n' +
+                '\t\tv27.128l83.165-81.873c-13.678-3.931-28.293-5.998-38.687-5.998c-20.662,0-58.012,8.161-71.499,22.917\n' +
+                '\t\tc-14.451,15.812-41.014,59.399-57.276,86.981C23.036,224.177,26.418,224.139,29.796,224.548z"/>\n' +
+                '\t<path d="M288.551,245.577c-5.371-4.741-12.529-6.956-19.632-6.061l-82.027,10.253l8.648,39.519h76.478\n' +
+                '\t\tc13.775,0,24.982-11.208,24.982-24.983C297,257.143,293.921,250.317,288.551,245.577z"/>\n' +
+                '\t<path d="M24.985,239.323c-6.054,0-11.947,2.203-16.536,6.255C3.079,250.317,0,257.143,0,264.305\n' +
+                '\t\tc0,13.776,11.208,24.983,24.982,24.983h155.136l-8.195-37.448C171.924,251.841,26.014,239.323,24.985,239.323z"/>\n' +
+                '\t<path d="M104.022,230.905l58.073,4.974h14.456l16.427-2.053v-58.364c0-3.536,2.46-6.596,5.913-7.356\n' +
+                '\t\tc3.453-0.765,6.97,0.985,8.455,4.192l26.132,56.465l33.571-4.196c3.429-0.427,6.862-0.397,10.224,0.049\n' +
+                '\t\tc-16.264-27.583-42.828-71.172-57.276-86.98c-3.968-4.342-10.011-8.107-17.078-11.267l-98.899,97.362V230.905z"/>\n' +
+                '</g>\n' +
+                '<g>\n' +
+                '</g>\n' +
+                '<g>\n' +
+                '</g>\n' +
+                '<g>\n' +
+                '</g>\n' +
+                '<g>\n' +
+                '</g>\n' +
+                '<g>\n' +
+                '</g>\n' +
+                '<g>\n' +
+                '</g>\n' +
+                '<g>\n' +
+                '</g>\n' +
+                '<g>\n' +
+                '</g>\n' +
+                '<g>\n' +
+                '</g>\n' +
+                '<g>\n' +
+                '</g>\n' +
+                '<g>\n' +
+                '</g>\n' +
+                '<g>\n' +
+                '</g>\n' +
+                '<g>\n' +
+                '</g>\n' +
+                '<g>\n' +
+                '</g>\n' +
+                '<g>\n' +
+                '</g>\n' +
+                '</svg>',
         },
         {
-            name: 'AR',
-            message: 'Such a deeply relaxing meditation led by Arian who clearly has much insight and knowledge. The information he holds and his desire to enhance the lives of others will do much to advance society. Thank you.',
-        },
-        {
-            name: 'Isaac Orr',
-            message: 'I\'ve never felt more at ease with my mind and soul. Looking forward to attend another session, best meditation I\'ve experienced in years!',
+            title: 'Website',
+            href: '/',
+            external: false,
+            icon: '',
         },
     ];
 
@@ -47,7 +97,7 @@ const Links = () => {
                     </a>
                 </Link>
             </Col>
-            <ProfileSection image="" />
+            <ProfileSection image="/images/profile-pic-1.jpeg"/>
             <BackImageFloatingContent
                 backgroundImage="/images/pattern-back-4.png"
                 title="Links"
@@ -57,7 +107,12 @@ const Links = () => {
                 noPaddTop
             >
                 <div className="theme-row">
-
+                    {links.map((item, key) => <LinksCard
+                        href={item.href}
+                        external={item.external}
+                        icon={item.icon}
+                        title={item.title}
+                    />)}
                 </div>
             </BackImageFloatingContent>
         </>
