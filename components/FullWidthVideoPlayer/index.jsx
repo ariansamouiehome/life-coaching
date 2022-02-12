@@ -3,7 +3,7 @@ import {Col, Container, Row} from "reactstrap";
 
 const FullWidthVideoPlayer = (props) => {
 
-    const {title, hTag, iframeSrc, thumbnailImage} = props
+    const {title, hTag, iframeSrc, thumbnailImage, paddingTop} = props
 
     const [play, setPlay] = useState(false);
     const src = play ? `${iframeSrc}&autoplay=1` : iframeSrc
@@ -32,7 +32,7 @@ const FullWidthVideoPlayer = (props) => {
     }
 
     return (
-        <Container className="full-width-video-player" fluid data-aos>
+        <Container className={`full-width-video-player ${paddingTop ? 'padding-top' : ''}`} fluid data-aos>
             <Container>
                 <Row>
                     {title && <Col xs={12} className="full-width-video-player-header">

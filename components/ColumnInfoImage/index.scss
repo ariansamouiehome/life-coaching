@@ -74,6 +74,12 @@
       @include media-breakpoint-up(xs) {
         font-size: 18px;
       }
+
+      span {
+        color: $brand-color-one;
+        font-family: $brand-font-heading-one;
+        font-size: 30px;
+      }
     }
   }
 
