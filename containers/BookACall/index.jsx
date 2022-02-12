@@ -36,7 +36,7 @@ const BookACall = () => {
                 backgroundImage="/images/healing.jpeg"
                 title="What is the goal?"
             >
-                <p className="body-copy">In these sessions we will dive deep into your life experiences and uncover the areas of your life that has caused you to arrive at the place you are today.<br /><br />We will dive deep and heal the traumas from your childhood that has been affecting you in your adulthood.<br /><br />I will teach you how to get to a normal state of being and how to release anxiety.<br /><br /> You will learn what trauma is, how we deal with it as humans and multiple ways to heal yourself from it.<br /><br />The skills that you will learn is something that you will take away with you and continuously apply throughout your life, as healing is a lifestyle.</p>
+                <p className="body-copy">In these sessions we will dive deep into your life experiences and uncover the areas of your life that has caused you to arrive at the place you are today.<br /><br />We will heal the traumas from your childhood that you have carried to your adulthood.<br /><br />I will teach you how to get to a normal state of being, what shadow work is and how to release anxiety.<br /><br />We will cover how to practise self love and as a reflection, increase the love you will have in your life. <br /><br /> You will learn what trauma is, how we deal with it as humans and how to heal yourself from it.<br /><br />The skills that you will learn is something that you will take away with you and continuously apply throughout your life, as healing is a lifestyle.</p>
             </ImageSideText>
 
             <FullWidthVideoPlayer
@@ -49,7 +49,7 @@ const BookACall = () => {
             <ColumnInfoImage
                 noCurve
                 title="Interested in this course?"
-                description="Fill out the form and tell me a little about yourself. <br /> I will then get in touch arrange the start of your healing journey.<br /> <span>12 weeks - £2490</span>"
+                description="Fill out the form and tell me a little about yourself. <br /> I will then get in touch and arrange the start of your healing journey.<br /> <span>12 Weeks - £2990</span>"
             />
 
             <ContactForm />
