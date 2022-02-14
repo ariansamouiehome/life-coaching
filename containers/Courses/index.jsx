@@ -54,8 +54,8 @@ const Courses = () => {
             <ImageSideText
                 backgroundImage="/images/self-invest.jpeg"
                 title="Self Investment"
-                cta_text="Learn More"
-                onClick={() => scrollToPosition('video-component')}
+                // cta_text="Learn More"
+                // onClick={() => scrollToPosition('video-component')}
             >
                 <p className="body-copy">We tend to find it very easy to invest our time in doing things that may give
                     us "quick win" feelings. Things such as going out to the club and bars to take our minds off the

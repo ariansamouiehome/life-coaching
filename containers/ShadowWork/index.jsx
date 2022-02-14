@@ -53,8 +53,6 @@ const ShadowWork = () => {
             <BackImageFloatingContent
                 backgroundImage="/images/pattern-back-4.png"
                 title="Societal Socialising"
-                href="/work-with-me"
-                cta_text="START HEALING"
                 headingLine
                 backgroundFade
                 curveBottom
@@ -74,15 +72,15 @@ const ShadowWork = () => {
                     <br/>The way we heal from this is to find those aspects of ourselves that we denied, rejected and
                     disowned from our subconscious and bring them to the light of our consciousness. We do this with
                     having unconditional love for those parts and opening up so that we can finally hear what they have
-                    to say. <br/> <br/> To learn more about shadow work, get in touch.</p>
+                    to say.</p>
             </BackImageFloatingContent>
 
             <div id="fragmentation">
                 <ImageSideText
                     backgroundImage="/images/mirror.webp"
                     title="What Is Fragmentation?"
-                    href="/work-with-me"
-                    cta_text="WORK WITH ME"
+                    href="/courses"
+                    cta_text="Online Courses"
                 >
                     <p className="body-copy">Fragmentation is the primary coping mechanism for a physical
                         human.<br/><br/>We have an outdated definition of the meaning for trauma. We tend to define
@@ -91,8 +89,8 @@ const ShadowWork = () => {
                         everyone has fragmentation within their being.<br/><br/> As humans the way we cope with trauma
                         is that we dissociate. Every time we experience trauma (distress without resolve), your
                         consciousness splits into parts. And the way we cope is by burying those feelings deep in our
-                        subconscious when the split occurs.<br/><br/> In order to heal we must reintegrate those
-                        fragments into our being. To learn more about Fragmentation, get in touch and book a call.</p>
+                        subconscious when the split occurs. In order to heal we must reintegrate those
+                        fragments into our being. <br/> <br/> To learn more about shadow work, check out my online courses.</p>
 
                     {showBackToButton && <Clickable
                         onClick={() => clickedPageChangeScrollToPosition('/', 'external-validation', '')}

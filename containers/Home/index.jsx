@@ -102,7 +102,7 @@ const Home = () => {
                 <BackImageFloatingContent
                     backgroundImage="/images/pattern-back-4.png"
                     title="Why Do We Seek External Validation?"
-                    href="/work-with-me"
+                    href="/courses"
                     cta_text="start healing"
                     headingLine
                     curveBottom
@@ -136,13 +136,16 @@ const Home = () => {
             <ImageSideText
                 backgroundImage="/images/self-love.webp"
                 title="What is self love?"
+                href="/courses"
+                cta_text="Start Healing"
             >
                 <p className="body-copy">We react the same way when speaking to ourselves as we would if someone else
                     was speaking to us. If a friend spoke to you the way you speak to yourself, would you still be their
                     friend? The only difference is we can get away from that friend, but we cannot get away from
                     ourselves.<br/><br/>Learn how to accept the ego and change the judgmental thoughts you have about
                     yourself given to you by others. <br/><br/>Being aware of how you treat yourself is one of the most
-                    powerful things you can learn as a human.<br/><br/> To learn more about self love, Watch <Clickable href="https://youtu.be/xA5CGvqv05Y" target>"What Is Self Love"</Clickable> Video On YouTube.</p>
+                    powerful things you can learn as a human.<br/><br/> Watch <Clickable href="https://youtu.be/xA5CGvqv05Y" target>"What Is Self Love"</Clickable> Video On YouTube.
+                    <br /><br />To learn about self love and how to apply it, sign up to my online course.</p>
             </ImageSideText>
 
             <BackImageFloatingContent
@@ -163,8 +166,8 @@ const Home = () => {
             <ImageSideText
                 backgroundImage="/images/relationship.webp"
                 title="Do your relationships have the same outcome?"
-                href="/work-with-me"
-                cta_text="Work With Me"
+                href="/courses"
+                cta_text="Learn to heal"
                 contentSwitch
             >
                 <p className="body-copy">

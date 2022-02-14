@@ -48,7 +48,7 @@ const Courses = (props) => {
                 {comingSoon && <>
                     <ColumnInfoImage
                         noCurve
-                        title="Interested in this course?"
+                        title="Interested In This Course?"
                         description={`This course is currently being created.<br /> If you are interested in taking this course please fill out your details and I will contact you when it is live.<br /> (Estimated Release Date - ${comingSoonDate})`}
                     />
 

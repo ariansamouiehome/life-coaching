@@ -1,9 +1,10 @@
 const courses =[
     {
+        altCard: false,
         title: "Heal Your Trauma",
         backgroundImage: '/images/trauma.jpeg',
         card_description: 'Learn the skills to heal yourself from past trauma.',
-        description: 'The goal of this course is to teach you the skills you will need so that you have a great understanding of what trauma is.<br />How to heal yourself from it and apply what you learn confidently so that you will be able to handle any situation life may throw at you.',
+        description: 'The goal of this course is to teach you the skills you will need so that you have a great understanding of what trauma is.<br />You will learn how to heal yourself from it and apply the skills you have gained confidently so that you will be able to handle any situation life may throw at you.',
         url: "heal-your-trauma",
         courseList: [
             'Intro - What Is Trauma?',
@@ -22,6 +23,9 @@ const courses =[
         ],
         comingSoon: true,
         comingSoonDate: 'March 2022',
+    },
+    {
+        altCard: true,
     },
 ];
 export default courses;
