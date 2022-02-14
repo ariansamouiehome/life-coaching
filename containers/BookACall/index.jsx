@@ -38,17 +38,6 @@ const BookACall = () => {
                 <p className="body-copy">We will heal the traumas from your childhood that you have carried to your adulthood.<br /><br />I will teach you how to get to a normal state of being, what shadow work is and how to release anxiety.<br /><br />We will cover how to practise self love and as a reflection, increase the love you will have in your life. <br /><br /> You will learn what trauma is, how we deal with it as humans and how to heal yourself from it.<br /><br />The skills that you will learn is something that you will take away with you and continuously apply throughout your life, as healing is a lifestyle.</p>
             </ImageSideText>
 
-            {/*<BackImageFloatingContent*/}
-            {/*    backgroundImage="/images/pattern-back-4.png"*/}
-            {/*    title="Testimonials"*/}
-            {/*    headingLine*/}
-            {/*    large*/}
-            {/*>*/}
-            {/*    <div className="theme-row">*/}
-            {/*        Hello*/}
-            {/*    </div>*/}
-            {/*</BackImageFloatingContent>*/}
-
             <ColumnInfoImage
                 noCurve
                 title="Interested in working with me?"

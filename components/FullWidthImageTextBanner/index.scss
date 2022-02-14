@@ -159,7 +159,9 @@
       }
 
       .inner-content {
-        transform: translateY(20px);
+        @include media-breakpoint-up(sm) {
+          transform: translateY(20px);
+        }
 
         .content-title {
           animation-delay: 0.2s;

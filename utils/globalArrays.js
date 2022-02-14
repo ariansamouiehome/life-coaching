@@ -11,10 +11,10 @@ export const navItems =[
         title: "Meditation Sessions",
         link: 'meditation-sessions'
     },
-    // {
-    //     title: "Courses",
-    //     link: 'courses'
-    // },
+    {
+        title: "Courses",
+        link: 'courses'
+    },
     {
         title: "Work WIth Me",
         link: 'work-with-me'

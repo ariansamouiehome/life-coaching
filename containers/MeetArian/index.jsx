@@ -61,10 +61,10 @@ const MeetArian = () => {
             <FullWidthInfo
                 hTag={3}
                 title="START HEALING"
-                description="Let's connect to start your healing journey and figure out why things are the way they are. <br />You're never in the position where you can't start."
+                description="Start your healing journey to learn why things are the way they are. <br />You're never in the position where you can't start."
                 cta_show
-                cta_href="/work-with-me"
-                cta_text="work with me"
+                cta_href="/courses"
+                cta_text="Online Courses"
                 headingLine
             />
         </>

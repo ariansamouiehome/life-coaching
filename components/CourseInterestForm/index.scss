@@ -1,0 +1,35 @@
+.mailing-list {
+  padding: 0 15px 35px;
+  margin: 0;
+
+  @include media-breakpoint-up(md) {
+    padding: 0 15px 15px;
+  }
+
+  .contact-form {
+    margin: 0 auto;
+
+    .mailing-list-header {
+      display: flex;
+      justify-content: center;
+
+      .mailing-list-heading {
+        font-family: $brand-font-heading-one;
+        font-size: 30px;
+        margin: 15px auto 30px;
+        color: $brand-white
+      }
+    }
+  }
+
+  .contact-form-footer {
+    justify-content: flex-start;
+    align-items: center;
+
+    .theme-button {
+      @include media-breakpoint-up(md) {
+        transform: translateY(4px);
+      }
+    }
+  }
+}

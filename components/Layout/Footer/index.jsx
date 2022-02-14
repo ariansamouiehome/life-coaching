@@ -13,7 +13,10 @@ const Footer = ({show}) => {
 
     return (
         <>
-            {router.asPath !== '/meditation-sessions' && router.asPath !== '/work-with-me' && <>
+            {router.asPath !== '/meditation-sessions' &&
+            router.asPath !== '/work-with-me' &&
+            (router.asPath.split('/')[1] !== 'courses' || router.asPath.split('/').length !== 3) &&
+            <>
                 <ColumnInfoImage
                     title="Mailing list"
                     description={`Want to be part of the mailing list? <br />Just fill out this form and you will be added to receive regular updates.`}
