@@ -86,22 +86,17 @@ const Home = () => {
                 thumbnailImage="/images/what-is-trauma.jpeg"
             />
 
-            <ColumnInfoImage
-                title="If you fail at something you don't want,<br /> you still fail. <br />So why not fail at something you do want?"
-                noCurve
+            <FullWidthImageTextBanner
+                title="HEAL YOUR TRAUMA"
+                description="Work one to one with me and learn the skills to be able to heal yourself. These skills are something that you can practise for the rest of your life."
+                backgroundImage="/images/shadow-1.jpeg"
+                contentCenter
+                href="/work-with-me"
+                cta_text="Work With Me"
+                alt
+                noPaddTop
+                animation
             />
-
-            <ImageSideText
-                backgroundImage="/images/self-love.webp"
-                title="What is self love?"
-            >
-                <p className="body-copy">We react the same way when speaking to ourselves as we would if someone else
-                    was speaking to us. If a friend spoke to you the way you speak to yourself, would you still be their
-                    friend? The only difference is we can get away from that friend, but we cannot get away from
-                    ourselves.<br/><br/>Learn how to accept the ego and change the judgmental thoughts you have about
-                    yourself given to you by others. <br/><br/>Being aware of how you treat yourself is one of the most
-                    powerful things you can learn as a human.<br/><br/> To learn more about self love, Watch <Clickable href="https://youtu.be/xA5CGvqv05Y" target>"What Is Self Love"</Clickable> Video On YouTube.</p>
-            </ImageSideText>
 
             <div id="external-validation">
                 <BackImageFloatingContent
@@ -139,21 +134,15 @@ const Home = () => {
             </div>
 
             <ImageSideText
-                backgroundImage="/images/relationship.webp"
-                title="Do your relationships have the same outcome?"
-                href="/book-a-call"
-                cta_text="get in touch"
-                contentSwitch
+                backgroundImage="/images/self-love.webp"
+                title="What is self love?"
             >
-                <p className="body-copy">
-                    Being humans, at our core we are relationally dependent. We have relationships with everyone in our
-                    lives. Growing up we learn about relationships in our environment. How to treat others, what’s ok to
-                    do and what’s not ok to do. Our experiences teach us what our version of love is.<br/><br/>We all
-                    have relationship dynamics. These are patterns of behaviour between people in the ways that we
-                    relate, communicate and interact with each other. <br/><br/>Recognising the dynamics that play out
-                    in our relationships puts us in a very powerful position. It allows us to navigate the challenges we
-                    face with each other. We increase compassion and experience more love and fulfillment throughout our
-                    days.</p>
+                <p className="body-copy">We react the same way when speaking to ourselves as we would if someone else
+                    was speaking to us. If a friend spoke to you the way you speak to yourself, would you still be their
+                    friend? The only difference is we can get away from that friend, but we cannot get away from
+                    ourselves.<br/><br/>Learn how to accept the ego and change the judgmental thoughts you have about
+                    yourself given to you by others. <br/><br/>Being aware of how you treat yourself is one of the most
+                    powerful things you can learn as a human.<br/><br/> To learn more about self love, Watch <Clickable href="https://youtu.be/xA5CGvqv05Y" target>"What Is Self Love"</Clickable> Video On YouTube.</p>
             </ImageSideText>
 
             <BackImageFloatingContent
@@ -171,27 +160,24 @@ const Home = () => {
                 </div>
             </BackImageFloatingContent>
 
-            <FullWidthImageTextBanner
-                title="SHADOW WORK"
-                description="Find out what the human shadow is and how to use shadow work to heal yourself."
-                backgroundImage="/images/shadow-1.jpeg"
-                contentCenter
-                href="/shadow-work"
-                cta_text="Find out more"
-                alt
-                noPaddTop
-                animation
-            />
+            <ImageSideText
+                backgroundImage="/images/relationship.webp"
+                title="Do your relationships have the same outcome?"
+                href="/book-a-call"
+                cta_text="get in touch"
+                contentSwitch
+            >
+                <p className="body-copy">
+                    Being humans, at our core we are relationally dependent. We have relationships with everyone in our
+                    lives. Growing up we learn about relationships in our environment. How to treat others, what’s ok to
+                    do and what’s not ok to do. Our experiences teach us what our version of love is.<br/><br/>We all
+                    have relationship dynamics. These are patterns of behaviour between people in the ways that we
+                    relate, communicate and interact with each other. <br/><br/>Recognising the dynamics that play out
+                    in our relationships puts us in a very powerful position. It allows us to navigate the challenges we
+                    face with each other. We increase compassion and experience more love and fulfillment throughout our
+                    days.</p>
+            </ImageSideText>
 
-            {/*<FullWidthInfo*/}
-            {/*    hTag={3}*/}
-            {/*    title="SHADOW WORK"*/}
-            {/*    description="Find out what the human shadow is and how to use shadow work to heal yourself."*/}
-            {/*    cta_show*/}
-            {/*    cta_href="/shadow-work"*/}
-            {/*    cta_text="Find out more"*/}
-            {/*    headingLine*/}
-            {/*/>*/}
         </>
     )
 }

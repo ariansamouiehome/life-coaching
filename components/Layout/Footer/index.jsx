@@ -13,12 +13,13 @@ const Footer = ({show}) => {
 
     return (
         <>
-            {router.asPath !== '/meditation-sessions' && router.asPath !== '/book-a-call' && <>
+            {router.asPath !== '/meditation-sessions' && router.asPath !== '/work-with-me' && <>
                 <ColumnInfoImage
                     title="Mailing list"
                     description={`Want to be part of the mailing list? <br />Just fill out this form and you will be added to receive regular updates.`}
                     headingLine
                     noCurve
+                    noAnimation={router.asPath === 'links'}
                 />
                 <MailingListForm/>
             </>}

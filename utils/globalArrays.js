@@ -16,8 +16,8 @@ export const navItems =[
     //     link: 'courses'
     // },
     {
-        title: "Book a call",
-        link: 'book-a-call'
+        title: "Work WIth Me",
+        link: 'work-with-me'
     }
 ];
 

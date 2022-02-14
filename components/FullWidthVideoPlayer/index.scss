@@ -176,6 +176,12 @@
     }
   }
 
+  &.padding-top {
+    @include media-breakpoint-up(xs) {
+      padding: 40px 15px 80px;
+    }
+  }
+
   &.aos-init {
     .full-width-video-player-header {
       .content-title {

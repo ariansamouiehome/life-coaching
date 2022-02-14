@@ -29,6 +29,7 @@
 
     &.no-data {
       padding: 30px 15px;
+
       .inner-content-head {
         margin: 0;
       }
@@ -73,6 +74,12 @@
       font-size: 19px;
       @include media-breakpoint-up(xs) {
         font-size: 18px;
+      }
+
+      span {
+        color: $brand-color-one;
+        font-family: $brand-font-copy-two;
+        font-size: 30px;
       }
     }
   }
@@ -151,35 +158,42 @@
     }
   }
 
-  &.aos-init {
-    .inner-content-head {
-      .content-head-title {
-        opacity: 0;
-        transform: translateY(25px);
-      }
-      .body-copy {
-        opacity: 0;
-        transform: translateY(25px);
-      }
-    }
-    .inner-content-each {
-      opacity: 0;
-      transform: translateY(25px);
-    }
-    &.aos-animate {
+  &.animation {
+    &.aos-init {
       .inner-content-head {
         .content-head-title {
-          opacity: 1;
-          transform: translateY(0);
+          opacity: 0;
+          transform: translateY(25px);
         }
+
         .body-copy {
-          opacity: 1;
-          transform: translateY(0);
+          opacity: 0;
+          transform: translateY(25px);
         }
       }
+
       .inner-content-each {
-        opacity: 1;
-        transform: translateY(0);
+        opacity: 0;
+        transform: translateY(25px);
+      }
+
+      &.aos-animate {
+        .inner-content-head {
+          .content-head-title {
+            opacity: 1;
+            transform: translateY(0);
+          }
+
+          .body-copy {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+
+        .inner-content-each {
+          opacity: 1;
+          transform: translateY(0);
+        }
       }
     }
   }
