@@ -61,7 +61,7 @@ const MeetArian = () => {
             <FullWidthInfo
                 hTag={3}
                 title="START HEALING"
-                description="Let's connect to start your healing journey and figure out why the things are the way they are. <br />You're never in the position where you can't start."
+                description="Let's connect to start your healing journey and figure out why things are the way they are. <br />You're never in the position where you can't start."
                 cta_show
                 cta_href="/work-with-me"
                 cta_text="work with me"
