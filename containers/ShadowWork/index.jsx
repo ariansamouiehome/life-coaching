@@ -53,8 +53,8 @@ const ShadowWork = () => {
             <BackImageFloatingContent
                 backgroundImage="/images/pattern-back-4.png"
                 title="Societal Socialising"
-                href="/book-a-call"
-                cta_text="Get in touch"
+                href="/work-with-me"
+                cta_text="START HEALING"
                 headingLine
                 backgroundFade
                 curveBottom
@@ -81,8 +81,8 @@ const ShadowWork = () => {
                 <ImageSideText
                     backgroundImage="/images/mirror.webp"
                     title="What Is Fragmentation?"
-                    href="/book-a-call"
-                    cta_text="GET IN TOUCH"
+                    href="/work-with-me"
+                    cta_text="WORK WITH ME"
                 >
                     <p className="body-copy">Fragmentation is the primary coping mechanism for a physical
                         human.<br/><br/>We have an outdated definition of the meaning for trauma. We tend to define

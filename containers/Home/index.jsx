@@ -64,7 +64,7 @@ const Home = () => {
             />
             <FullWidthImageTextBanner
                 title="BECOME THE MOST <br /> AUTHENTIC YOU"
-                description="The further away we are from our most authentic self,<br /> the further away we are to healing."
+                description="The further away we are from the most authentic self,<br /> the further away we are from healing."
                 backgroundImage="/images/peace.webp"
                 contentCenter
                 showScrollArrow
@@ -102,8 +102,8 @@ const Home = () => {
                 <BackImageFloatingContent
                     backgroundImage="/images/pattern-back-4.png"
                     title="Why Do We Seek External Validation?"
-                    href="/book-a-call"
-                    cta_text="Book a call"
+                    href="/work-with-me"
+                    cta_text="start healing"
                     headingLine
                     curveBottom
                 >
@@ -163,8 +163,8 @@ const Home = () => {
             <ImageSideText
                 backgroundImage="/images/relationship.webp"
                 title="Do your relationships have the same outcome?"
-                href="/book-a-call"
-                cta_text="get in touch"
+                href="/work-with-me"
+                cta_text="Work With Me"
                 contentSwitch
             >
                 <p className="body-copy">
@@ -177,6 +177,16 @@ const Home = () => {
                     face with each other. We increase compassion and experience more love and fulfillment throughout our
                     days.</p>
             </ImageSideText>
+
+            <FullWidthInfo
+                hTag={3}
+                title="Meditation Sessions"
+                description="Join my FREE online healing meditation sessions."
+                cta_show
+                cta_href="/meditation-sessions"
+                cta_text="Reserve your spot"
+                headingLine
+            />
 
         </>
     )

@@ -19,7 +19,7 @@ const Footer = ({show}) => {
                     description={`Want to be part of the mailing list? <br />Just fill out this form and you will be added to receive regular updates.`}
                     headingLine
                     noCurve
-                    noAnimation={router.asPath === 'links'}
+                    noAnimation={router.asPath === '/links'}
                 />
                 <MailingListForm/>
             </>}
