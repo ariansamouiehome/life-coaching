@@ -37,8 +37,8 @@ const Courses = () => {
             />
 
             <ColumnInfoImage
-                title="Get Access"
-                description="Check out which course would be helpful with what you are looking for. <br />Courses include video chapters."
+                title="Course List"
+                description="All courses include video chapters."
                 headingLine
                 paddingBottom
             />
@@ -58,23 +58,22 @@ const Courses = () => {
                 onClick={() => scrollToPosition('video-component')}
             >
                 <p className="body-copy">We tend to find it very easy to invest our time in doing things that may give
-                    us quick win feelings. Things such as going out to the club and bars to take our minds off the
-                    mental pain we feel. <br/> <br/> But what this is doing is creating distractions for us which is a
-                    copping mechanism. Anything that is taking our attention away from our healing and emotions is going
+                    us "quick win" feelings. Things such as going out to the club and bars to take our minds off the
+                    mental pain we feel. <br/> <br/> But what this is doing is creating distractions for us (copping mechanisms). Anything that is taking our attention away from us feeling our emotions, is going
                     in the opposite direction of healing.<br/><br/>
 
 
                     From an early age we learnt to deal with emotional pain by pushing it away. This is not a healthy
                     way of being. <br/><br/> The way we heal any emotional pain and trauma is by going towards the pain,
                     not away from it. So investing time into your own healing journey is the key to be able to heal the
-                    aspects of yourself that need to healed. <br/><br/> Get used to prioritising your healing journey
+                    aspects of yourself that need to be healed. <br/><br/> Get used to prioritising your healing journey
                     over most things in your life. Your healing is one of the most important things in your life as YOU
                     are the most important thing in your life.</p>
             </ImageSideText>
 
             <div id="video-component">
                 <FullWidthVideoPlayer
-                    title="Are Thoughts Important?"
+                    title="What Are Our Thoughts?"
                     iframeSrc="https://www.youtube.com/embed/3UGEfefw_CY?rel=0"
                     thumbnailImage="/images/thoughts-promo.jpeg"
                 />
@@ -88,7 +87,7 @@ const Courses = () => {
                 onClick={() => scrollToPosition('course-list')}
             >
                 <p className="body-copy">We are all on our own healing journey. Everyone has experienced life in their
-                    own unique way.<br/><br/> No-one has been through the same things you have been through so it
+                    own unique way.<br/><br/> No-one has experienced the same things you have, so it
                     doesn't make sense to compare yourself to anyone else when it comes to healing.<br/><br/>There is no
                     time limit of when you should start feeling better, or be in a better place.<br/><br/> We grow up
                     with such unrealistic expectations projected onto us and carry these over to when we are
