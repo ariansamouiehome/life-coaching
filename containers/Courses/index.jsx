@@ -73,7 +73,7 @@ const Courses = () => {
 
             <div id="video-component">
                 <FullWidthVideoPlayer
-                    title="What Are Our Thoughts?"
+                    title="What Are Your Thoughts?"
                     iframeSrc="https://www.youtube.com/embed/3UGEfefw_CY?rel=0"
                     thumbnailImage="/images/thoughts-promo.jpeg"
                 />

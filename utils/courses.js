@@ -21,6 +21,7 @@ const courses =[
             'Healing your inner child (Meditation)',
         ],
         comingSoon: true,
+        comingSoonDate: 'March 2022',
     },
 ];
 export default courses;

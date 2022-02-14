@@ -88,11 +88,11 @@ const Home = () => {
 
             <FullWidthImageTextBanner
                 title="HEAL YOUR TRAUMA"
-                description="Work one to one with me and learn the skills to be able to heal yourself. These skills are something that you can practise for the rest of your life."
+                description="My online course 'Heal Your Trauma' is designed to teach you what trauma is and how to heal yourself from it."
                 backgroundImage="/images/shadow-1.jpeg"
                 contentCenter
-                href="/work-with-me"
-                cta_text="Work With Me"
+                href="/courses"
+                cta_text="View Courses"
                 alt
                 noPaddTop
                 animation
