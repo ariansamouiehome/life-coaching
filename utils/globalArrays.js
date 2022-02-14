@@ -16,8 +16,8 @@ export const navItems =[
     //     link: 'courses'
     // },
     {
-        title: "Trauma Healing",
-        link: 'trauma-healing'
+        title: "Work WIth Me",
+        link: 'work-with-me'
     }
 ];
 

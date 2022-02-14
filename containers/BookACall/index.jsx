@@ -4,21 +4,20 @@ import ColumnInfoImage from "components/ColumnInfoImage";
 import ContactForm from "components/ContactForm";
 import FullWidthInfo from "components/FullWidthInfo";
 import AppHead from "components/Layout/AppHead";
-import FullWidthVideoPlayer from "components/FullWidthVideoPlayer";
-import Clickable from "components/Elements/Clickable";
 import ImageSideText from "components/ImageSideText";
+import BackImageFloatingContent from "components/BackImageFloatingContent";
 
 const BookACall = () => {
 
     return (
         <>
             <AppHead
-                title="- One To One"
+                title="- Work With Me"
                 description="Fill out the form and tell me a little about yourself. What you're looking for and some of the challenges you face regularly"
                 image="/images/profile-4-mobile.webp"
             />
             <FullWidthImageTextBanner
-                title="Trauma Healing"
+                title="Working One To One"
                 backgroundImage="/images/helping.jpeg"
                 contentCenter
                 alt
@@ -26,8 +25,8 @@ const BookACall = () => {
             />
 
             <ColumnInfoImage
-                title="Join My 12 Week <br /> One To One Trauma Healing Course"
-                description="This course will be 12 (90 minute) weekly private sessions with myself over Zoom calls."
+                title="Heal Your Trauma"
+                description="In our sessions we will dive deep into your life experiences and uncover the areas of your life that has caused you to arrive at the place you are today."
                 headingLine
                 noCurve
             />
@@ -36,20 +35,24 @@ const BookACall = () => {
                 backgroundImage="/images/healing.jpeg"
                 title="What is the goal?"
             >
-                <p className="body-copy">In these sessions we will dive deep into your life experiences and uncover the areas of your life that has caused you to arrive at the place you are today.<br /><br />We will heal the traumas from your childhood that you have carried to your adulthood.<br /><br />I will teach you how to get to a normal state of being, what shadow work is and how to release anxiety.<br /><br />We will cover how to practise self love and as a reflection, increase the love you will have in your life. <br /><br /> You will learn what trauma is, how we deal with it as humans and how to heal yourself from it.<br /><br />The skills that you will learn is something that you will take away with you and continuously apply throughout your life, as healing is a lifestyle.</p>
+                <p className="body-copy">We will heal the traumas from your childhood that you have carried to your adulthood.<br /><br />I will teach you how to get to a normal state of being, what shadow work is and how to release anxiety.<br /><br />We will cover how to practise self love and as a reflection, increase the love you will have in your life. <br /><br /> You will learn what trauma is, how we deal with it as humans and how to heal yourself from it.<br /><br />The skills that you will learn is something that you will take away with you and continuously apply throughout your life, as healing is a lifestyle.</p>
             </ImageSideText>
 
-            <FullWidthVideoPlayer
-                title="Find Out More"
-                iframeSrc="https://www.youtube.com/embed/v8GP6tn4798?rel=0"
-                thumbnailImage="/images/what-is-trauma.jpeg"
-                paddingTop
-            />
+            {/*<BackImageFloatingContent*/}
+            {/*    backgroundImage="/images/pattern-back-4.png"*/}
+            {/*    title="Testimonials"*/}
+            {/*    headingLine*/}
+            {/*    large*/}
+            {/*>*/}
+            {/*    <div className="theme-row">*/}
+            {/*        Hello*/}
+            {/*    </div>*/}
+            {/*</BackImageFloatingContent>*/}
 
             <ColumnInfoImage
                 noCurve
-                title="Interested in this course?"
-                description="Fill out the form and tell me a little about yourself. <br /> I will then get in touch and arrange the start of your healing journey.<br /> <span>12 Weeks - £2990</span>"
+                title="Interested in working with me?"
+                description="Fill out the form and tell me a little about yourself. <br /> I will then get in touch and we can arrange the start of your healing journey."
             />
 
             <ContactForm />

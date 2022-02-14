@@ -14,7 +14,7 @@ const ColumnInfoImage = (props) => {
     //     cta_onClick: () => console.log('clicked'),
     // },
 
-    const {hTag, title, description, data, noCurve, headingLine, paddingBottom} = props;
+    const {hTag, title, description, data, noCurve, headingLine, paddingBottom, noAnimation} = props;
 
     const ctaOutput = (item) => {
         if (item.cta_show) {
@@ -55,7 +55,7 @@ const ColumnInfoImage = (props) => {
     }
 
     return (
-        <Container className={`column-info-image ${noCurve ? 'noCurve' : ''} ${!data && !description ? 'heading-only' : ''} ${paddingBottom ? 'padding-bottom' : ''}`} fluid data-aos>
+        <Container className={`column-info-image ${!noAnimation ? 'animation' : ''}  ${noCurve ? 'noCurve' : ''} ${!data && !description ? 'heading-only' : ''} ${paddingBottom ? 'padding-bottom' : ''}`} fluid data-aos>
             <Container className={data ? '' : 'no-data'}>
                 <Row>
                     <Col xs={12} className={`inner-content-head`}>
