@@ -80,7 +80,7 @@ const ShadowWork = () => {
                     backgroundImage="/images/mirror.webp"
                     title="What Is Fragmentation?"
                     href="/shop"
-                    cta_text="Online Shop"
+                    cta_text="View Shop"
                 >
                     <p className="body-copy">Fragmentation is the primary coping mechanism for a physical
                         human.<br/><br/>We have an outdated definition of the meaning for trauma. We tend to define
