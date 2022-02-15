@@ -137,7 +137,7 @@ const Home = () => {
                 backgroundImage="/images/self-love.webp"
                 title="What is self love?"
                 href="/shop"
-                cta_text="Start Healing"
+                cta_text="Learn to heal"
             >
                 <p className="body-copy">We react the same way when speaking to ourselves as we would if someone else
                     was speaking to us. If a friend spoke to you the way you speak to yourself, would you still be their
@@ -167,7 +167,7 @@ const Home = () => {
                 backgroundImage="/images/relationship.webp"
                 title="Do your relationships have the same outcome?"
                 href="/shop"
-                cta_text="Learn to heal"
+                cta_text="Start Healing"
                 contentSwitch
             >
                 <p className="body-copy">

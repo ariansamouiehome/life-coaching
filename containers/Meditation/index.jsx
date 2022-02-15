@@ -40,7 +40,7 @@ const Meditation = () => {
             />
 
             <ColumnInfoImage
-                title="Learn To Control Your Thoughts!"
+                title="How to let go - Becoming the new you"
                 description="One of the best ways to heal is to let go of everything. <br /> Your mind, your body, your feelings and your thoughts. <br /> Become your consciousness. <br /> To understand more, watch the video below."
                 headingLine
                 paddingBottom

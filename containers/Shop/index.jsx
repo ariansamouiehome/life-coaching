@@ -72,7 +72,7 @@ const Shop = () => {
 
             <div id="video-component">
                 <FullWidthVideoPlayer
-                    title="What Are Your Thoughts?"
+                    title="What Are Thoughts?"
                     iframeSrc="https://www.youtube.com/embed/3UGEfefw_CY?rel=0"
                     thumbnailImage="/images/thoughts-promo.jpeg"
                 />

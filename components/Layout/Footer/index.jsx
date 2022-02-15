@@ -15,7 +15,7 @@ const Footer = ({show}) => {
         <>
             {router.asPath !== '/meditation-sessions' &&
             router.asPath !== '/work-with-me' &&
-            (router.asPath.split('/')[1] !== 'courses' || router.asPath.split('/').length !== 3) &&
+            (router.asPath.split('/')[1] !== 'shop' || router.asPath.split('/').length !== 3) &&
             <>
                 <ColumnInfoImage
                     title="Mailing list"
