@@ -63,8 +63,8 @@ const MeetArian = () => {
                 title="START HEALING"
                 description="Start your healing journey to learn why things are the way they are. <br />You're never in the position where you can't start."
                 cta_show
-                cta_href="/courses"
-                cta_text="Online Courses"
+                cta_href="/shop"
+                cta_text="View Courses"
                 headingLine
             />
         </>

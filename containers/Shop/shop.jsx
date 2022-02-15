@@ -7,10 +7,10 @@ import BackImageFloatingContent from "components/BackImageFloatingContent";
 import CourseInterestForm from "components/CourseInterestForm";
 import FullWidthInfo from "components/FullWidthInfo";
 
-const Courses = (props) => {
+const Shop = (props) => {
 
     if (props.data) {
-        const {title, description, backgroundImage, card_description, courseList, comingSoon, comingSoonDate} = props.data;
+        const {title, description, backgroundImage, card_description, courseList, comingSoon, comingSoonDate, category} = props.data;
         return (
             <>
                 <AppHead
@@ -54,16 +54,16 @@ const Courses = (props) => {
 
                     <CourseInterestForm
                         courseName={title}
+                        successMessage={`Your interest has been submitted and you will be contacted once this ${category} is live.`}
                     />
                 </>}
 
                 <FullWidthInfo
                     hTag={3}
-                    title="Courses"
-                    // description="Join my FREE online healing meditation sessions."
+                    title="See More Products"
                     cta_show
-                    cta_href="/courses"
-                    cta_text="Back to courses"
+                    cta_href="/shop"
+                    cta_text="Back to Shop"
                     headingLine
                 />
 
@@ -76,4 +76,4 @@ const Courses = (props) => {
     }
 }
 
-export default Courses;
+export default Shop;

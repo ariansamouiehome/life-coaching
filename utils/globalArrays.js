@@ -12,8 +12,8 @@ export const navItems =[
         link: 'meditation-sessions'
     },
     {
-        title: "Courses",
-        link: 'courses'
+        title: "Shop",
+        link: 'shop'
     },
     {
         title: "Work WIth Me",

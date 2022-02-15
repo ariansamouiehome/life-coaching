@@ -1,4 +1,4 @@
-import PageComponents from 'containers/Courses/courses';
+import PageComponents from 'containers/Shop/shop';
 import coursesInformation from 'utils/courses';
 
 const Page = (props) => {
@@ -6,8 +6,8 @@ const Page = (props) => {
 }
 
 Page.getInitialProps = async ({ query }) => {
-    const {courses} = query;
-    const data = coursesInformation.find(c => c.url === courses);
+    const {shop} = query;
+    const data = coursesInformation.find(c => c.url === shop);
     return { data };
 };
 

@@ -91,8 +91,8 @@ const Home = () => {
                 description="My online course 'Heal Your Trauma' is designed to teach you what trauma is and how to heal yourself from it."
                 backgroundImage="/images/shadow-1.jpeg"
                 contentCenter
-                href="/courses"
-                cta_text="View Courses"
+                href="/shop"
+                cta_text="View Shop"
                 alt
                 noPaddTop
                 animation
@@ -102,7 +102,7 @@ const Home = () => {
                 <BackImageFloatingContent
                     backgroundImage="/images/pattern-back-4.png"
                     title="Why Do We Seek External Validation?"
-                    href="/courses"
+                    href="/shop"
                     cta_text="start healing"
                     headingLine
                     curveBottom
@@ -136,7 +136,7 @@ const Home = () => {
             <ImageSideText
                 backgroundImage="/images/self-love.webp"
                 title="What is self love?"
-                href="/courses"
+                href="/shop"
                 cta_text="Start Healing"
             >
                 <p className="body-copy">We react the same way when speaking to ourselves as we would if someone else
@@ -166,7 +166,7 @@ const Home = () => {
             <ImageSideText
                 backgroundImage="/images/relationship.webp"
                 title="Do your relationships have the same outcome?"
-                href="/courses"
+                href="/shop"
                 cta_text="Learn to heal"
                 contentSwitch
             >
