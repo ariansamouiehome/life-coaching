@@ -13,12 +13,12 @@ const MeetArian = () => {
         <>
             <AppHead
                 title="- Meet Arian"
-                description="Get to know why I have chosen to help people heal their minds."
+                description="Get to know why I have chosen to help people heal themselves"
                 image="/images/profile-4-mobile.webp"
             />
             <FullWidthImageTextBanner
                 title="HI, I'M ARIAN"
-                description="Get to know why I have chosen to help people heal their minds,<br />what my background is and how I came to find my purpose."
+                description="Get to know why I have chosen to help people heal themselves,<br />what my background is and how I came to find my purpose"
                 className="profile"
                 contentCenter
                 halfBackShadow
@@ -28,7 +28,7 @@ const MeetArian = () => {
 
             <div id="second-component">
                 <ColumnInfoImage
-                    title="My Goal Is To Teach People How To Heal Themselves."
+                    title="My Goal Is To Teach People How To Heal Themselves"
                     noCurve
                 />
             </div>

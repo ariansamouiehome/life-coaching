@@ -32,7 +32,7 @@ const Shop = () => {
             <FullWidthImageTextBanner
                 title="Shop"
                 backgroundImage="/images/courses.jpeg"
-                description="Courses and meditations to help you learn how to heal yourself from the experiences we go through out lives."
+                description="Courses and Meditations to help you heal yourself from the experiences we have had throughout our lives."
                 contentCenter
                 alt
             />
