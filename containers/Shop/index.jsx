@@ -11,7 +11,7 @@ import FullWidthVideoPlayer from "components/FullWidthVideoPlayer";
 import {scrollToPosition} from "../../utils/functions";
 import PageNotFound from "components/PageNotFound";
 
-const Courses = () => {
+const Shop = () => {
 
     // States
     const [loading, setLoading] = useState(true);
@@ -25,19 +25,20 @@ const Courses = () => {
     return (
         <>
             <AppHead
-                title="Online Courses"
+                title="Online Shop"
                 description="Check out which course would be helpful with what you are looking for."
-                image="/images/courses.jpeg"
+                image="/images/shops.jpeg"
             />
             <FullWidthImageTextBanner
-                title="Online Courses"
+                title="Shop"
                 backgroundImage="/images/courses.jpeg"
+                description="Courses and meditations to help you learn how to heal yourself from the experiences we go through out lives."
                 contentCenter
                 alt
             />
 
             <ColumnInfoImage
-                title="Course List"
+                title="Product List"
                 description="All courses include video chapters."
                 headingLine
                 paddingBottom
@@ -54,8 +55,6 @@ const Courses = () => {
             <ImageSideText
                 backgroundImage="/images/self-invest.jpeg"
                 title="Self Investment"
-                // cta_text="Learn More"
-                // onClick={() => scrollToPosition('video-component')}
             >
                 <p className="body-copy">We tend to find it very easy to invest our time in doing things that may give
                     us "quick win" feelings. Things such as going out to the club and bars to take our minds off the
@@ -110,4 +109,4 @@ const Courses = () => {
     // return <PageNotFound/>;
 }
 
-export default Courses;
+export default Shop;

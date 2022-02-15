@@ -1,4 +1,4 @@
-import PageComponents from 'containers/Courses';
+import PageComponents from 'containers/Shop';
 
 const Page = (props) => {
     return (<PageComponents {...props} />)

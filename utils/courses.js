@@ -1,6 +1,7 @@
 const courses =[
     {
         altCard: false,
+        category: 'course',
         title: "Heal Your Trauma",
         backgroundImage: '/images/trauma.jpeg',
         card_description: 'Learn the skills to heal yourself from past trauma.',

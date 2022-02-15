@@ -8,7 +8,7 @@ import {scrollToPosition} from "../../utils/functions";
 
 const CourseInterestForm = (props) => {
 
-    const {courseName} = props;
+    const {courseName, successMessage} = props;
 
     // Data
     const contactForm = [
@@ -124,7 +124,7 @@ const CourseInterestForm = (props) => {
                     <Col xs={12}  className="contact-form-message" id="contact-form-message">
                         {showMessage && <AlertMessage
                             success={success}
-                            successMessage="Your interest has been submitted and you will be contacted once the course is live."
+                            successMessage={successMessage}
                             failed={failedToSend}
                         />}
                     </Col>
