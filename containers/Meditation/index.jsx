@@ -64,7 +64,10 @@ const Meditation = () => {
                 noCurve
             />
 
-            <MediationForm sessionDate={sessionDate}/>
+            <MediationForm
+                name={meditation.name}
+                sessionDate={sessionDate}
+            />
 
             <FullWidthInfo
                 hTag={3}
