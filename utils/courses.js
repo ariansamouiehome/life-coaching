@@ -23,7 +23,7 @@ const courses =[
             'Healing your inner child (Meditation)',
         ],
         comingSoon: true,
-        comingSoonDate: 'March 2022',
+        comingSoonDate: 'March/April 2022',
     },
     {
         altCard: true,

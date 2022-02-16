@@ -12,6 +12,11 @@ const Meditation = () => {
 
     // Data
     const sessionDate = '22nd Feb - 8:00pm';
+    const meditation = {
+        date: sessionDate,
+        name: 'How to let go - Becoming the new you',
+        description: 'One of the best ways to heal is to let go of everything. <br /> Your mind, your body, your feelings and your thoughts. <br /> Become your consciousness. <br /> To understand more, watch the video below.',
+    }
 
     // State
     const [testimonialState, setTestimonialState] = useState(false);
@@ -28,11 +33,11 @@ const Meditation = () => {
                 setState={setTestimonialState}
                 heading="Testimonial"
             >
-                <TestimonialForm subject="Learn To Let Go"/>
+                <TestimonialForm subject={meditation.name}/>
             </ContextCard>
             <FullWidthImageTextBanner
                 title="Meditation Sessions"
-                description={`Next session <br />${sessionDate} (Zoom call)`}
+                description={`Next session <br />${meditation.date} <br />(Zoom call)`}
                 backgroundImage="/images/meditation.jpeg"
                 contentCenter
                 alt
@@ -41,15 +46,15 @@ const Meditation = () => {
 
             <ColumnInfoImage
                 title="How to let go - Becoming the new you"
-                description="One of the best ways to heal is to let go of everything. <br /> Your mind, your body, your feelings and your thoughts. <br /> Become your consciousness. <br /> To understand more, watch the video below."
+                description={meditation.description}
                 headingLine
                 paddingBottom
             />
 
             <FullWidthVideoPlayer
                 title="Find Out More"
-                iframeSrc="https://www.youtube.com/embed/IA6N8RGEmaE?rel=0"
-                thumbnailImage="/images/meditation-session-thumbnail.jpeg"
+                iframeSrc="https://www.youtube.com/embed/dB4-nvmaPoY?rel=0"
+                thumbnailImage="/images/meditation-promo.jpeg"
             />
 
             <ColumnInfoImage

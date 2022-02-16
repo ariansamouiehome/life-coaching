@@ -16,60 +16,42 @@ export default async (req, res) => {
         },
         secure: true,
     })
-    const subject = 'What Is Crying?';
+    const subject = 'Release Your Anxiety!';
     const bodyText = `
         <img src="https://ariansamouie.com/images/logo-single.svg" style="max-width: 320px;"/>
-        <h1>STOP trying to STOP people crying!</h1>
+        <h1>What is Anxiety and how to releaase it?</h1>
         
-        <h2>I know it can sound crazy ${req.body.firstName}.</h2>   
-        <h2>But let me explain...</h2>
+        <h2>Hi ${req.body.firstName}.</h2>   
         
-        <p>Crying is not a social thing. It's a biological thing. It's how we as humans work.</p> 
+        <p>For just being a living human being means you have the ability to heal yourself.</p>
+        <br/>
+        <p>Gret news, my new YouTube video is up.</p>
+        <p>In this video I’m going to teach you what anxiety is, why we experience it, where it comes from and how to start healing and release it on your own.</p>
+
+        <p>To watch this video click on the button below.</p>
         
-        <p>We release emotions by crying. And by stopping the crying we're stopping that release, which means those emotions are still within us. We're still keeping a hold of them. And that is not a healthy state of being.</p>
-        
-        <p>There are two main reasons why we tell people to stop crying.</p>
-        
-        <ul>
-            <li>1) Because of social conditioning. This is what ever generation has been taught for the longest time. Especially the men. </li>
-            <li>2) We actually relate to that bad feeling of someone crying, and it triggers those feelings in us. So because it makes us feel bad that they're crying, we try and stop them.</li>
-        </ul>
-   
-        <p>The goal when we get a bad feeling isn't to get rid of it. Feelings are the bodies way of communicating with us. This is how we work.</p>
-        
-        <p>Allow people to be who they are. Kids and adults.</p>
-        
-        <p>If someone is crying for any reason, it's not unreasonable, it's how they feel. It's who they are in that moment. By telling them not to cry you're telling them to be someone other than who they are.</p>
-        
-        <p>Just be there with their emotions and allow them to express themselves. We all feel the way we do and that's ok and normal.</p>
-        
-        <p>Should and shouldn't cry are subjective. Crying is a healthy way of releasing our emotions. It's also the way we work as humans.</p>
-        
-        <p>It's ok to work like a normal human.</p>
-        <p>You're doing great, keep going.</p>
-        
-        
-        <a href="https://youtu.be/VimTmPvsT6U" target="_blank"
+        <a href="https://youtu.be/kqt4hqpxLEs" target="_blank"
             style="width: 100%; max-width: 320px; display: block; padding: 15px; text-align: center; color: #fff; background: #c4302b; text-decoration: none; border-radius: 5px;"
         >
-            Watch YouTube Short Video
+            Watch YouTube Video
         </a> 
         
         <br />
-        <br />
-        <p><strong>To join my <u>FREE</u> online "How To Let Go" meditation session, click the button below. 8th Feb - 8:00pm (Zoom call)</strong></p>
-        <a href="https://ariansamouie.com/meditation-sessions" target="_blank"
-            style="width: 100%; max-width: 320px; display: block; padding: 15px; text-align: center; color: #fff; background: #d2a94e; text-decoration: none; border-radius: 5px;"
-        >
-            Reserve Your Position
-        </a>
-        
         <br />
         <p><strong>To join my MeetUp group about all meditation sessions I will be hosting, click on the button below.</strong></p>
         <a href="https://www.meetup.com/online-healing-meditation/" target="_blank"
             style="width: 100%; max-width: 320px; display: block; padding: 15px; text-align: center; color: #fff; background: #e51937; text-decoration: none; border-radius: 5px;"
         >
             Join MeetUp Group
+        </a>
+        
+        
+        <br />
+        <p><strong>Alternativley you can join by reserving your place on my website, click the button below.</strong></p>
+        <a href="https://ariansamouie.com/meditation-sessions" target="_blank"
+            style="width: 100%; max-width: 320px; display: block; padding: 15px; text-align: center; color: #fff; background: #d2a94e; text-decoration: none; border-radius: 5px;"
+        >
+            Reserve Your Position
         </a>
         
         <br />
