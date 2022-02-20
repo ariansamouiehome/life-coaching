@@ -1,9 +1,10 @@
 import React, {useState} from 'react';
 import {Col, Container, Row} from "reactstrap";
+import Button from "components/Elements/Button";
 
 const FullWidthVideoPlayer = (props) => {
 
-    const {title, hTag, iframeSrc, thumbnailImage, paddingTop} = props
+    const {title, hTag, iframeSrc, thumbnailImage, paddingTop, cta_href, cta_text, cta_target} = props
 
     const [play, setPlay] = useState(false);
     const src = play ? `${iframeSrc}&autoplay=1` : iframeSrc
@@ -53,6 +54,13 @@ const FullWidthVideoPlayer = (props) => {
                             </button>}
                         </div>
                     </Col>
+                    {cta_href && <Col xs={12} className="full-width-video-player-button-content">
+                        <Button
+                            target={cta_target}
+                            href={cta_href}
+                            className="meetUp"
+                        >{cta_text}</Button>
+                    </Col>}
                 </Row>
             </Container>
         </Container>

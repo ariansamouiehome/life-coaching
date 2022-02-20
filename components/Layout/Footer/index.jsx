@@ -76,7 +76,7 @@ const Footer = ({show}) => {
                                     </a>
                                 </li>
                                 <li className="list-item">
-                                    <a href="https://www.meetup.com/online-healing-meditation/" target="_blank"
+                                    <a href="https://www.meetup.com/trauma-healing-online-meditations/" target="_blank"
                                        className="item-link">
                                         <svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"
                                              width="50px" height="50px">

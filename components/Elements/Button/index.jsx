@@ -4,7 +4,7 @@ import Loader from "components/Elements/Loader";
 
 const Button = (props) => {
 
-    const {onClick, className, style, href, type, loading, secondary, danger, disabled, secondaryBorder} = props;
+    const {onClick, className, style, href, type, loading, secondary, danger, disabled, secondaryBorder, target} = props;
 
     if(href) {
         return (
@@ -18,6 +18,7 @@ const Button = (props) => {
                         ${disabled ? 'disabled' :''}
                         ${secondaryBorder ? 'secondaryBorder' :''}
                     `}
+                    target={target ? '_blank' : false}
                     onClick={onClick}
                 >
                     {props.children}

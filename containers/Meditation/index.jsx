@@ -55,10 +55,13 @@ const Meditation = () => {
                 title="Find Out More"
                 iframeSrc="https://www.youtube.com/embed/dB4-nvmaPoY?rel=0"
                 thumbnailImage="/images/meditation-promo.jpeg"
+                cta_href="https://www.meetup.com/trauma-healing-online-meditations/"
+                cta_text="Join MeetUp Group"
+                cta_target
             />
 
             <ColumnInfoImage
-                title="Want to be involved?"
+                title="Reserve a spot without MeetUp"
                 description={`The next FREE online meditation session will be on ${sessionDate} <br />(Zoom call). <br />Fill out the form to secure your position.`}
                 headingLine
                 noCurve

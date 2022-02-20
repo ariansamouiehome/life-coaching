@@ -113,4 +113,23 @@
       box-shadow: 0 0 7px 1px rgba($warning, 0.5) inset;
     }
   }
+
+  &.meetUp {
+    background: $meetUp;
+    color: $brand-white;
+    text-shadow: 1px 1px rgba($brand-white, 0.5);
+
+    &:before,
+    &:after {
+      background: $meetUp;
+    }
+
+    &:hover {
+      background: $brand-white;
+      border-color: $meetUp;
+      color: $meetUp;
+      text-shadow: 1px 1px rgba($brand-white, 0.5);
+      box-shadow: 0 0 7px 1px rgba($meetUp, 0.5) inset;
+    }
+  }
 }
