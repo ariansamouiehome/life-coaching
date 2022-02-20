@@ -14,7 +14,7 @@ const Meditation = () => {
     const sessionDate = '22nd Feb - 8:00pm';
     const meditation = {
         date: sessionDate,
-        name: 'How to let go - Becoming the new you',
+        name: 'How To Let Go - Becoming The New You',
         description: 'One of the best ways to heal is to let go of everything. <br /> Your mind, your body, your feelings and your thoughts. <br /> Become your consciousness. <br /> To understand more, watch the video below.',
     }
 
@@ -45,7 +45,7 @@ const Meditation = () => {
             />
 
             <ColumnInfoImage
-                title="How to let go - Becoming the new you"
+                title={meditation.name}
                 description={meditation.description}
                 headingLine
                 paddingBottom

@@ -88,7 +88,7 @@ const Home = () => {
 
             <FullWidthImageTextBanner
                 title="HEAL YOUR TRAUMA"
-                description="My online course 'Heal Your Trauma' is designed to teach you what trauma is and how to heal yourself from it."
+                description="My online course 'Heal Your Trauma' is designed to teach you what trauma is so you can learn how we heal from it, as well as have the understanding of how to start your healing journey down the right path."
                 backgroundImage="/images/shadow-1.jpeg"
                 contentCenter
                 href="/shop"

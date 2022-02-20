@@ -16,27 +16,27 @@ export default async (req, res) => {
         },
         secure: true,
     })
-    const subject = 'Release Your Anxiety!';
+    const subject = 'New Meditation Sessions';
     const bodyText = `
         <img src="https://ariansamouie.com/images/logo-single.svg" style="max-width: 320px;"/>
-        <h1>What is Anxiety and how to releaase it?</h1>
+        <h1>What do they do?</h1>
         
         <h2>Hi ${req.body.firstName}.</h2>   
         
-        <p>For just being a living human being means you have the ability to heal yourself.</p>
+        <p>I'm hosting 3 meditation sessions.</p>
         <br/>
-        <p>Gret news, my new YouTube video is up.</p>
-        <p>In this video I’m going to teach you what anxiety is, why we experience it, where it comes from and how to start healing and release it on your own.</p>
+        <p>I've moved to MeetUp and will be using this platform for all my onlne meditation sessions.</p>
+        <p>In this video I explain what these sessions are for and how each meditation helps you heal yourself.</p>
 
-        <p>To watch this video click on the button below.</p>
-        
-        <a href="https://youtu.be/kqt4hqpxLEs" target="_blank"
+        <a href="https://www.youtube.com/watch?v=dB4-nvmaPoY" target="_blank"
             style="width: 100%; max-width: 320px; display: block; padding: 15px; text-align: center; color: #fff; background: #c4302b; text-decoration: none; border-radius: 5px;"
         >
-            Watch YouTube Video
+            Watch Video
         </a> 
-        
         <br />
+        <br />
+        
+        <p>To stay up to date with everything that is going on and be notified when I create new sessions, join my MeetUp group.</p>
         <br />
         <p><strong>To join my MeetUp group about all meditation sessions I will be hosting, click on the button below.</strong></p>
         <a href="https://www.meetup.com/online-healing-meditation/" target="_blank"
