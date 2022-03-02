@@ -137,6 +137,18 @@
           border-radius: 50%;
           background: $brand-color-one;
         }
+
+        a {
+          @extend .clickable;
+          display: inline-block;
+        }
+
+        &.Meditation {
+          padding-left: 0;
+          &:before {
+            display: none;
+          }
+        }
       }
 
       @for $i from 1 to 20 {
