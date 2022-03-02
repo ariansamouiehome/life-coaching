@@ -53,7 +53,8 @@ const Shop = (props) => {
                     <ColumnInfoImage
                         noCurve
                         title={`Interested In This ${category}?`}
-                        description={`This ${category} is currently being created.<br /> If you are interested in this ${category} please fill out your details and I will contact you when it is live.<br /> (Estimated Release Date - ${comingSoonDate})`}
+                        headingLine
+                        description={`This ${category} is currently being created.<br /> Please fill out your details and I will contact you when it is live.<br /> (Estimated Release Date - ${comingSoonDate})`}
                     />
 
                     <CourseInterestForm

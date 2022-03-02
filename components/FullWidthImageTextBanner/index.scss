@@ -152,8 +152,8 @@
 
   &.alt {
     .container {
-      padding-top: 60px;
-      min-height: 35vh;
+      padding-top: 80px;
+      min-height: 30vh;
       @include media-breakpoint-up(sm) {
         min-height: 60vh;
       }
@@ -196,12 +196,6 @@
       animation-name: scaleOutFade;
       animation-fill-mode: both;
       animation-duration: 10s;
-    }
-
-    .container {
-      animation-name: roundBottom;
-      animation-fill-mode: both;
-      animation-duration: 1s;
     }
 
     .inner-content {

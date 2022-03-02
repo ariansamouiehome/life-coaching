@@ -41,6 +41,7 @@ const BookACall = () => {
             <ColumnInfoImage
                 noCurve
                 title="Interested in working with me?"
+                headingLine
                 description="Fill out the form and tell me a little about yourself. <br /> I will then get in touch and we can arrange the start of your healing journey."
             />
 

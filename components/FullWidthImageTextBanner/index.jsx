@@ -81,7 +81,7 @@ const FullWidthImageTextBanner = (props) => {
                 <Row>
                     <Col xs={12} md={8} lg={6} className="inner-content">
                         {hTagOutput()}
-                        {description && <p className="body-copy" dangerouslySetInnerHTML={{__html: description}}/>}
+                        {description && <p className={`body-copy ${!cta_text ? 'm-0' : ''}`} dangerouslySetInnerHTML={{__html: description}}/>}
                         {cta_text && ctaOutput()}
                     </Col>
                 </Row>

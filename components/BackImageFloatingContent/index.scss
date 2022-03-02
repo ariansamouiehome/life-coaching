@@ -145,6 +145,10 @@
 
         &.Meditation {
           padding-left: 0;
+          text-align: center;
+          @include media-breakpoint-up(xs) {
+            text-align: left;
+          }
           &:before {
             display: none;
           }

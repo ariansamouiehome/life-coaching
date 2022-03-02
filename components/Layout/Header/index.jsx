@@ -46,7 +46,7 @@ const Header = (props) => {
                         <Link href="/">
                             <a className="brand-logo">
                                 <img src="/images/logo-single.svg" alt="Arian Samouie Life Coach" className="logo-image"/>
-                                <spam className="logo-text">LIFE COACH / HEALER</spam>
+                                <spam className="logo-text">HEALER / LIFE COACH</spam>
                             </a>
                         </Link>
                         <div className="nav-hold-wrapper">
