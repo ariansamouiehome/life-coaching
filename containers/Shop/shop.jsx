@@ -27,7 +27,7 @@ const Shop = (props) => {
                 />
 
                 <ColumnInfoImage
-                    title="What is the goal?"
+                    title="What Is The Goal?"
                     description={description}
                     headingLine
                     paddingBottom
@@ -35,21 +35,25 @@ const Shop = (props) => {
 
                 <BackImageFloatingContent
                     backgroundImage="/images/pattern-back-4.png"
-                    title="What Is Covered In This Course?"
+                    title={`What Is Covered In This ${category}?`}
                     headingLine
                     curveBottom
                 >
                     <ul className="courses-list">
                         {courseList.map((item, key) =>
-                        <li className="list-item" key={`course-list-key-${key}`}>{item}</li>)}
+                        <li
+                            className={`list-item ${category}`}
+                            key={`course-list-key-${key}`}
+                            dangerouslySetInnerHTML={{__html: item}}
+                        />)}
                     </ul>
                 </BackImageFloatingContent>
 
                 {comingSoon && <>
                     <ColumnInfoImage
                         noCurve
-                        title="Interested In This Course?"
-                        description={`This course is currently being created.<br /> If you are interested in taking this course please fill out your details and I will contact you when it is live.<br /> (Estimated Release Date - ${comingSoonDate})`}
+                        title={`Interested In This ${category}?`}
+                        description={`This ${category} is currently being created.<br /> If you are interested in this ${category} please fill out your details and I will contact you when it is live.<br /> (Estimated Release Date - ${comingSoonDate})`}
                     />
 
                     <CourseInterestForm

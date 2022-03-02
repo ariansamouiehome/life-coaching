@@ -20,12 +20,12 @@ export default async (req, res) => {
         <h3>Add to Course Interest List</h3>
         <p><strong>Customer Name:</strong><br /> ${req.body.courseInterestName}</p>
         <p><strong>Customer Email:</strong><br /> ${req.body.courseInterestEmail}</p>
-        <p><strong>Course Name:</strong><br /> ${req.body.courseName}</p>
+        <p><strong>Product Name:</strong><br /> ${req.body.courseName}</p>
     `;
     const mailData = {
         from: 'ariansamouiecoach@outlook.com',
         to: 'ariansamouiecoach@outlook.com',
-        subject: 'ADD TO COURSE INTEREST LIST!',
+        subject: 'ADD TO INTEREST LIST!',
         text: bodyText,
         html: bodyText,
     }
