@@ -45,12 +45,24 @@ const Home = () => {
             message: 'I found the meditation very helpful and useful for someone like me who has always had negative thoughts. I will recommend it to my friends and family.',
         },
         {
-            name: 'AR',
+            name: 'Ash',
             message: 'Such a deeply relaxing meditation led by Arian who clearly has much insight and knowledge. The information he holds and his desire to enhance the lives of others will do much to advance society. Thank you.',
         },
         {
             name: 'Isaac Orr',
             message: 'I\'ve never felt more at ease with my mind and soul. Looking forward to attend another session, best meditation I\'ve experienced in years!',
+        },
+        {
+            name: 'Selina Chibanda',
+            message: 'Amazing session. This is my second session and I am excited to go through \'how to let go - becoming the new you\' session. Thank you for taking time and sharing your talent.',
+        },
+        {
+            name: 'Mike',
+            message: 'Very powerful and so much insight from Arian. Looking forward to more. Thank you :)',
+        },
+        {
+            name: 'Tracy Maria Vose',
+            message: 'Intense experience. Very powerful. Looking forward to the next session. Thank you Arian',
         },
     ];
     const {clickedPageChangeScrollToPosition} = useContext(PageChangeContext);
