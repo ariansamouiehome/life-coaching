@@ -37,16 +37,16 @@ const Home = () => {
             message: 'This meditation helped me so much to calm my mind and detach from my thoughts. I loved Arians voice and guidance through the process with his open heart. Thank you so much, will definitely join again. 🙏',
         },
         {
-            name: 'Jenni Wardell',
-            message: 'Arian makes sure there is an ongoing conversation and makes you feel comfortable from the get go. Amazing process.',
-        },
-        {
             name: 'Taba Fard',
             message: 'I found the meditation very helpful and useful for someone like me who has always had negative thoughts. I will recommend it to my friends and family.',
         },
         {
             name: 'Ash',
             message: 'Such a deeply relaxing meditation led by Arian who clearly has much insight and knowledge. The information he holds and his desire to enhance the lives of others will do much to advance society. Thank you.',
+        },
+        {
+            name: 'Isaac Orr',
+            message: 'I\'ve never felt more at ease with my mind and soul. Looking forward to attend another session, best meditation I\'ve experienced in years!',
         },
         {
             name: 'Selina Chibanda',
