@@ -9,38 +9,6 @@ export const globalMailingList = [
         firstName: 'ArianOutlook',
         lastName: 'SamouieOutlook'
     },
-    {
-        email: 'tabafard@yahoo.co.uk',
-        firstName: 'Tabd ',
-        lastName: 'Fard'
-    },
-    {
-        email: 'ingliskatherine8@gmail.com',
-        firstName: 'Kathy',
-        lastName: 'AAAAAAAA'
-    },
-    {
-        email: 'loiswoodhead@gmail.con',
-        firstName: 'Lois',
-        lastName: 'AAAAAAAA'
-    },
-    {
-        email: 'jj01.joseph@gmail.com',
-        firstName: 'John',
-        lastName: 'AAAAAAAA'
-    },
-    {
-        email: 'gary@spiritedstrength.com',
-        firstName: 'Gary',
-        lastName: 'AAAAAAAA'
-    },
-
-
-
-
-
-
-
     // {
     //     email: 'ashley_collins87@hotmail.co.uk',
     //     firstName: 'Ashley',
@@ -165,5 +133,10 @@ export const globalMailingList = [
     //     email: 'ingliskatherine8@gmail.com',
     //     firstName: 'Kathy',
     //     lastName: 'Inglis'
+    // },
+    // {
+    //     email: 'babycham1966@gmail.com',
+    //     firstName: 'Tracy',
+    //     lastName: 'Maria Vose'
     // },
 ]

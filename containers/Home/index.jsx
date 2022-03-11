@@ -37,16 +37,17 @@ const Home = () => {
             message: 'This meditation helped me so much to calm my mind and detach from my thoughts. I loved Arians voice and guidance through the process with his open heart. Thank you so much, will definitely join again. 🙏',
         },
         {
-            name: 'Taba Fard',
-            message: 'I found the meditation very helpful and useful for someone like me who has always had negative thoughts. I will recommend it to my friends and family.',
-        },
-        {
             name: 'Ash',
             message: 'Such a deeply relaxing meditation led by Arian who clearly has much insight and knowledge. The information he holds and his desire to enhance the lives of others will do much to advance society. Thank you.',
         },
         {
-            name: 'Isaac Orr',
-            message: 'I\'ve never felt more at ease with my mind and soul. Looking forward to attend another session, best meditation I\'ve experienced in years!',
+            full: true,
+            name: 'Lydia Pitts',
+            message: 'This was the first shared energy space I\'ve had for some time now and it was a wonderful group from different locations. There were many bits of knowledge that I learned through Arian about the basics of meditation and its benefits. Among this, the breathing technique we began with was something I had never experienced before, a rush of energy to my crown and a localized pressure. Since then, I have been using this technique before my morning and evening meditations as it has brought a mental clarity and focus into my life. Very thankful for his time and energy spent towards inspiring, leading and empowering individuals into a more vibrant present and future.',
+        },
+        {
+            name: 'Taba Fard',
+            message: 'I found the meditation very helpful and useful for someone like me who has always had negative thoughts. I will recommend it to my friends and family.',
         },
         {
             name: 'Selina Chibanda',
@@ -61,6 +62,7 @@ const Home = () => {
             message: 'Intense experience. Very powerful. Looking forward to the next session. Thank you Arian',
         },
         {
+            full: true,
             name: 'David Burgess',
             message: 'What can I say about what I have just experienced? Unbelievable the way Arian explains the reasons we do everything ie the movement, the breath, it is just amazing. Make sure you are at his next one.',
         },
@@ -169,6 +171,7 @@ const Home = () => {
                 <div className="theme-row">
                     {testimonials.map((item, key) =>
                         <TestimonialCard
+                            full={item.full}
                             name={item.name}
                             message={item.message}
                         />)}
