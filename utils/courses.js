@@ -10,7 +10,8 @@ const courses =[
         courseList: [
             'Intro - What Is Trauma?',
             'Awareness - The Conscious and Subconscious',
-            'Feelings & Thoughts - What are they?',
+            'Thoughts - What are they?',
+            'Feelings - What are they?',
             'Our Core Wounds - Childhood Trauma',
             'Relationships and Codependency',
             'Our Beliefs - How to change a belief?',
@@ -23,7 +24,7 @@ const courses =[
             'Healing your inner child (Meditation)',
         ],
         comingSoon: true,
-        comingSoonDate: 'April 2022',
+        comingSoonDate: 'April/May 2022',
     },
     {
         altCard: false,
