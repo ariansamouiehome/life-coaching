@@ -18,7 +18,7 @@ const courses =[
             'Shadow Work - What is it and how to do it?',
             'Parts Work - What is it and how to do it?',
             'The Nervous System',
-            'Self love - How to practise self love?',
+            'Self love - Learn how to emotionally self soothe',
             'How to let go - Becoming the new you (Meditation)',
             'Activate your heart - Becoming the love that you naturally are (Meditation)',
             'Healing your inner child (Meditation)',
