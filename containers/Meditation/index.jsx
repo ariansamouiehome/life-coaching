@@ -11,7 +11,7 @@ import TestimonialForm from "components/TestimonialForm";
 const Meditation = () => {
 
     // Data
-    const sessionDate = '15th March - 8:00pm';
+    const sessionDate = '22nd March - 8:00pm';
     const meditation = {
         date: sessionDate,
         name: 'How To Let Go - Becoming The New You',
