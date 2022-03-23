@@ -103,7 +103,7 @@ const TestimonialForm = (props) => {
                             value="testimonialMessage"
                             type="textarea"
                             label="Message"
-                            placeholder="How did you find the meditation experience?"
+                            placeholder="How did you find the experience?"
                             errorActive={errorActive}
                             loading={loading}
                         />

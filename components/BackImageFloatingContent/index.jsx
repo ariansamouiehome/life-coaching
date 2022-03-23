@@ -16,6 +16,7 @@ const BackImageFloatingContent = (props) => {
         large,
         noPaddTop,
         noAnimation,
+        spaceButton,
     } = props;
 
     const ctaOutput = () => {
@@ -62,7 +63,7 @@ const BackImageFloatingContent = (props) => {
                     <Col xs={12} xl={!large && 10} className={`inner-content `}>
                         {title && hTagOutput()}
                         {props.children}
-                        {cta_text && <div className="theme-button-wrapper">{ctaOutput()}</div>}
+                        {cta_text && <div className={`theme-button-wrapper ${spaceButton ? 'spaceButton' : ''}`}>{ctaOutput()}</div>}
                     </Col>
                 </Row>
             </Container>

@@ -1,4 +1,4 @@
-import React, {useContext} from 'react';
+import React, {useContext, useState} from 'react';
 import {scrollToPosition} from "../../utils/functions";
 import FullWidthImageTextBanner from "components/FullWidthImageTextBanner";
 import ColumnInfoImage from "components/ColumnInfoImage";
@@ -10,6 +10,8 @@ import Clickable from "components/Elements/Clickable";
 import {PageChangeContext} from "../../utils/pageChangeContext";
 import TestimonialCard from "components/TestimonialCard";
 import FullWidthInfo from "components/FullWidthInfo";
+import TestimonialForm from "components/TestimonialForm";
+import ContextCard from "components/ContextCard";
 
 const Home = () => {
 
@@ -69,6 +71,9 @@ const Home = () => {
     ];
     const {clickedPageChangeScrollToPosition} = useContext(PageChangeContext);
 
+    // States
+    const [testimonialState, setTestimonialState] = useState(false);
+
     return (
         <>
             <AppHead
@@ -76,6 +81,14 @@ const Home = () => {
                 description="BECOME THE MOST AUTHENTIC YOU. The further away we are from our most authentic self,<br /> the further away we are to healing"
                 image="/images/profile-4-mobile.webp"
             />
+            <ContextCard
+                state={testimonialState}
+                setState={setTestimonialState}
+                heading="Testimonial"
+            >
+                <TestimonialForm subject="Testimonials"/>
+            </ContextCard>
+
             <FullWidthImageTextBanner
                 title="BECOME THE MOST <br /> AUTHENTIC YOU"
                 description="The further away we are from the most authentic self,<br /> the further away we are from healing."
@@ -167,6 +180,9 @@ const Home = () => {
                 title="Testimonials"
                 headingLine
                 large
+                spaceButton
+                cta_text="Submit testimonial"
+                onClick={() => setTestimonialState(true)}
             >
                 <div className="theme-row">
                     {testimonials.map((item, key) =>

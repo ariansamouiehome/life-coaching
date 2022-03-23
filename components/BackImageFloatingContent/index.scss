@@ -99,6 +99,10 @@
       position: relative;
       display: inline-block;
       width: auto;
+
+      &.spaceButton {
+        margin-top: 25px;
+      }
     }
 
     @for $i from 1 to 10 {
