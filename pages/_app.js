@@ -1,10 +1,10 @@
 import React, {useState, useEffect} from "react";
 import 'styles/app.scss';
 import AOS from 'aos';
+import Router, {useRouter} from 'next/router';
 import {isMobile} from 'react-device-detect';
 import Header from "components/Layout/Header";
 import Footer from "components/Layout/Footer";
-import Router, {useRouter} from 'next/router';
 import {PageChangeContext} from "../utils/pageChangeContext";
 import {scrollToPosition} from "../utils/functions";
 import axios from "axios";

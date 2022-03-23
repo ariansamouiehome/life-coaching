@@ -139,4 +139,24 @@ export const globalMailingList = [
     //     firstName: 'Tracy',
     //     lastName: 'Maria Vose'
     // },
+    // {
+    //     email: 'nqmac1@gmail.com',
+    //     firstName: 'Ash',
+    //     lastName: 'XXXXX'
+    // },
+    // {
+    //     email: 'samchanty4@gmail.com',
+    //     firstName: 'Sam',
+    //     lastName: 'Chant'
+    // },
+    // {
+    //     email: 'loiswoodhead@gmail.com',
+    //     firstName: 'Lois',
+    //     lastName: 'Woodhead'
+    // },
+    // {
+    //     email: 'machteldhester@gmail.com',
+    //     firstName: 'Machteld',
+    //     lastName: 'Hester'
+    // },
 ]

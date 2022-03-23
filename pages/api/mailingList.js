@@ -16,30 +16,33 @@ export default async (req, res) => {
         },
         secure: true,
     })
-    const subject = 'New Podcast Series';
+    const subject = 'You Are Good Enough';
     const bodyText = `
         <img src="https://ariansamouie.com/images/logo-single.svg" style="max-width: 320px;"/>
         <h1>Arian Talks - Podcast Series.</h1>
         <br />
         <h2>Hi ${req.body.firstName}.</h2>   
-        <p>Great news, my new podcast series (Arian Talks) is <strong style="color:#d2a94e;">now live</strong>.</p>
-        <p>The goal of this podcast series is to be able to give you a better understanding of how you work as a human and what your healing journey will look like.</p>
-        <p>I am going to upload this series on all podcast platforms but for now you guys get an early sneak peek of it on YouTube.</p>
-        
+        <p>Great news, episode two of Arian Talks is <strong style="color:#d2a94e;">now live</strong>.</p>
+        <p>In this episode I talk about how our up bringing make us develop the belief that we are not good enough.</p>
+        <p>You are good enough to be loved just for being who you are.</p>
+        <br/>
+        <p>This is something that every generation has been suffering from due to the way we have been brought up.</p>
+        <p>You were good enough when you were born without needing to prove it to anyone. The only reason you feel like that now is because of the way you have been programmed.</p>
+        <p>To get a much better understanding of this, watch my new YouTube video.</p>
         
         <br/>
-        <p>Watch the first episode titled "Why We Feel The Way We Do"</p>
-        <a href="https://youtu.be/ycRuRUYyZ5g" target="_blank"
-            style="width: 100%; max-width: 320px; display: block; padding: 15px; text-align: center; color: #fff; background: #c4302b; text-decoration: none; border-radius: 5px;"
+        <p>Watch Episode 2 Titled - The "I'm Not Good enough" Belief</p>
+        <a href="https://youtu.be/S8MwB6GqHWE" target="_blank"
+            style="width: 100%; max-width: 320px; display: block; padding: 15px; text-align: center; color: #fff; background: #d2a94e; text-decoration: none; border-radius: 5px;"
         >
-            Watch Episode One
+            Watch Episode Two
         </a>
         
         <br />
         <hr>
         <br />
-        <h2><strong>MeetUp</strong></h2>
-        <p>To stay up to date with all the news about my new meditation sessions, join my MeetUp group.</p>
+        <h2><strong>MeetUp - FREE Online Meditation</strong></h2>
+        <p>To stay up to date with all the news about my FREE meditation sessions, join my MeetUp group.</p>
         <a href="https://www.meetup.com/online-healing-meditation/" target="_blank"
             style="width: 100%; max-width: 320px; display: block; padding: 15px; text-align: center; color: #fff; background: #e51937; text-decoration: none; border-radius: 5px;"
         >
