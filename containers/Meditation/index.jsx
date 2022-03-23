@@ -74,11 +74,11 @@ const Meditation = () => {
 
             <FullWidthInfo
                 hTag={3}
-                title="Testimonial"
-                description="It would be great to hear what you thought about the session.<br /> Please share a few thoughts about your experience."
+                title="Get This Meditation"
+                description="This meditation is currently being recorder and will be available to purchase soon. Register your interest and you will be notified as soon as it's live."
                 cta_show
-                cta_onClick={() => setTestimonialState(true)}
-                cta_text="Submit Testimonial"
+                cta_href="/shop"
+                cta_text="Go To Shop"
                 headingLine
             />
         </>
