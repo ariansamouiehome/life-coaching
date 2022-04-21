@@ -38,7 +38,7 @@ const courses =[
             'In this meditation session I will guide you into being pure consciousness. <br /><br/> We will get to a stage of releasing all parts of the vehicle your consciousness is driving that we call the "body". <br /><br/> At the moment of being pure consciousness I will teach you how to align with new thoughts and feel your desired emotions, such as love or abundance. You will literally reprogramme your mind and body to go towards your desired destiny in life, becoming the new you. <br /><br/> Our worrying thoughts turn on the stress hormones in our body. These stress hormones are addictive to us which in turn feed us more worrying thoughts. This is the body\'s way of getting the chemicals of stress that it has become addicted to. Yes, we are addicted to our worrying thoughts. <br /><br/> The way we stop this is learning how to observe our thoughts so that we can choose which thoughts to align with. <br /><br/> By being able to experience this you will learn that you are separate from your thoughts and feelings. You will be able to get an understanding that at any point of the day you have the ability to separate yourself from your mind, body, thoughts and feelings. <br /><br/> This is not only very beneficial for your mental health but it is very healing as well. This skill can be used in the moments that our emotions get the best of us and we can also use it to improve the relationships that we have in our lives.<br /><br />To experience this meditation live, join my <a href="https://www.meetup.com/trauma-healing-online-meditations/" target="_blank">MeetUp group</a>.',
         ],
         comingSoon: true,
-        comingSoonDate: 'April 2022',
+        comingSoonDate: 'May 2022',
     },
     {
         altCard: true,
