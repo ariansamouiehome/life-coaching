@@ -35,12 +35,19 @@ const Links = () => {
                 noAnimation
             >
                 <div className="theme-row">
-                    {linkItems.map((item, key) => <LinksCard
-                        href={item.href}
-                        external={item.external}
-                        icon={item.icon}
-                        title={item.title}
-                    />)}
+                    {linkItems.map((item, key) =>
+                        item.heading ? <div className='links-heading'>
+                                <h3 className='links-heading-title'>{item.title}</h3>
+                            </div>
+                            :
+                            <LinksCard
+                                key={key}
+                                href={item.href}
+                                external={item.external}
+                                icon={item.icon}
+                                title={item.title}
+                            />
+                    )}
                 </div>
             </BackImageFloatingContent>
         </>

@@ -13,6 +13,7 @@
   box-shadow: 0 0 9px 4px rgba($brand-color-one, 0.4);
   text-shadow: 1px 1px rgba($brand-black, 0.5);
   transition: 0.5s;
+  text-align: left;
 
   .links-card-image {
     width: 40px;
@@ -28,4 +29,20 @@
     text-decoration: none;
     color: $brand-white;
   }
+}
+
+.links-heading {
+  display: flex;
+  width: 100%;
+  position: relative;
+  margin: 0 auto 15px;
+}
+
+.links-heading-title {
+  display: flex;
+  color: $brand-white;
+  font-family: $brand-font-heading-one;
+  font-size: 24px;
+  margin: 0;
+  text-shadow: 1px 1px rgba($brand-color-one, 0.5);
 }
