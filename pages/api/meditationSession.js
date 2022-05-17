@@ -18,7 +18,7 @@ export default async (req, res) => {
         
         <p>Don't forget all you will need is Zoom, the video calling app and Preferably headphones.</p>
         <p>Below is a link to the Zoom call, please keep this safe as it will be what you will need to use to join the call.</p> 
-        <a href="https://us04web.zoom.us/j/76063040928?pwd=c2E2U21sVVNEdjNTWUlXZjNIY1hoUT09" target="_blank"
+        <a href="https://us02web.zoom.us/j/89773315386?pwd=alNhZi9nUW1qMnAvNWFNc1FpeHU4dz09" target="_blank"
             style="width: 100%; max-width: 320px; display: block; padding: 15px; text-align: center; color: #fff; background: #2D8CFF; text-decoration: none; border-radius: 5px;"
         >
             Join Zoom Call
