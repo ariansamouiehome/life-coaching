@@ -7,10 +7,10 @@ export const navItems =[
         title: "Shadow Work",
         link: 'shadow-work'
     },
-    {
-        title: "Meditation Sessions",
-        link: 'meditation-sessions'
-    },
+    // {
+    //     title: "Meditation Sessions",
+    //     link: 'meditation-sessions'
+    // },
     {
         title: "Shop",
         link: 'shop'
