@@ -49,11 +49,8 @@ const BookACall = () => {
 
             <FullWidthInfo
                 hTag={3}
-                title="Meditation Sessions"
-                description="Join my FREE online healing meditation sessions."
-                cta_show
-                cta_href="/meditation-sessions"
-                cta_text="Reserve your spot"
+                title="NEW WEBSITE COMING SOON"
+                description="I am updating this website so you can access my meditations and online course from my shop. This is nearly finished and will be available very soon."
                 headingLine
             />
         </>

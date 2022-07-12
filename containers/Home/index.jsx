@@ -216,9 +216,6 @@ const Home = () => {
                 hTag={3}
                 title="NEW WEBSITE COMING SOON"
                 description="I am updating this website so you can access my meditations and online course from my shop. This is nearly finished and will be available very soon."
-                cta_show
-                cta_href="/meditation-sessions"
-                cta_text="Reserve your spot"
                 headingLine
             />
 
