@@ -68,8 +68,8 @@ export const linkItems =[
             '</svg>',
     },
     {
-        title: 'Free Meditation Session Form',
-        href: '/meditation-sessions',
+        title: 'Becoming The New You',
+        href: '/shop/how-to-let-go-becoming-a-new-you',
         external: false,
         icon: '<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"\n' +
             '\t viewBox="0 0 297 297" style="enable-background:new 0 0 297 297;" xml:space="preserve">\n' +
