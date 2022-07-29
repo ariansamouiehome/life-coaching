@@ -7,18 +7,18 @@ const MyApp = ({Component, pageProps}) => {
     // Data
     const router = useRouter();
 
-    useEffect(() => {
-        setTimeout(() => {
-            router.push('https://ariansamouie.com/mind-matters-events')
-        },100)
-    },[])
+    // useEffect(() => {
+    //     setTimeout(() => {
+    //         router.push('https://ariansamouie.com/mind-matters-events')
+    //     },100)
+    // },[])
     return (
         <PageChangeContext.Provider >
             {/*{show && <Header*/}
             {/*    showNav={showNav}*/}
             {/*    setShowNav={setShowNav}*/}
             {/*/>}*/}
-            {/*<Component {...pageProps} />*/}
+            <Component {...pageProps} />
             {/*<Footer show={show}/>*/}
         </PageChangeContext.Provider>
     )
