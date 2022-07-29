@@ -13,11 +13,11 @@ const AppHead = (props) => {
             <meta name="viewport" content="width=device-width, initial-scale=1" />
             <meta charSet="utf-8" />
             <meta name="description" content={description} />
-            <title>Arian Samouie Trauma Intuitive Coach {title}</title>
+            <title> {title}</title>
             {/*Facebook & Whatsapp*/}
             <meta name="msapplication-TileImage" content={image}/>
-            <meta property="og:site_name" content="Arian Samouie Trauma Intuitive Coach"/>
-            <meta property="og:title" content={`Arian Samouie Trauma Intuitive Coach ${title}`}/>
+            <meta property="og:site_name" content=""/>
+            <meta property="og:title" content={` ${title}`}/>
             <meta property="og:description" content={description}/>
             <meta property="og:image" content={image}/>
             <meta property="og:type" content="website"/>
@@ -29,7 +29,7 @@ const AppHead = (props) => {
 
 
             {/*Twitter*/}
-            <meta name="twitter:title" content={`Arian Samouie Trauma Intuitive Coach ${title}`}/>
+            <meta name="twitter:title" content={` ${title}`}/>
             <meta name="twitter:description" content={description}/>
             <meta name="twitter:image" content={image}/>
             <meta name="twitter:card" content={image}/>
